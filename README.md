@@ -1,1 +1,1 @@
-# namazonClub
+This is site for Namazon woman wrestling club.
