@@ -17,7 +17,7 @@ function style () {
   .pipe(browserSync.stream())
 }
 function riggerHtml () {
-	return gulp.src('./src/**/*.html')
+	return gulp.src('./src/*.html')
 	.pipe(rigger())
 	.pipe(gulp.dest('./docs'))
 }
