@@ -1,3 +1,49 @@
 body {
   background: url('/img/background.jpg');
 }
+.logo {
+  margin-top: 25px;
+  background: linear-gradient(to right,#1B8BBA, #023C56);
+  .row{
+    padding: 30px 20px;
+  }
+  h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 0.85;
+  }
+  h2 {
+    color: orange;
+    font-size: 25px;
+    margin-left: 2px;
+  }
+}
+.navbar {
+  background-color: black;
+  ul{
+    // padding: 0;
+    padding: 5px 0;
+  }
+  li:not(:last-of-type) {
+    border-right: 1px solid grey;
+  }
+  li:not(:first-of-type) {
+    a{
+      padding-left: 30px;
+    }
+  }
+  a {
+    color: white;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 30px;
+    &:hover {
+      color:orange;
+    }
+    &:not(:nth-of-type(1)) {
+      color: red;
+    }
+  }
+}

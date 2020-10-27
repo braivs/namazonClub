@@ -1,4 +1,38 @@
 body {
   background: url("/img/background.jpg"); }
 
+.logo {
+  margin-top: 25px;
+  background: linear-gradient(to right, #1B8BBA, #023C56); }
+  .logo .row {
+    padding: 30px 20px; }
+  .logo h1 {
+    color: white;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 0.85; }
+  .logo h2 {
+    color: orange;
+    font-size: 25px;
+    margin-left: 2px; }
+
+.navbar {
+  background-color: black; }
+  .navbar ul {
+    padding: 5px 0; }
+  .navbar li:not(:last-of-type) {
+    border-right: 1px solid grey; }
+  .navbar li:not(:first-of-type) a {
+    padding-left: 30px; }
+  .navbar a {
+    color: white;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 30px; }
+    .navbar a:hover {
+      color: orange; }
+    .navbar a:not(:nth-of-type(1)) {
+      color: red; }
+
 /*# sourceMappingURL=style.css.map */
