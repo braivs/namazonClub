@@ -21,6 +21,12 @@ body {
   margin-left: -15px;
   width: calc(100% + 30px);
   background-color: black; }
+  .navbar .navbar-brand img {
+    width: 100px; }
+  .navbar button {
+    border: 1px solid white; }
+  .navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
   .navbar ul {
     padding: 5px 0; }
     .navbar ul a {
@@ -37,5 +43,7 @@ body {
       padding-left: 20px; }
   .navbar .dropdown-menu {
     background-color: grey; }
+    .navbar .dropdown-menu .dropdown-item:hover {
+      background-color: #555555; }
 
 /*# sourceMappingURL=style.css.map */
