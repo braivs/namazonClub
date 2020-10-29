@@ -46,4 +46,8 @@ body {
     .navbar .dropdown-menu .dropdown-item:hover {
       background-color: #555555; }
 
+.carousel {
+  margin-left: -15px;
+  width: calc(100% + 30px); }
+
 /*# sourceMappingURL=style.css.map */
