@@ -18,21 +18,24 @@ body {
     margin-left: 2px; }
 
 .navbar {
+  margin-left: -15px;
+  width: calc(100% + 30px);
   background-color: black; }
   .navbar ul {
     padding: 5px 0; }
-  .navbar li:not(:last-of-type) {
-    border-right: 1px solid grey; }
-  .navbar li:not(:first-of-type) a {
-    padding-left: 30px; }
-  .navbar a {
-    color: white;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-right: 30px; }
-    .navbar a:hover {
-      color: orange; }
-    .navbar a:not(:nth-of-type(1)) {
-      color: red; }
+    .navbar ul a {
+      color: white;
+      padding-top: 0;
+      padding-bottom: 0; }
+      .navbar ul a:hover {
+        color: orange; }
+    .navbar ul li {
+      padding-right: 25px; }
+    .navbar ul li:not(:last-of-type) {
+      border-right: 1px solid #13729A; }
+    .navbar ul li:not(:first-of-type) {
+      padding-left: 20px; }
+  .navbar .dropdown-menu {
+    background-color: grey; }
 
 /*# sourceMappingURL=style.css.map */

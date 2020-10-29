@@ -21,29 +21,32 @@ body {
   }
 }
 .navbar {
+  margin-left: -15px;
+  width: calc(100% + 30px);
   background-color: black;
-  ul{
-    // padding: 0;
+  ul {
     padding: 5px 0;
-  }
-  li:not(:last-of-type) {
-    border-right: 1px solid grey;
-  }
-  li:not(:first-of-type) {
-    a{
-      padding-left: 30px;
+    a {
+      color: white;
+      padding-top: 0;
+      padding-bottom: 0;
+      &:hover {
+        color:orange;
+      }
+    }
+    li {
+      padding-right: 25px;
+    }
+    li:not(:last-of-type) {
+      border-right: 1px solid #13729A;
+    }
+    li:not(:first-of-type) {
+      padding-left: 20px;
     }
   }
-  a {
-    color: white;
-    padding-top: 0;
-    padding-bottom: 0;
-    padding-right: 30px;
-    &:hover {
-      color:orange;
-    }
-    &:not(:nth-of-type(1)) {
-      color: red;
-    }
+  
+  
+  .dropdown-menu {
+    background-color: grey;
   }
 }

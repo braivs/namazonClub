@@ -8,7 +8,7 @@
     <title>NamazonClub</title>
   </head>
   <body>
-    <div class="header">
+    <header>
       <div class="container logo">
         <div class="row">
           <div class="col-12">
@@ -17,25 +17,68 @@
           </div>
         </div>
       </div>
-      <div class="container navbar">
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">ГЛАВНАЯ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">ТРЕНИРОВКИ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">УЧАСТНИЦЫ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">СОРЕВНОВАНИЯ</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">ВИДЕО</a>
-          </li>
-        </ul>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">ГЛАВНАЯ</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  ТРЕНИРОВКИ
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Видео тренировок</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  УЧАСТНИЦЫ
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">2010 - 2011</a>
+                  <a class="dropdown-item" href="#">2012 - 2013</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  СОРЕВНОВАНИЯ
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Архив</a>
+                  <a class="dropdown-item" href="#">2011</a>
+                  <a class="dropdown-item" href="#">2012</a>
+                  <a class="dropdown-item" href="#">2013 - 2014</a>
+                  <a class="dropdown-item" href="#">2015 - 2017</a>
+                  <a class="dropdown-item" href="#">Анонсы</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  ВИДЕО
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Борьба</a>
+                  <a class="dropdown-item" href="#">MMA</a>
+                  <a class="dropdown-item" href="#">Кикбоксинг, муай тай</a>
+                  <a class="dropdown-item" href="#">Смешанная борьба</a>
+                  <a class="dropdown-item" href="#">Как приобрести видео?</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-    </div>
+
+
+    </header>
+    <footer>
+      <script src="js/jquery-3.5.1.min.js"></script>
+      <script src="js/bootstrap.js"></script>
+    </footer>
   </body>
 </html>
