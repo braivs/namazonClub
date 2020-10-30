@@ -74,18 +74,35 @@ body {
   padding: 20px;
   .row {
     padding: 0 20px;
+    margin-bottom: 15px;
   }
   img {
     float: left;
     margin-right: 10px;
   }
-  a{
-    h3 {
+  h3{
+    a{
       color: black;
+      &:hover{
+        text-decoration: none;
+        color: #329CCB;
+      }
     }
   }
-  .container > li > a:hover {
-    color: blue;
+  p { 
+    a:hover{
+      color: black;
+    }
+    margin-bottom: 10px;
+  }
+  button {
+    color: white;
+    background-color:#C0C0C0;
+    border: none;
+    height: 28px;
+    &:hover {
+      background-color: #1B8BBA;
+    }
   }
 }
 

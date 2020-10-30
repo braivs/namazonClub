@@ -54,13 +54,26 @@ body {
   background-color: white;
   padding: 20px; }
   .mainCards .row {
-    padding: 0 20px; }
+    padding: 0 20px;
+    margin-bottom: 15px; }
   .mainCards img {
     float: left;
     margin-right: 10px; }
-  .mainCards a h3 {
+  .mainCards h3 a {
     color: black; }
-  .mainCards .container > li > a:hover {
-    color: blue; }
+    .mainCards h3 a:hover {
+      text-decoration: none;
+      color: #329CCB; }
+  .mainCards p {
+    margin-bottom: 10px; }
+    .mainCards p a:hover {
+      color: black; }
+  .mainCards button {
+    color: white;
+    background-color: #C0C0C0;
+    border: none;
+    height: 28px; }
+    .mainCards button:hover {
+      background-color: #1B8BBA; }
 
 /*# sourceMappingURL=style.css.map */
