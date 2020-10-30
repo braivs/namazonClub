@@ -69,3 +69,23 @@ body {
   margin-left: -15px;
   width: calc(100% + 30px);
 }
+.mainCards {
+  background-color: white;
+  padding: 20px;
+  .row {
+    padding: 0 20px;
+  }
+  img {
+    float: left;
+    margin-right: 10px;
+  }
+  a{
+    h3 {
+      color: black;
+    }
+  }
+  .container > li > a:hover {
+    color: blue;
+  }
+}
+
