@@ -1,20 +1,26 @@
 body {
   background: url("../img/background.jpg"); }
 
+* h1 {
+  font-size: 60px;
+  font-weight: bold; }
+
+* h2 {
+  font-size: 25px; }
+
 .logo {
   margin-top: 25px;
   background: linear-gradient(to right, #1B8BBA, #023C56); }
   .logo .row {
     padding: 30px 20px; }
   .logo h1 {
-    color: white;
     font-size: 60px;
-    font-weight: bold;
+    color: white;
     margin: 0;
     line-height: 0.85; }
   .logo h2 {
-    color: orange;
     font-size: 25px;
+    color: orange;
     margin-left: 2px; }
 
 .navbar {
@@ -75,6 +81,34 @@ body {
     height: 28px; }
     .mainCards button:hover {
       background-color: #1B8BBA; }
+
+.videoAll {
+  padding-top: 10px;
+  background: white; }
+  .videoAll h3:first-of-type {
+    color: #1B8BBA; }
+  .videoAll .row-text {
+    margin-left: 0; }
+    .videoAll .row-text:last-child {
+      padding-bottom: 20px; }
+  .videoAll .card-row {
+    margin-left: 15px;
+    margin-bottom: 20px; }
+    .videoAll .card-row:last-child {
+      padding-bottom: 20px; }
+  .videoAll .card {
+    width: 205px;
+    background-color: #FAF0E6;
+    text-align: center; }
+    .videoAll .card .card-img-top {
+      width: 176px;
+      margin: 5px auto 0;
+      border-radius: 0; }
+    .videoAll .card .card-body {
+      padding: 5px;
+      text-align: center;
+      line-height: 1.2;
+      font-size: 14px; }
 
 footer {
   padding: 50px 0 0 0;
