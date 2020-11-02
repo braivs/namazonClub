@@ -4,6 +4,7 @@ const browserSync = require('browser-sync').create();
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const rigger = require('gulp-rigger'); //для инклудов
+const merge = require('merge-stream'); //для нескольких gulp.src
 //sass compile
 function style () {
 	return gulp.src('./src/scss/*.scss')
@@ -16,10 +17,17 @@ function style () {
   .pipe(gulp.dest('./docs/css'))
   .pipe(browserSync.stream())
 }
+
 function riggerHtml () {
-	return gulp.src('./src/*.html')
-	.pipe(rigger())
+  var mainHtmls = gulp.src('./src/*.html')
+  .pipe(rigger())
 	.pipe(gulp.dest('./docs'))
+
+  var videos = gulp.src('./src/videos/*html') 
+	.pipe(rigger())
+	.pipe(gulp.dest('./docs/videos'))
+  
+  return merge(mainHtmls,videos)
 }
 function watch () {
   browserSync.init({
