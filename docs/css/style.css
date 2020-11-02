@@ -82,29 +82,29 @@ body {
     .mainCards button:hover {
       background-color: #1B8BBA; }
 
-.videoAll {
+.videoAll, .order {
   padding-top: 10px;
   background: white; }
-  .videoAll h3:first-of-type {
+  .videoAll h3:first-of-type, .order h3:first-of-type {
     color: #1B8BBA; }
-  .videoAll .row-text {
+  .videoAll .row-text, .order .row-text {
     margin-left: 0; }
-    .videoAll .row-text:last-child {
+    .videoAll .row-text:last-child, .order .row-text:last-child {
       padding-bottom: 20px; }
-  .videoAll .card-row {
+  .videoAll .card-row, .order .card-row {
     margin-left: 15px;
     margin-bottom: 20px; }
-    .videoAll .card-row:last-child {
+    .videoAll .card-row:last-child, .order .card-row:last-child {
       padding-bottom: 20px; }
-  .videoAll .card {
+  .videoAll .card, .order .card {
     width: 205px;
     background-color: #FAF0E6;
     text-align: center; }
-    .videoAll .card .card-img-top {
+    .videoAll .card .card-img-top, .order .card .card-img-top {
       width: 176px;
       margin: 5px auto 0;
       border-radius: 0; }
-    .videoAll .card .card-body {
+    .videoAll .card .card-body, .order .card .card-body {
       padding: 5px;
       text-align: center;
       line-height: 1.2;
