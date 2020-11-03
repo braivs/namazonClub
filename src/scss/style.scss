@@ -116,7 +116,7 @@ body {
     }
   }
 }
-.videoAll, .order {
+.videoAll, .order, .videos {
   padding-top: 10px;
   background: white;
   h3:first-of-type {
@@ -151,6 +151,14 @@ body {
       font-size: 14px;
     }
   }
+}
+.videos {
+  .gallery {
+    img {
+      width: 330px;
+    }
+  }
+
 }
 footer {
   padding: 50px 0 0 0; 
