@@ -3,8 +3,7 @@ const sass = require('gulp-sass');
 const browserSync = require('browser-sync').create();
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
-const rigger = require('gulp-rigger'); //для инклудов
-const merge = require('merge-stream'); //для нескольких gulp.src
+const pug = require('gulp-pug');
 //sass compile
 function style () {
 	return gulp.src('./src/scss/*.scss')
@@ -18,17 +17,21 @@ function style () {
   .pipe(browserSync.stream())
 }
 
-function riggerHtml () {
-  var mainHtmls = gulp.src('./src/*.html')
-  .pipe(rigger())
-	.pipe(gulp.dest('./docs'))
-
-  var videos = gulp.src('./src/videos/*html') 
-	.pipe(rigger())
-	.pipe(gulp.dest('./docs/videos'))
-  
-  return merge(mainHtmls,videos)
+function pugMainHTMLs () {
+  return gulp.src('./src/*.pug')
+  .pipe(pug({
+      pretty: true
+  }))
+  .pipe(gulp.dest('./docs/'))
 }
+function pugVideos () {
+  return gulp.src('./src/videos/*.pug')
+  .pipe(pug({
+      pretty: true
+  }))
+  .pipe(gulp.dest('./docs/videos/'))
+}
+
 function watch () {
   browserSync.init({
     server: {
@@ -36,11 +39,12 @@ function watch () {
     }
   })
 	gulp.watch('./src/scss/*.scss', style);
-	gulp.watch('./src/**/*.html', riggerHtml);
-	gulp.watch('./docs/*.html').on('change', browserSync.reload); 
+  gulp.watch('./src/includes/*.pug', pugMainHTMLs);
+  gulp.watch('./src/videos/*.pug', pugVideos);
+  gulp.watch('./src/includes/*.pug', pugVideos);
+	gulp.watch('./docs/**/*.html').on('change', browserSync.reload); 
 }
 
-exports.riggerHtml = riggerHtml;
 exports.watch = watch; //for gulp watch start
 gulp.task('default', function () {
 	watch(); //for gulp start
