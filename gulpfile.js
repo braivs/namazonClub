@@ -38,7 +38,8 @@ function watch () {
         baseDir: './docs'
     }
   })
-	gulp.watch('./src/scss/*.scss', style);
+  gulp.watch('./src/scss/*.scss', style);
+  gulp.watch('./src/*.pug', pugMainHTMLs);
   gulp.watch('./src/includes/*.pug', pugMainHTMLs);
   gulp.watch('./src/videos/*.pug', pugVideos);
   gulp.watch('./src/includes/*.pug', pugVideos);

@@ -1,0 +1,23 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='stylesheet' href='css/style.css')
+    link(rel='stylesheet' href='css/bootstrap.css')
+    title Видео кикбоксинг, муай тай
+  body
+    include includes/header.pug
+    main
+      include includes/slider.pug
+      .container.videoAll
+        .row.row-text
+          .col
+            h3 Кикбоксинг, муай тай
+            p.
+              Подкатегория для видео <b>ЖЕНСКИХ</b> боёв в зале по правилам <b>КИКБОКСИНГА</b> и <b>МУАЙ ТАЙ</b>.
+            include includes/cardsBoxing.pug
+        .row.row-text
+          .col
+            a(href='order.html') Как приобрести наше видео
+    include includes/footer.pug

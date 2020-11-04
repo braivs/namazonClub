@@ -1,0 +1,6 @@
+mixin card(title,ref,imgref,alt)
+  .card
+      a(href=ref)
+        img.card-img-top(src=imgref alt=alt)
+      .card-body
+        a(href=ref) !{title}

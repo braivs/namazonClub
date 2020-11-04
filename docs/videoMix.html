@@ -5,350 +5,193 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <title>Видео все категории</title>
+    <title>Видео смешанная борьба</title>
   </head>
-<body>
-  <header>
-    <div class="container logo">
+  <body>
+    <header>
+      <div class="container logo">
+        <div class="row">
+          <div class="col-12">
+            <h1>Намазон</h1>
+            <h2>Клуб единоборств для женщин</h2>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg"><a class="navbar-brand" href="../index.html"><img src="../img/logo.jpg" alt=""></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active"><a class="nav-link" href="../index.html">ГЛАВНАЯ</a></li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">ВИДЕО</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="videoAll.html">Все категории</a><a class="dropdown-item" href="videoWrestling.html">Борьба</a><a class="dropdown-item" href="videoMMA.html">MMA</a><a class="dropdown-item" href="videoBoxing.html">Кикбоксинг, муай тай</a><a class="dropdown-item" href="videoMix.html">Смешанная борьба</a><a class="dropdown-item" href="#">Как приобрести видео?</a></div>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">УЧАСТНИЦЫ</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">Все участницы</a><a class="dropdown-item" href="#">2010 - 2011</a><a class="dropdown-item" href="#">2012 - 2013</a></div>
+              </li>
+              <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">СОРЕВНОВАНИЯ</a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown"><a class="dropdown-item" href="#">Архив</a><a class="dropdown-item" href="#">2011</a><a class="dropdown-item" href="#">2012</a><a class="dropdown-item" href="#">2013 - 2014</a><a class="dropdown-item" href="#">2015 - 2017</a><a class="dropdown-item" href="#">Анонсы</a></div>
+              </li>
+              <li class="nav-item active"><a class="nav-link" href="#">ОБРАТНАЯ СВЯЗЬ</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--
+    li.nav-item.dropdown
+    a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+      | ТРЕНИРОВКИ
+    .dropdown-menu(aria-labelledby='navbarDropdown')
+      a.dropdown-item(href='#') Видео тренировок
+    -->
+    <main>
+      <div class="container">
+        <div class="carousel slide carousel-fade" id="carouselExampleIndicators" data-ride="carousel" data-interval="8000">
+          <ol class="carousel-indicators">
+            <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active"><img class="d-block w-100" src="img/slider/slide1.jpg" alt="..."></div>
+            <div class="carousel-item"><img class="d-block w-100" src="img/slider/slide2.jpg" alt="..."></div>
+            <div class="carousel-item"><img class="d-block w-100" src="img/slider/slide3.jpg" alt="..."></div>
+            <div class="carousel-item"><img class="d-block w-100" src="img/slider/slide4.jpg" alt="..."></div>
+            <div class="carousel-item"><img class="d-block w-100" src="img/slider/slide5.jpg" alt="..."></div>
+            <div class="carousel-item"><img class="d-block w-100" src="img/slider/slide6.jpg" alt="..."></div>
+          </div><a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+        </div>
+      </div>
+      <div class="container videoAll">
+        <div class="row row-text">
+          <div class="col">
+            <h3>Смешанная борьба</h3>
+            <p>
+              В нашем клубе смешанная борьба - это <b>СОРЕВНОВАТЕЛЬНАЯ борьба между мужчиной и женщиной</b> 
+              (миксрестлинг), которая проводится по правилам <b>САБМИШН ГРЭППЛИНГА</b> без ограничения по времени
+              каждой схватки.
+            </p>
+          </div>
+        </div>
+        <div class="row card-row">
+          <div class="col-2.4">
+                    <div class="card"><a href="#"><img class="card-img-top" src="img/video/mixWrestThumb/video-3-wm.jpg" alt="video-3-wm"></a>
+                      <div class="card-body"><a href="#">ВИДЕО 3<br>Пляжная борьба<br>Смешанный турнир. 2010</a></div>
+                    </div>
+          </div>
+          <div class="col-2.4">
+                    <div class="card"><a href="#"><img class="card-img-top" src="img/video/mixWrestThumb/video-5.jpg" alt="video-5"></a>
+                      <div class="card-body"><a href="#">ВИДЕО 5<br>Виллиан  vs. Таис<br>Смешанная борьба. 2011</a></div>
+                    </div>
+          </div>
+          <div class="col-2.4">
+                    <div class="card"><a href="#"><img class="card-img-top" src="img/video/mixWrestThumb/video-7.jpg" alt="video-7"></a>
+                      <div class="card-body"><a href="#">ВИДЕО 7<br>Алекс  vs. Таис<br>Бой на берегу озера</a></div>
+                    </div>
+          </div>
+          <div class="col-2.4">
+                    <div class="card"><a href="#"><img class="card-img-top" src="img/video/mixWrestThumb/video-10.jpg" alt="video-10"></a>
+                      <div class="card-body"><a href="#">ВИДЕО 10<br>Смешанная борьба<br>Лучшие бои. Часть 1. 2011</a></div>
+                    </div>
+          </div>
+          <div class="col-2.4">
+                    <div class="card"><a href="#"><img class="card-img-top" src="img/video/mixWrestThumb/2011-alex-elena.jpg" alt="video-11"></a>
+                      <div class="card-body"><a href="#">| ВИДЕО 11<br>Алекс  vs. Елены<br>Пляжная борьба. 2011</a></div>
+                    </div>
+          </div>
+        </div>
+        <div class="row card-row">
+          <div class="col-2.4">
+                    <div class="card"><a href="#"><img class="card-img-top" src="img/video/mixWrestThumb/video-14.jpg" alt="video-14"></a>
+                      <div class="card-body"><a href="#">ВИДЕО 14<br>Двое мужчин  vs. одной<br>женщины. Часть 1. 2011</a></div>
+                    </div>
+          </div>
+          <div class="col-2.4">
+                    <div class="card"><a href="#"><img class="card-img-top" src="img/video/mixWrestThumb/video-15.jpg" alt="video-15"></a>
+                      <div class="card-body"><a href="#">ВИДЕО 15<br>Двое мужчин  vs. одной<br>женщины. Часть 2. 2011</a></div>
+                    </div>
+          </div>
+          <div class="col-2.4">
+                    <div class="card"><a href="#"><img class="card-img-top" src="img/video/mixWrestThumb/video-22.jpg" alt="video-22"></a>
+                      <div class="card-body"><a href="#">ВИДЕО 22<br>Ирина и Елена Васильева<br>vs.  Виллиана.  2011</a></div>
+                    </div>
+          </div>
+          <div class="col-2.4">
+                    <div class="card"><a href="#"><img class="card-img-top" src="img/video/mixWrestThumb/video-25.jpg" alt="video-25"></a>
+                      <div class="card-body"><a href="#">ВИДЕО 25<br>Смешанная борьба<br>Лучшие бои. Часть 2. 2011</a></div>
+                    </div>
+          </div>
+          <div class="col-2.4">
+                    <div class="card"><a href="#"><img class="card-img-top" src="img/video/mixWrestThumb/video-28.jpg" alt="video-28"></a>
+                      <div class="card-body"><a href="#">ВИДЕО 28<br>Смешанная борьба<br>Лучшие бои. Часть 3. 2013</a></div>
+                    </div>
+          </div>
+        </div>
+        <div class="row card-row">
+          <div class="col-2.4">
+                    <div class="card"><a href="#"><img class="card-img-top" src="img/video/mixWrestThumb/video-30.jpg" alt="video-30"></a>
+                      <div class="card-body"><a href="#">ВИДЕО 30<br>Смешанная борьба<br>Лучшие бои. Часть 4. 2013</a></div>
+                    </div>
+          </div>
+          <div class="col-2.4">
+                    <div class="card"><a href="#"><img class="card-img-top" src="img/video/mixWrestThumb/video-31-1.jpg" alt="video-31-1"></a>
+                      <div class="card-body"><a href="#">ВИДЕО 31-1<br>Смешанная борьба<br>Лучшие бои. Часть 5.1. 2013</a></div>
+                    </div>
+          </div>
+          <div class="col-2.4">
+                    <div class="card"><a href="#"><img class="card-img-top" src="img/video/mixWrestThumb/video-31-2.jpg" alt="video-31-2"></a>
+                      <div class="card-body"><a href="#">ВИДЕО 31-2<br>Смешанная борьба<br>Лучшие бои. Часть 5.2. 2013</a></div>
+                    </div>
+          </div>
+          <div class="col-2.4">
+                    <div class="card"><a href="#"><img class="card-img-top" src="img/video/mixWrestThumb/video-32.jpg" alt="video-32"></a>
+                      <div class="card-body"><a href="#">ВИДЕО 32<br>Смешанная борьба<br>Артём  vs. Таис. 2013</a></div>
+                    </div>
+          </div>
+          <div class="col-2.4">
+                    <div class="card"><a href="#"><img class="card-img-top" src="img/video/mixWrestThumb/video-34.jpg" alt="video-34"></a>
+                      <div class="card-body"><a href="#">ВИДЕО 34<br>Александр и Виллиан<br>vs. Таис. 2013</a></div>
+                    </div>
+          </div>
+        </div>
+        <div class="row card-row">
+          <div class="col-2.4">
+                    <div class="card"><a href="#"><img class="card-img-top" src="img/video/mixWrestThumb/video-38.jpg" alt="video-38"></a>
+                      <div class="card-body"><a href="#">ВИДЕО 38<br>Смешанная борьба<br>Александр vs. Таис. 2014</a></div>
+                    </div>
+          </div>
+          <div class="col-2.4">
+                    <div class="card"><a href="#"><img class="card-img-top" src="img/video/mixWrestThumb/video-39.jpg" alt="video-39"></a>
+                      <div class="card-body"><a href="#">ВИДЕО 39<br>Смешанная борьба. Вил-<br>лиан  vs. Таис. Часть 1. 2014</a></div>
+                    </div>
+          </div>
+          <div class="col-2.4">
+                    <div class="card"><a href="#"><img class="card-img-top" src="img/video/mixWrestThumb/video-40.jpg" alt="video-40"></a>
+                      <div class="card-body"><a href="#">ВИДЕО 40<br>Смешанная борьба. Вил-<br>лиан  vs. Таис. Часть 2. 2014</a></div>
+                    </div>
+          </div>
+        </div>
+        <div class="row row-text">
+          <div class="col"><a href="order.html">Как приобрести наше видео</a></div>
+        </div>
+      </div>
+    </main>
+    <footer class="container">
+      <div class="row"><a href="https://vk.com/namazon"><img src="../img/socialVk.png" alt=""></a><a href="https://www.facebook.com/groups/namazonclub"><img src="../img/socialFacebook.png" alt=""></a></div>
       <div class="row">
-        <div class="col-12">
-          <h1>Намазон</h1>
-          <h2>Клуб единоборств для женщин</h2>
+        <div class="col-12 text-center">
+          <p>©2020 Клуб единоборств для женщин "Намазон" | Дизайн Hurricane Media</p>
+          <p class="social-my"><span>Сайт создал Брайвс</span><span><a href="https://t.me/brightwiths"><img src="../img/social-telegram-color.png" alt=""></a></span><span>2020</span></p>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg">
-        <a class="navbar-brand" href="../index.html">
-          <img src="../img/logo.jpg" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="../index.html">ГЛАВНАЯ</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                ВИДЕО
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="../videoAll.html">Все категории</a>
-                <a class="dropdown-item" href="../videoWrestling.html">Борьба</a>
-                <a class="dropdown-item" href="../videoMMA.html">MMA</a>
-                <a class="dropdown-item" href="../videoBoxing.html">Кикбоксинг, муай тай</a>
-                <a class="dropdown-item" href="../videoMix.html">Смешанная борьба</a>
-                <a class="dropdown-item" href="#">Как приобрести видео?</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                УЧАСТНИЦЫ
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Все участницы</a>
-                <a class="dropdown-item" href="#">2010 - 2011</a>
-                <a class="dropdown-item" href="#">2012 - 2013</a>
-              </div>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                СОРЕВНОВАНИЯ
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Архив</a>
-                <a class="dropdown-item" href="#">2011</a>
-                <a class="dropdown-item" href="#">2012</a>
-                <a class="dropdown-item" href="#">2013 - 2014</a>
-                <a class="dropdown-item" href="#">2015 - 2017</a>
-                <a class="dropdown-item" href="#">Анонсы</a>
-              </div>
-            </li>
-            <li class="nav-item active">
-              <a class="nav-link" href="#">ОБРАТНАЯ СВЯЗЬ</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </header>
-  
-  <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                ТРЕНИРОВКИ
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Видео тренировок</a>
-              </div>
-            </li> -->
-  <main>
-    <div class="container">
-      <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel" data-interval="8000">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/slider/slide1.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/slider/slide2.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/slider/slide3.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/slider/slide4.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/slider/slide5.jpg" class="d-block w-100" alt="...">
-          </div>
-          <div class="carousel-item">
-            <img src="img/slider/slide6.jpg" class="d-block w-100" alt="...">
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
-    <div class="container videoAll">
-      <div class="row row-text">
-        <div class="col">
-          <h3>Смешанная борьба</h3>
-          <p>В нашем клубе смешанная борьба - это <b>СОРЕВНОВАТЕЛЬНАЯ борьба между мужчиной и женщиной</b> (миксрестлинг), которая проводится по правилам <b>САБМИШН ГРЭППЛИНГА</b> без ограничения по времени каждой схватки.</p>
-        </div>
-      </div>
-      <!-- карточки смешанная борьба -->
-      <div class="row card-row">
-        <div class="col-2.4">
-          <div class="card">
-            <img class="card-img-top" src="img\video\mixWrestThumb\video-3-wm.jpg" alt="video-3">
-            <div class="card-body">
-              <a href="">ВИДЕО 3<br>
-                Пляжная борьба<br>
-                Смешанный турнир. 2010</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-2.4">
-          <div class="card">
-            <img class="card-img-top" src="img\video\mixWrestThumb\video-5.jpg" alt="video-5">
-            <div class="card-body">
-              <a href="">ВИДЕО 5<br>
-                Виллиан  vs. Таис<br>
-                Смешанная борьба. 2011</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-2.4">
-          <div class="card">
-            <img class="card-img-top" src="img\video\mixWrestThumb\video-7.jpg" alt="video-7">
-            <div class="card-body">
-              <a href="">ВИДЕО 7<br>
-                Алекс  vs. Таис<br>
-                Бой на берегу озера. 2011</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-2.4">
-          <div class="card">
-            <img class="card-img-top" src="img\video\mixWrestThumb\video-10.jpg" alt="video-10">
-            <div class="card-body">
-              <a href="">ВИДЕО 10<br>
-                Смешанная борьба<br>
-                Лучшие бои. Часть 1. 2011</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-2.4">
-          <div class="card">
-            <img class="card-img-top" src="img\video\mixWrestThumb\2011-alex-elena.jpg" alt="video-11">
-            <div class="card-body">
-              <a href="">ВИДЕО 11<br>
-                Алекс  vs. Елены<br>
-                Пляжная борьба. 2011</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row card-row">
-        <div class="col-2.4">
-          <div class="card">
-            <img class="card-img-top" src="img\video\mixWrestThumb\video-14.jpg" alt="video-14">
-            <div class="card-body">
-              <a href="">ВИДЕО 14<br>
-                Двое мужчин  vs. одной<br>
-                женщины. Часть 1. 2011</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-2.4">
-          <div class="card">
-            <img class="card-img-top" src="img\video\mixWrestThumb\video-15.jpg" alt="video-15">
-            <div class="card-body">
-              <a href="">ВИДЕО 15<br>
-                Двое мужчин  vs. одной<br>
-                женщины. Часть 2. 2011</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-2.4">
-          <div class="card">
-            <img class="card-img-top" src="img\video\mixWrestThumb\video-22.jpg" alt="video-22">
-            <div class="card-body">
-              <a href="">ВИДЕО 22<br>
-                Ирина и Елена Васильева<br>
-                vs.  Виллиана.  2011</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-2.4">
-          <div class="card">
-            <img class="card-img-top" src="img\video\mixWrestThumb\video-25.jpg" alt="video-25">
-            <div class="card-body">
-              <a href="">ВИДЕО 25<br>
-                Смешанная борьба<br>
-                Лучшие бои. Часть 2. 2011</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-2.4">
-          <div class="card">
-            <img class="card-img-top" src="img\video\mixWrestThumb\video-28.jpg" alt="video-28">
-            <div class="card-body">
-              <a href="">ВИДЕО 28<br>
-                Смешанная борьба<br>
-                Лучшие бои. Часть 3. 2013</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row card-row">
-        <div class="col-2.4">
-          <div class="card">
-            <img class="card-img-top" src="img\video\mixWrestThumb\video-30.jpg" alt="video-30">
-            <div class="card-body">
-              <a href="">ВИДЕО 30<br>
-                Смешанная борьба<br>
-                Лучшие бои. Часть 4. 2013</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-2.4">
-          <div class="card">
-            <img class="card-img-top" src="img\video\mixWrestThumb\video-31-1.jpg" alt="video-31-1">
-            <div class="card-body">
-              <a href="">ВИДЕО 31-1<br>
-                Смешанная борьба<br>
-                Лучшие бои. Часть 5.1. 2013</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-2.4">
-          <div class="card">
-            <img class="card-img-top" src="img\video\mixWrestThumb\video-31-2.jpg" alt="video-31-2">
-            <div class="card-body">
-              <a href="">ВИДЕО 31-2<br>
-                Смешанная борьба<br>
-                Лучшие бои. Часть 5.2. 2013</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-2.4">
-          <div class="card">
-            <img class="card-img-top" src="img\video\mixWrestThumb\video-32.jpg" alt="video-32">
-            <div class="card-body">
-              <a href="">ВИДЕО 32<br>
-                Смешанная борьба<br>
-                Артём  vs. Таис. 2013</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-2.4">
-          <div class="card">
-            <img class="card-img-top" src="img\video\mixWrestThumb\video-34.jpg" alt="video-34">
-            <div class="card-body">
-              <a href="">ВИДЕО 34<br>
-                Александр и Виллиан<br>
-                vs. Таис. 2013</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row card-row">
-        <div class="col-2.4">
-          <div class="card">
-            <img class="card-img-top" src="img\video\mixWrestThumb\video-38.jpg" alt="video-38">
-            <div class="card-body">
-              <a href="">ВИДЕО 38<br>
-                Смешанная борьба<br>
-                Александр vs. Таис. 2014</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-2.4">
-          <div class="card">
-            <img class="card-img-top" src="img\video\mixWrestThumb\video-39.jpg" alt="video-39">
-            <div class="card-body">
-              <a href="">ВИДЕО 39<br>
-                Смешанная борьба. Вил-<br>
-                лиан  vs. Таис. Часть 1. 2014</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-2.4">
-          <div class="card">
-            <img class="card-img-top" src="img\video\mixWrestThumb\video-40.jpg" alt="video-40">
-            <div class="card-body">
-              <a href="">ВИДЕО 40<br>
-                Смешанная борьба. Вил-<br>
-                лиан  vs. Таис. Часть 2. 2014</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row row-text">
-        <div class="col">
-          <a href="order.html">Как приобрести наше видео</a>
-        </div>
-      </div>        
-    </div>
-  </main>
-  <footer class="container">
-    <div class="row">
-      <a href="https://vk.com/namazon">
-        <img src="../img/socialVk.png" alt="">
-      </a>
-      <a href="https://www.facebook.com/groups/namazonclub">
-        <img src="../img/socialFacebook.png" alt="">
-      </a>
-    </div>
-    <div class="row">
-      <div class="col-12 text-center">
-        <p>©2020 Клуб единоборств для женщин "Намазон" | Дизайн Hurricane Media</p>
-        <p class="social-my"><span>Сайт создал Брайвс</span>
-          <span><a href="https://t.me/brightwiths"><img src="../img/social-telegram-color.png" alt=""></a></span>
-          <span>2020</span>
-        </p>
-      </div>
-    </div>
-    <script src="../js/jquery-3.5.1.min.js"></script>
-    <script src="../js/bootstrap.js"></script>
-    <script src="../js/ekko-lightbox.js"></script>
-    <script src="../js/script.js"></script>
-  </footer>
-</body>
+      <script src="../js/jquery-3.5.1.min.js"></script>
+      <script src="../js/bootstrap.js"></script>
+      <script src="../js/ekko-lightbox.js"></script>
+      <script src="../js/script.js"></script>
+    </footer>
+  </body>
 </html>

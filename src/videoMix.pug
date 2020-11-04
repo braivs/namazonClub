@@ -1,0 +1,25 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='stylesheet' href='css/style.css')
+    link(rel='stylesheet' href='css/bootstrap.css')
+    title Видео смешанная борьба
+  body
+    include includes/header.pug
+    main
+      include includes/slider.pug
+      .container.videoAll
+        .row.row-text
+          .col
+            h3 Смешанная борьба
+            p.
+              В нашем клубе смешанная борьба - это <b>СОРЕВНОВАТЕЛЬНАЯ борьба между мужчиной и женщиной</b> 
+              (миксрестлинг), которая проводится по правилам <b>САБМИШН ГРЭППЛИНГА</b> без ограничения по времени
+              каждой схватки.
+        include includes/cardsMix.pug
+        .row.row-text
+          .col
+            a(href='order.html') Как приобрести наше видео
+    include includes/footer.pug

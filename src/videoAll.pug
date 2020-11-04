@@ -1,0 +1,47 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    link(rel='stylesheet' href='css/style.css')
+    link(rel='stylesheet' href='css/bootstrap.css')
+    title Видео все категории
+  body
+    include includes/header.pug
+    main
+      include includes/slider.pug
+      .container.videoAll
+        .row.row-text
+          .col
+            h3 Видео соревнований и отдельных поединков в клубе "Намазон"
+            h3 Подкатегории
+            a(href='videoWrestling.html') Борьба
+            p.
+              В данной подкатегории рассматривается <b>борьба только между женщинами</b> , которая, как правило,
+              проводится по правилам <b>САБМИШН ГРЭППЛИНГА</b>.
+            //= includes/cardsWrestling.html
+        .row.row-text
+          .col
+            a(href='videoMMA.html') MMA
+            p.
+              В подкатегории представлены исключительно <b>ЖЕНСКИЕ ММА БОИ</b>как в зале, так и на природе.
+            //= includes/cardsMMA.html
+        .row.row-text
+          .col
+            a(href='videoBoxing.html') Кикбоксинг, муай тай
+            p.
+              Подкатегория для видео <b>ЖЕНСКИХ</b> боёв в зале и на природе по правилам <b>КИКБОКСИНГА</b> и  
+              <b>МУАЙ ТАЙ</b>.
+            include includes/cardsBoxing.pug
+        .row.row-text
+          .col
+            a(href='videoMix.html') Смешанная борьба
+            p.
+              В нашем клубе смешанная борьба - это <b>СОРЕВНОВАТЕЛЬНАЯ борьба между мужчиной и женщиной</b>
+              (миксрестлинг), которая проводится по правилам <b>САБМИШН ГРЭППЛИНГА</b> без ограничения
+              по времени каждой схватки.
+            //= includes/cardsMix.html
+        .row.row-text
+          .col
+            a(href='order.html') Как приобрести наше видео
+    include includes/footer.pug
