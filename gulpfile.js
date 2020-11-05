@@ -6,7 +6,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const pug = require('gulp-pug');
 //sass compile
 function style () {
-	return gulp.src('./src/scss/*.scss')
+	return gulp.src('./src/sass/*.sass')
   .pipe(sourcemaps.init())
   .pipe(sass().on('error', sass.logError))
   .pipe(autoprefixer({
@@ -38,7 +38,7 @@ function watch () {
         baseDir: './docs'
     }
   })
-  gulp.watch('./src/scss/*.scss', style);
+  gulp.watch('./src/sass/*.sass', style);
   gulp.watch('./src/*.pug', pugMainHTMLs);
   gulp.watch('./src/includes/*.pug', pugMainHTMLs);
   gulp.watch('./src/videos/*.pug', pugVideos);
