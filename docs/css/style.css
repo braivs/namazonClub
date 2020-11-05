@@ -39,6 +39,8 @@ body {
       color: white;
       padding-top: 0;
       padding-bottom: 0; }
+      .navbar ul a:hover {
+        color: orange; }
     .navbar ul li {
       padding-right: 25px; }
     .navbar ul li:not(:last-of-type) {

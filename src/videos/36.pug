@@ -5,12 +5,13 @@ html(lang='en')
     meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
     link(rel='stylesheet' href='../css/style.css')
     link(rel='stylesheet' href='../css/bootstrap.css')
+    link(rel="stylesheet", href="../css/ekko-lightbox.css")
     title Видео 36
   body
     include ../includes/header.pug
     main
       .container.videos
-        .row
+        .row.mx-auto
           .col
             h3 Видео 36
             h4 Турнир по сабмишн грэпплингу среди начинающих. Женщины. I. Предварительные бои. Весовая категория от 65.8 до 72.5 кг
@@ -27,13 +28,18 @@ html(lang='en')
               Эта была типично женская борьба. В каждом поединке девушки боролись до двух побед. Каждый отдельный раунд был ограничен по времени 4
               минутами. Всего в фильме представлено три матча, два из которых состояли из двух раундов, и один, между Викой и Кристиной, – из трёх.
             h4 <u>Скриншоты фильма</u>
-            .row.gallery
-              .col-md-12
-                .row
-                  a.col-sm-4(href='../img/videos/36/001.jpg' data-toggle='lightbox' data-gallery='example-gallery')
-                    img.img-fluid(src='../img/videos/36/001.jpg')
-                  a.col-sm-4(href='../img/videos/36/002.jpg' data-toggle='lightbox' data-gallery='example-gallery')
-                    img.img-fluid(src='../img/videos/36/002.jpg')
-                  a.col-sm-4(href='../img/videos/36/003.jpg' data-toggle='lightbox' data-gallery='example-gallery')
-                    img.img-fluid(src='../img/videos/36/003.jpg')
+            .row
+              .col-md-12.text-center
+                .row.justify-content-center
+                  - var n = 0;
+                  while n < 28
+                    - n = n+1
+                    a.col-sm-4(href='../img/videos/36/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                      img.img-fluid(src='../img/videos/36/'+n+'.jpg')
+            p.
+              Мы рекомендуем посмотреть этот фильм тем, кто любит энергичную и бескомпромиссную борьбу физически крепких девушек,
+              в которой было всё: удушения, болевые приёмы и удержания (пины).
+            p.
+              Нашего видео нет в свободном доступе. В данный момент ВИДЕО 36 можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a> 
     include ../includes/footer.pug
