@@ -7,11 +7,11 @@ mixin header(path='')
           h2 Клуб единоборств для женщин
     .container
       nav.navbar.navbar-expand-lg
-        a.navbar-brand(href="index.html")
+        a.navbar-brand(href=path+"index.html")
           img(src=path+'img/logo.jpg' alt='')
         button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
           //- span.navbar-toggler-icon
-          <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:#e6e6ff"></i></span>
+          <span class="" role="button"><i class="fa fa-bars" aria-hidden="true" style="color:#e6e6ff"></i></span>
 
         #navbarSupportedContent.collapse.navbar-collapse
           ul.navbar-nav.mr-auto
