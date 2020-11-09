@@ -1,3 +1,7 @@
+include includes/header.pug
+include includes/slider.pug
+include includes/footer.pug
+
 doctype html
 html(lang='en')
   head
@@ -7,9 +11,9 @@ html(lang='en')
     link(rel='stylesheet' href='css/bootstrap.css')
     title Видео все категории
   body
-    include includes/header.pug
+    +header
     main
-      include includes/slider.pug
+      +slider
       .container.videoAll
         .row.row-text
           .col
@@ -44,4 +48,4 @@ html(lang='en')
         .row.row-text
           .col
             a(href='order.html') Как приобрести наше видео
-    include includes/footer.pug
+    +footer

@@ -1,3 +1,7 @@
+include includes/header.pug
+include includes/slider.pug
+include includes/footer.pug
+
 doctype html
 html(lang='en')
   head
@@ -7,8 +11,9 @@ html(lang='en')
     link(rel='stylesheet' href='css/bootstrap.css')
     title Как приобрести наше видео?
   body
-    include includes/header.pug
+    +header
     main
+      +slider
       .container.order
         .row
           .col
@@ -19,4 +24,4 @@ html(lang='en')
             p.
               Стоимость видео в рублях и ссылку на него можно получить по почте 
               <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>.
-    include includes/footer.pug
+    +footer
