@@ -1,3 +1,7 @@
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
 doctype html
 html(lang='en')
   head
@@ -8,8 +12,9 @@ html(lang='en')
     link(rel="stylesheet", href="../css/ekko-lightbox.css")
     title Видео 36
   body
-    include ../includes/header.pug
+    +header("../")
     main
+      +slider('../')
       .container.videos
         .row.mx-auto
           .col
@@ -42,4 +47,4 @@ html(lang='en')
             p.
               Нашего видео нет в свободном доступе. В данный момент ВИДЕО 36 можно приобрести в ручном режиме, написав на почту 
               <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a> 
-    include ../includes/footer.pug
+    +footer("../")

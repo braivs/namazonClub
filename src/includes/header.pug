@@ -1,50 +1,51 @@
-header
-  .container.logo
-    .row
-      .col-12
-        h1 Намазон
-        h2 Клуб единоборств для женщин
-  .container
-    nav.navbar.navbar-expand-lg
-      a.navbar-brand(href="index.html")
-        img(src='img/logo.jpg' alt='')
-      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
-        //- span.navbar-toggler-icon
-        <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:#e6e6ff"></i></span>
-          
-      #navbarSupportedContent.collapse.navbar-collapse
-        ul.navbar-nav.mr-auto
-          li.nav-item.active
-            a.nav-link(href='index.html') ГЛАВНАЯ
-          li.nav-item.dropdown
-            a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-              | ВИДЕО
-            .dropdown-menu(aria-labelledby='navbarDropdown')
-              a.dropdown-item(href='videoAll.html') Все категории
-              a.dropdown-item(href='videoWrestling.html') Борьба
-              a.dropdown-item(href='videoMMA.html') MMA
-              a.dropdown-item(href='videoBoxing.html') Кикбоксинг, муай тай
-              a.dropdown-item(href='videoMix.html') Смешанная борьба
-              a.dropdown-item(href='order.html') Как приобрести видео?
-          li.nav-item.dropdown
-            a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-              | УЧАСТНИЦЫ
-            .dropdown-menu(aria-labelledby='navbarDropdown')
-              a.dropdown-item(href='#') Все участницы
-              a.dropdown-item(href='#') 2010 - 2011
-              a.dropdown-item(href='#') 2012 - 2013
-          li.nav-item.dropdown
-            a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
-              | СОРЕВНОВАНИЯ
-            .dropdown-menu(aria-labelledby='navbarDropdown')
-              a.dropdown-item(href='#') Архив
-              a.dropdown-item(href='#') 2011
-              a.dropdown-item(href='#') 2012
-              a.dropdown-item(href='#') 2013 - 2014
-              a.dropdown-item(href='#') 2015 - 2017
-              a.dropdown-item(href='#') Анонсы
-          li.nav-item.active
-            a.nav-link(href='#') ОБРАТНАЯ СВЯЗЬ
+mixin header(path='')
+  header
+    .container.logo
+      .row
+        .col-12
+          h1 Намазон
+          h2 Клуб единоборств для женщин
+    .container
+      nav.navbar.navbar-expand-lg
+        a.navbar-brand(href="index.html")
+          img(src=path+'img/logo.jpg' alt='')
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+          //- span.navbar-toggler-icon
+          <span class="" role="button" ><i class="fa fa-bars" aria-hidden="true" style="color:#e6e6ff"></i></span>
+
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.mr-auto
+            li.nav-item.active
+              a.nav-link(href=path+'index.html') ГЛАВНАЯ
+            li.nav-item.dropdown
+              a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                | ВИДЕО
+              .dropdown-menu(aria-labelledby='navbarDropdown')
+                a.dropdown-item(href=path+'videoAll.html') Все категории
+                a.dropdown-item(href=path+'videoWrestling.html') Борьба
+                a.dropdown-item(href=path+'videoMMA.html') MMA
+                a.dropdown-item(href=path+'videoBoxing.html') Кикбоксинг, муай тай
+                a.dropdown-item(href=path+'videoMix.html') Смешанная борьба
+                a.dropdown-item(href=path+'order.html') Как приобрести видео?
+            li.nav-item.dropdown
+              a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                | УЧАСТНИЦЫ
+              .dropdown-menu(aria-labelledby='navbarDropdown')
+                a.dropdown-item(href='#') Все участницы
+                a.dropdown-item(href='#') 2010 - 2011
+                a.dropdown-item(href='#') 2012 - 2013
+            li.nav-item.dropdown
+              a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                | СОРЕВНОВАНИЯ
+              .dropdown-menu(aria-labelledby='navbarDropdown')
+                a.dropdown-item(href='#') Архив
+                a.dropdown-item(href='#') 2011
+                a.dropdown-item(href='#') 2012
+                a.dropdown-item(href='#') 2013 - 2014
+                a.dropdown-item(href='#') 2015 - 2017
+                a.dropdown-item(href='#') Анонсы
+            li.nav-item.active
+              a.nav-link(href='#') ОБРАТНАЯ СВЯЗЬ
 //
   li.nav-item.dropdown
   a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
