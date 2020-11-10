@@ -106,6 +106,12 @@ body {
       line-height: 1.2;
       font-size: 14px; }
 
+.videos img {
+  width: 100%; }
+
+.videos .screensBtn {
+  margin-bottom: 10px; }
+
 .videos .gallery img {
   width: 330px; }
 
