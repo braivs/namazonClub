@@ -1,0 +1,42 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='en')
+  +head('../','Видео 42')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 42
+            h4 Турнир по сабмишн грэпплингу. Женщины. Часть 2. Октябрь 2014
+            p.
+              Во второй части (ВИДЕО 42) представлены два поединка, в которых фактически определялась победительница нашего небольшого соревнования по сабмишн грэпплингу. На татами встретились Кристина Швец (68,9 кг) и Виктория Вардугина (65,3 кг).
+            img.mainImg(src='../img/videos/42/2014-sg-christina-victoria.jpg' alt='')
+            p.
+              Девушки уже боролись ранее в рамках <a href="#">турнира по борьбе для новичков (май 2014 года)</a>. И вот два новых поединка. Для победы в отдельных схватках было необходимо заставить соперницу признать своё поражение (сдаться) или выполнить удержание (пин) до счёта 5.
+            p.
+              Силы девушек, как и вес, примерно равны. Первая схватка начинается с продолжительный разведки, обе соперницы боятся допустить серьёзную ошибку.
+              В конце концов борьба ускоряется и принимает в партере обоюдоострый характер.
+            p.
+              Вторая схватка Кристины и Виктории проходила по сценарию первой. И чтоб всё-таки выявить сильнейшую из девушек, организаторы соревнования решили увеличить дополнительное время с 2-х до 10 минут!
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 14
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/42/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/42/'+n+'.jpg')
+            p.
+              Нашего видео нет в свободном доступе. В данный момент ВИДЕО 42 можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a> 
+    +footer("../")

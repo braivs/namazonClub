@@ -1,0 +1,55 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='en')
+  +head('../','Видео 41')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 41
+            h4 Турнир по сабмишн грэпплингу. Женщины. Часть 1. Октябрь 2014
+            p.
+              ВИДЕО 41 и 42 были сделаны на основе поединков небольшого турнира по сабмишн грэпплингу, состоявшемся 13 октября 2014 году. В первой части представлены 4 поединка с участием дебютантки наших соревнований  Зои Дорофеевой   (56,0 кг, ранее занималась " Русским Стилем" рукопашного боя).
+            img.mainImg(src='../img/videos/41/2014-sg-zoya-victoria.jpg' alt='2014-sg-zoya-victoria')
+            p.
+              Соперницами Зои были девушки, принимавшие ранее участие в майском турнире по борьбе для начинающих: Кристина Швец (68,9 кг) 
+              и Виктория Вардугина (65,3 кг). Для победы в отдельных схватках было необходимо заставить соперницу признать своё поражение 
+              (сдаться) или выполнить удержание (пин) до счёта 5.
+              Несмотря на большую разницу в весе Зоя боролась очень энергично и не хотела просто так уступить своим более тяжёлым соперницам.
+              Достаточно сказать. что в первом поединке Зои с Кристиной ни в основные 4 минуты, ни в добавленные 2, так и не удалось выявить
+              победительницу. 
+            h5.
+              Кристина Швец против Зои Дорофеевой
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 13
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/41/kz/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/41/kz/'+n+'.jpg')
+            h5 Виктория Вардугина против Зои Дорофеевой
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 8
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/41/vz/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/41/vz/'+n+'.jpg')
+            p.
+              Нашего видео нет в свободном доступе. В данный момент ВИДЕО 42 можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a> 
+    +footer("../")

@@ -1,0 +1,52 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+mixin lightbox(img)
+  a.col-sm-4(href=img data-toggle='lightbox' data-gallery='example-gallery')
+    img.img-fluid(src=img)
+
+doctype html
+html(lang='en')
+  +head('../','Видео 44')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col-12
+            h3 Видео 44
+            h4 Женские силовые соревнования на Масленицу 2016. Борьба
+            p.
+              Отчёт о соревнованиях, главной частью которых были эти поединки, можете прочитать <a href="#">здесь</a>. Там найдёте краткий отчёт о поединках, а также множество фоток. Для дополнительной красоты мы добавили сюда ещё по паре фоток от каждого поединка.
+          .col-12.d-flex.justify-content-center
+        .row.mx-auto
+          .col-12.d-flex.justify-content-center
+            p Виктория Смородина vs Виктория Вардугина
+          .col-sm-6
+            +lightbox("../img/videos/44/1_V.Smorodina_vs_V.Vardugina.jpg")
+          .col-sm-6
+            +lightbox("../img/videos/44/2_V.Smorodina_vs_V.Vardugina.jpg")
+        .row.mx-auto.text-center
+          .col-12
+            p Оксана Григоренко vs Виктория Вардугина
+          .col-sm-6
+            +lightbox("../img/videos/44/1_O.Grigorenko_vs_V.Vardugina.jpg")
+          .col-sm-6
+            +lightbox("../img/videos/44/2_O.Grigorenko_vs_V.Vardugina.jpg")
+        .row.mx-auto
+          .col-12.d-flex.justify-content-center
+            p Оксана Григоренко vs Виктория Смородина
+          .col-sm-6 
+            +lightbox("../img/videos/44/1_O.Grigorenko_vs_V.Smorodina.jpg")
+          .col-sm-6
+            +lightbox("../img/videos/44/2_O.Grigorenko_vs_V.Smorodina.jpg")
+        .row.mx-auto
+          .col-12
+            p.
+              Нашего видео нет в свободном доступе. В данный момент ВИДЕО 44 можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a> 
+    +footer("../")

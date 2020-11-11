@@ -1,0 +1,48 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='en')
+  +head('../','Видео 37')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 37
+            h4 Турнир по сабмишн грэпплингу среди начинающих. Женщины. II. Финальные поединки. Весовая категория от 65.8 до 72.5 кг
+            p.
+              Это видео является продолжением <b>ВИДЕО 36</b>, в котором представлены предварительные бои нашего турнира. В <b>ВИДЕО 37</b> Вы сможете увидеть финальные бои, в которых и были определены победительницы турнира.
+            img.mainImg(src='../img/videos/37/2014-sg-victoria-daria.jpg' alt='2014-sg-victoria-daria')
+            p.
+              В первом поединки в борьбе за 4 место сошлись  Нина  и  Ирина.  Во втором бою между  Викторией  и  Дарьей  должна была быть определена 
+              победительница нашего соревнования.
+              Если борьба между Ниной и Ириной была относительно скоротечной и закончилась капитуляцией одной из девушек в ответ на проведённый
+              болевой приём, то финальная схватка была упорной и продолжительной.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 4
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/37/1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/37/1/'+n+'.jpg')
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 4;
+                    while n < 23
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/37/2/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/37/2/'+n+'.jpg')
+            p Мы рекомендуем посмотреть этот фильм тем, кто любит борьбу физически крепких девушек, в которой были удушения, болевые приёмы и многочисленные попытки удержаний (пинов), некоторые из которых оказались победными. 
+            p.
+              Нашего видео нет в свободном доступе. В данный момент ВИДЕО 37 можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")
