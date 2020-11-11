@@ -1,0 +1,38 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='en')
+  +head('../','Видео 37')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 35
+            h4 Лидия Ослоповских против Таис. Пин матчи. Декабрь 2013
+            p.
+              <b>Лидия Ослоповских</b> (53 кг / 118 lb) - физически подкаченная и очень подвижная файтерша. В настоящем фильме вы можете увидеть три её поединка
+              с одной из сильнейших девушек клуба <b>Таис</b> (60 кг / 133 lb).
+            img.mainImg(src='../img/videos/35/2013-sg-lydia-tais.jpg' alt='2013-sg-lydia-tais')
+            p.
+              Борьба проводилась до капитуляции (сдачи) соперницы. Причём, капитуляция могла быть достигнута в том числе и в результате длительного удержания (пина) соперницы. Именно такого пути для победы и придерживалась Таис - фаворитка соревнования.
+            p Мы рекомендуем посмотреть этот фильм (<b>ВИДЕО 35</b>) тем, кто любит энергичную и бескомпромиссную борьбу, сопровождающуюся длительными пинами и попытками освобождения от них.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 7
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/35/0'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/35/0'+n+'.jpg')
+            p Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 35</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

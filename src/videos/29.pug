@@ -1,0 +1,44 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='en')
+  +head('../','Видео 29')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+            
+        .row.mx-auto
+          .col
+            h3 Видео 29
+            h4 Елена Васильева против Таис. Июнь 2013
+            p.
+              В фильме представлен матч между <b>Еленой Васильевой</b>  (168 см / 71 кг) и <b>Таис</b> (170 см / 59 кг). Девушки провели на татами шесть раундов 
+              без ограничения по времни в каждой отдельной схватке. Боролись до сдачи (капитуляции).  Правила - сабмишн грэпплинг.
+            img.mainImg(src='../img/videos/29/2013-sg-elena-vasilyeva-tais.jpg' alt='2013-sg-elena-vasilyeva-tais')
+            p.
+              Елена - сильная м амбициозная молодая девушка. Она пару лет назад уже много раз боролась с Таис, но потом исчезла из Клуба.<br>
+              И вот, спустя два года, Таис и Елена Васильева снова решили выяснить, кто из них сильнее на татами. За прошедшее время Елена подкачалась и
+              набрала вес. Она прибавила в технике и стала уверенной в себе более, чем когда-либо. С первых минут стало ясно, что Елена хочет дать бой
+              своей более искушённой сопернице. Хотя Таис очень сильная женщина, но она сразу оказалась в тяжёлом положении. И после 15 минут напряжённой
+              борьбы была вынуждена признать своё поражение.<br>
+              Таис впервые проиграла сабмишн грэпплинг матч Елене Васильевой.<br>
+            p Если Вам интересно  увидеть, как всё было, то смотрите наш фильм (<b>ВИДЕО 29</b>).
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 12
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/29/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/29/'+n+'.jpg')
+            p Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 29</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

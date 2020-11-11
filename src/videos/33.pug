@@ -1,0 +1,54 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='en')
+  +head('../','Видео 33')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 33
+            h4 Женские силовые единоборства. Грэпплинг. Октябрь 2013
+            p.
+              В финале турнира по женским силовым единоборствам, организованном совместно Санкт-Петербургским  Атлетическим  Центром и клубом "Намазон",
+              девушки должны были выявить сильнейшую  в борцовских  поединках  по правилам <b>сабмишн грэпплинга</b>.
+            img.mainImg(src='../img/videos/33/2013-sg-lydia-victoria.jpg' alt='2013-sg-lydia-victoria')
+            p.
+              В первой финальной паре встретились <b>ЛИДИЯ Ослоповских</b> (53 кг) и <b>ВИКТОРИЯ Вардугина</b> (69 кг).<br>
+              Несмотря на то, что Вика существенно превосходила Лиду в весе, поединок девушек получился на редкость упорным и почти равным.
+            p.
+              Во второй паре боролись <b>ЮЛИЯ Боровик</b> (91 кг) и <b>ТАИС</b> (60 кг).
+              Юля Боровик превосходила Таис по весу в полтора раза. И лишь огромный опыт позволил Таис бороться со своей мощной и сильной соперницей на равных.
+            p Если Вы хотите увидеть полностью эти два напряжённых и зрелищных поединка, то посмотрите наш фильм (<b>ВИДЕО 33</b>)
+            h5 Лидия Ослоповских против Виктории Вардугиной
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 11
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/33/lida-vika/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/33/lida-vika/'+n+'.jpg')
+            h5 Юлия Боровик против Таис
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 7
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/33/tais-yulia/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/33/tais-yulia/'+n+'.jpg')
+            p Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 33</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")
