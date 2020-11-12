@@ -1,0 +1,42 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 3')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 3
+            h4 Пляжная борьба. Смешанный турнир. Сентябрь 2010
+            p.
+              От женщин (намазонок) в турнире боролись <b>Таис</b> (170 см / 60 кг) и <b>Наталья Мысик</b> (180 см / 70 кг).  
+              Мужчин представлял <b>Алекс</b>> (175 см / 68 кг).  Именно благодаря поединкам между Натальей и Таис <b>ВИДЕО 3</b>
+              может быть отнесёно 
+              к категории <b>БОРЬБА</b>, в которой у нас представлена именно  <b>ЖЕНСКАЯ БОРЬБА</b>.
+            p.
+              Все поединки проходили по правилам <a>сабмишн грэпплинга</a> без ограничения по времени каждой отдельной схватки.
+              В этот раз Таис противостояла соперница, которая не только превосходила её по весу, но и обладала большой физической силой.
+              Во всех трёх поединках девушки показали энергичную и бескомпромиссную борьбу. Особенно драматично проходили первые две схватки, 
+              в которых девушки большую часть времени с переменным успехом боролись на слегка влажном песке.
+            h5 Наталья Мысик против Таис 
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 42
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/3/ww/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/3/ww/'+n+'.jpg')
+            p Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 3</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

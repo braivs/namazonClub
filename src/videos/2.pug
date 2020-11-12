@@ -1,0 +1,38 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 2')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 2
+            h4 Сабмишн грэпплинг. Турнир. Часть 2. Июнь 2010
+            p.
+              <b>ВИДЕО 2</b> - это продолжение <b>ВИДЕО 1</b>. В фильме представлены поединки 2 круга июньского турнира. Файтерши - <b>Таис</b> (170 см / 58 кг), 
+              <b>Мария Рылёва</b> (172 см / 57 кг) и <b>Надежда Ахмерова</b> (168 см / 58 кг).  Правила -  <a href="#">сабмишн грэпплинг<a>.  Ограничение по времени в каждом
+              отдельной схватке предусмотрено не были.
+            p.
+              Как всё прошло и чем всё закончилось, Вы сможете увидеть, если посмотрите наш фильм (<b>ВИДЕО 2</b>).
+            img.mainImg(src='../img/videos/2/main.jpg' alt='main')
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 27
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/2/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/2/'+n+'.jpg')
+            p Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 2</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

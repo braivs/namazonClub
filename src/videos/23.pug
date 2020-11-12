@@ -1,0 +1,39 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='en')
+  +head('../','Видео 23')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 23
+            h4 Ирина (Власта) против Таис. Сабмишн грэпплинг.  Май 2011
+            p.
+              В этом небольшом фильме представлен поединок  <b>Ирины (Власты)</b>  и <b>Таис</b>.  Ирина (176 см / 70 кг) – дебютантки соревнований, занимается муай
+              таем и танцами на пилоне. Таис (170 см / 59 кг) - известная файтерша, специализирующаяся в сабмишн грэпплинге и ММА.
+            p.
+              Борьба (два раунда) проходила до сдачи одной из девушек по правилам сабмишн грэпплинга. На стороне Ирины было некоторое преимуществе в весе и росте, она попыталась навязать Таис жёсткую борьбу. Что из этого получилось, Вы cможете увидеть, если посмотрите наш фильм.
+            img.mainImg(src='../img/videos/23/main.jpg' alt='main')
+            p.
+              Если Вы любите борьбу энергичных и вмеру агрессивных женщин, то (<b>ВИДИО 23</b>) - это Ваш фильм.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 19
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/23/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/23/'+n+'.jpg')
+            p Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 23</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

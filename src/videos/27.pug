@@ -1,0 +1,39 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='en')
+  +head('../','Видео 27')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 27
+            h4 Женская борьба на пляже. Часть 2. Июнь 2011
+            p.
+              Во второй части нашего фильма Вы сможете увидеть продолжение борьбы на песке <b>Таис</b> (170 см / 59 кг) и 
+              <b>Елены Васильевой</b> (168 см / 61 кг). 
+              Ещё восемь напряжённых раундов. Правила прежние - сабмишн грэпплинг. Борьба велась до сдачи (капитуляции) одной из девушек.
+            img.mainImg(src='../img/videos/27/2011-female-beach-wrestling-2.jpg' alt='2011-female-beach-wrestling-2')
+            p.
+              Обе девушки очень амбициозны, но они были на тот момент не совсем равны по мастерство. Таис (более опытная в этой паре) использовала в борьбе интересные комбинаций, активно применяла болевые и удушающие приёмы. Елена боролась, полагаясь в основном на свою силу, демонстрируя свой высокий боевой дух и отказываясь сдаваться в самых тяжёлых для неё ситуациях.
+            p Если Вам нравится реальная борьба сильных, умелых и спортивных женщин, то мы рекомендуем Вам посмотреть наш фильм (<b>ВИДЕО 27</b>).
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 38
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/27/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/27/'+n+'.jpg')
+            p Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 27</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

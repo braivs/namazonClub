@@ -1,0 +1,35 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 4')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 4
+            h4 Сабмишн грэпплинг. Турнир "Рождественский Кубок 2011"
+            p.
+              <b>ВИДЕО 4</b> содердит пять весьма жёстких поединков с участием Натальи, Ксении и Валентины, один из которых окончился даже "отключением"
+              одной из девушек. Там же Вы сможете увидеть схватку <b>Таис</b> (170 см / 60 кг) и <b>Натальи Мысик</b>,
+              которая прошла вне рамок основного турнира.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 42
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/4/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/4/'+n+'.jpg')
+            p Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 4</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

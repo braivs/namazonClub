@@ -1,0 +1,44 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='en')
+  +head('../','Видео 19')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 19
+            h4 Варвара Акулова против Таис. Сабмишн грэпплинг.  Май 2012
+            p.
+              <b>Варвара Акулова</b>  (Украина, 175 см / 75 кг) является действующей спортсменкой, мастером спорта по гиревому спорту и 
+              пауэрлифтингу. Будучи ребёнком и подростком, она неоднократно признавалась самой сильной девочкой планеты, 
+              что дважды подтверждено Книгой рекордов Гиннеса. Силовые показатели в разные периоды жизни Варвары представлены, например,
+              на <a href="http://www.spb-ac.ru/var.htm">Официальном сайте Санкт-Петербургского Атлетического Центра</a>. Смотри также <a href="https://warnet.ws/2007/07/13/varvara-akulova-samaya-silnaya-devochka-na-planete-39-foto.html">тут</a>.
+              <a href="#">Таис</a>  (Россия. 170 см / 60 кг) – лидер клуба “Намазон”, специализируется в борьбе и ММА.
+            img.mainImg(src='../img/videos/19/main.jpg' alt='main')
+            p.
+              Борьба (два раунда) проходила до сдачи по правилам сабмишн грэпплинга. На стороне Варвары было превосходство в весе (около 15 кг) и силе, на стороне Таис был опыт и превосходство в технике.
+            img.mainImg(src='../img/videos/19/main2.jpg' alt='main')
+            p.
+              Интрига поединка состояла в том, <b>ЧЬЯ</b> же всё-таки возьмёт? ЧТО одержит верх: мастерство или чистая сила?<br>
+              Смотрите наш фильм (<b>ВИДЕО 19</b>) и Вы узнаете, кому из девушек,  <b>Варваре</b>  или  <b>Таис</b>,  удалось "подчинить" свою соперницу, вынудив её сдаться (капитулировать).
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 13
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/19/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/19/'+n+'.jpg')
+            p Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 19</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

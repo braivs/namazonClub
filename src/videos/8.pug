@@ -1,0 +1,63 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 8')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 8
+            h4 Пляжный турнир. Сабмишн грэпплинг. Июнь 2011
+            p.
+              На песке боролись: <b>Таис</b> (170 см / 59 кг),  <b>Елена Васильева</b> (168 см / 61 кг) - молодая и перспективная намазонка 
+              и <b>Ирина (Власта)</b>
+              (176 см / 70 кг) - дебютантка наших соревнований. Турнир прошёл в два круга без ограничения времени каждой отдельной схватки.
+            p.
+              Все поединки девушек отличались упорством, никто из них не хотел уступать без борьбы. Особенно тяжело и драматично складывались поединки Ирины с Еленой Васильевой.
+            img.mainImg(src='../img/videos/8/main.jpg' alt='main')
+            p.
+              Если Вы хотите узнать, кто и как победила в турнире, то смотрите наш фильм (<b>ВИДЕО 12</b>), включающий в себя шесть бескомпромиссных женских поединков.
+            h5 Елена Васильева против Таис
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 15
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/8/1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/8/1/'+n+'.jpg')
+            h5 Ирина (Власта) против Таис
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 9
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/8/plyazhnyj-turnir-2011-2/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/8/plyazhnyj-turnir-2011-2/'+n+'.jpg')
+            h5 Елена Васильева против Ирины (Власты)
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample3' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample3.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 17
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/8/plyazhnyj-turnir-2011-3/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/8/plyazhnyj-turnir-2011-3/'+n+'.jpg')
+            p Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 8</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

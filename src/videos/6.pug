@@ -1,0 +1,39 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 6')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 6
+            h4 Мария Рылёва против Таис. Март 2011
+            p.
+              Соревнование между девушками (<b>ВИДЕО 6</b>) состояло из двух частей. Первая часть - армрестлинг на полу на обеих руках,
+              вторая - семь раундов борьбы до сдачи по правилам сабмишн грэпплинга.  <b>Мария</b>, как мастер спорта в армрестлинге, 
+              была фавориткой в арм спорте,  <b>Таис</b> имела больший опыт в борьбе.
+            p.
+              Девушки на момент их встречи на татами имели одинаковый вес (58 кг),  Маша немного превосходила Таис ростом (171 см против 170 см).
+              Ожидалась борьба <b>равных</b> по физическим данным соперниц.<br>
+              Как всё было, которая из девушек оказалась сильнее в армрестлинге и борьбе, Вы узнаете, если посмотрите наш фильм.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 33
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/6/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/6/'+n+'.jpg')
+            p Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 6</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

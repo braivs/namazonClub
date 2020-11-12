@@ -1,0 +1,39 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='en')
+  +head('../','Видео 24')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 24
+            h4 Людмила против Таис. Сабмишн грэпплинг. Октябрь 2011
+            p.
+              <b>Людмила</b> (180 см / 70 кг) занимается муай таем, дебютантка соревнований в клубе "Намазон". <b>Таис</b> (170 см / 59 кг) - многократная 
+              победительница наших соревнований, специализируется в сабмишн грэпплинге и ММА. Девушки боролись три раунда без ограничения по времени
+              в каждой отдельной схватке.
+            img.mainImg(src='../img/videos/24/main.jpg' alt='main')
+            p.
+              Людмила на 11 кг тяжелее Таис и на 10 см выше. В начале первого раунда Людмиле удалось поставить Таис в очень тяжёлое положение. 
+              Смотрите наш фильм (<b>ВИДЕО 24</b>) и Вы узнаете, чем всё закончилось.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 14
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/24/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/24/'+n+'.jpg')
+            p Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 24</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

@@ -1,0 +1,41 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 12')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 12
+            h4 Сабмишн грэпплинг. Турнир. Апрель 2010
+            p.
+              Наш фильм - это видеоотчёт о борцовском турнире, в котором приняли участие <b>Мария Рылёва</b> (172 см / 57 кг),
+              <b>Валентина Перфильева</b>
+              (172 см / 60 кг) и <b>Наталья Мысик</b> (180 см / 70 кг). Девушки были в разных весовых категорияих, фактически это был клубный турнир
+              в абсолютной весовой категории.
+            p.
+              Борьба проходила в два круга до сдачи по правилам САБМИШН ГРЭППЛИНГА. На победу претендовали две девушк - это Наталья мысик и Мария Рылёва. В поединках между ними и решалась судьба первого места, борьба Вали Перфильевой, как и всегда, отличалась изяществом и артистичностью.
+            img.mainImg(src='../img/videos/12/main.jpg' alt='main')
+            p.
+              Если Вы хотите узнать, кто и как победила в турнире, то смотрите наш фильм (<b>ВИДЕО 12</b>), включающий в себя шесть бескомпромиссных женских поединков.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 16
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/12/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/12/'+n+'.jpg')
+            p Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 12</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")
