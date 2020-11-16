@@ -1,0 +1,64 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 25')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 25
+            h4 Смешанная борьба.  Лучшие бои.  Часть 2.  2011 год
+            p.
+              Это второй фильм из серии <b>"Смешанная борьба. Лучшие бои"</b>. Единственному мужчине <b>Виллиану</b> (172 см /80 кг) поочередно противостояли
+              три женщины: <b>Елена Васильева</b> (168 см / 61 кг), <b>Таис</b> (170 см / 59 кг) и <b>Людмила</b> (180 см / 70 кг). Борьба проходила как в зале, так 
+              и на природе: на печсчаном берегу и на траве. Правила - САБМИШН ГРЭППЛИНГ.
+            p.
+              Таис – наиболее опытная из девушек, неоднократная участница соревнования по грэпплингу и ММА.  Елена успешно выступает в армрестлинге, сабмишн грэпплинге и ММА.  Людмила – дебютантка соревнований, занимается муай таем.
+            img.mainImg(src='../img/videos/25/main.jpg' alt='main')
+            p.
+              Если Вам нравится смешанная борьба, если Вы любите смотреть матчи, в которых мужчина и женщина соревнуются в силе и умении бороться, то этот фильм (<b>ВИДЕО 25</b>) для Вас.
+            h5 Виллиан против Елены Васильевой
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 21
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/25/villian-elena/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/25/villian-elena/'+n+'.jpg')
+            h5 Виллиан против Людмилы
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 3
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/25/villian-lyudmila/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/25/villian-lyudmila/'+n+'.jpg')
+            h5 Виллиан против Таис
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample3' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample3.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 6
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/25/villian-tais/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/25/villian-tais/'+n+'.jpg')
+            p.
+              Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 25</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

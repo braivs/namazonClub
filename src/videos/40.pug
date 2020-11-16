@@ -1,0 +1,41 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 40')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 40
+            h4 Смешанная борьба. Виллиан против Таис. Часть 2. 2014
+            p.
+              ВИДЕО 40 - это продолжение <a href="../videos/39.html">ВИДЕО 39</a>, в котором представлены ещё 6 поединков между <b>Виллайном</b> (82 кг) 
+              и <b>Таис</b> (62 кг), проведённых в 2014 году.
+              Соперники хорошо знают друг друга и не раз встречались в смешанных поединках, показывая энергичную и довольно жёсткую борьбу.
+            img.mainImg(src='../img/videos/40/main.jpg' alt='main')
+            p.
+              Таис в борьбе активно и успешно использует ноги. У Виллайна же ноги являются относительно болезненным местом. 
+              Этим периодически пользуется Таис, добиваясь победы, проводя болевые примы на ноги (растяжение Ахилла).<br>
+              Смотрите <b>ВИДЕО 40</b>, если Вам нравится реальная состязательная борьба между женщиной и мужчиной.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 28
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/40/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/40/'+n+'.jpg')
+            p.
+              Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 40</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

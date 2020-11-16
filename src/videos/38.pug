@@ -1,0 +1,39 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 38')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 38
+            h4 Смешанная борьба. Александр против Таис. 2014 год
+            p.
+              Ещё один реальный поединок между мужчиной и женщиной. <b>Александр</b> (85 кг) много крупнее и сильнее <b>Таис</b> (62 кг). Из-за разницы в весе Таис было
+              трудно использовать своё преимуществе в технике, несмотря на некоторую медлительность Александра. Борьба проводилась до чистой победы 
+              (капитуляции) по правилам сабмишн грэпплинга.
+            img.mainImg(src='../img/videos/38/main.jpg' alt='main')
+            p.
+              Матч состоял из шести поединков. Ни Александр, ни Таис не имели решающего преимущества в отдельных схватках. ВИДЕО 38 для тех, кто любит настоящую соревновательную смешанную борьбу, кому нравятся напряжённые и бескомпромиссные поединки на татами между мужчиной и женщиной.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 24
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/38/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/38/'+n+'.jpg')
+            p.
+              Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 38</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

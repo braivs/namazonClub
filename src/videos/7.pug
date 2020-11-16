@@ -1,0 +1,38 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 7')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 7
+            h4 Алекс против Таис.   Бой на берегу озера.  2011 год
+            p.
+              В данном шуточном фильме Вы можете наблюдать поединок  <b>Серого волка  (Алекса)</b>  с  <b>Красной шапочкой  (Таис)</b>, который происходил в апреле месяце
+              при довольно холодной погоде. Шуточной тут является лишь идея поединка, сам же бой состоял из четырёх серёзных схваток.
+            p.
+              <b>Алекс</b> (175 см / 68 кг) как весом, так и ростом превосходил <b>Таис</b> (170 см / 58 кг), но это  не дало ему преимущества в борьбе. Казалось, что Таис помогали "родные стены", а точнее "родное озеро". Сервый волк защищался как мог, но в результате оказался в полной зависимости от очень агрессивной в этот раз Красной шапочки.
+            img.mainImg(src='../img/videos/7/main.jpg' alt='main')
+            p Мы рекомендуем наш фильм  (ВИДЕО 7)  тем, кому нравится состязательная смешанная борьба (миксрестлинг) с элементами лёгкого доминирования со стороны "слабого пола".
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 19
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/7/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/7/'+n+'.jpg')
+            p Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 7</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

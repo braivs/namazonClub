@@ -1,0 +1,39 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 22')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 22
+            h4 Ирина и Елена Васильева против Виллиана.  2011 год
+            p.
+              В этом фильме <b>Виллиан</b> (172 см / 80 кг) последовательно противостоит сразу двум девушкам: <b>Ирине</b> (176 см / 70 кг). она же <b>Власта</b>,
+              и  <b>Елене Васильевой</b> (168 см / 61 кг). Ирина, физически сильная девушка, занимается муай таем и танцами на пилоне.  
+              Елена самая молодая и весьма перспективная участница наших соревнований, успешно выступает в армрестлинге, сабмишн грэпплинге и ММА.
+            img.mainImg(src='../img/videos/22/main.jpg' alt='main')
+            p.
+              Если Вам нравится смешанная борьба (миксрестлинг) и Вы хотите посмотреть соревновательную борьбу мужчины и женщины по правилам сабмишн грэпплинга, тогда этот фильм для Вас :)
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 10
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/22/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/22/'+n+'.jpg')
+            p.
+              Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 22</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

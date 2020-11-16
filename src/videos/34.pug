@@ -1,0 +1,41 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 34')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 34
+            h4 Смешанная борьба. Александр и Виллиан против Таис. 2013 год
+            p.
+              В настоящем фильме <b>Таис</b> (170 см / 60 кг) противостоят два оппонента: <b>Виллиан</b> (172 см / 80 кг) и <b>Александр</b> (177 см / 83 кг). 
+              Оба соперника превосходят Таис в весе (по крайней мере на 20 кг) и физической силе. Борьба проводилась до чистой победы (капитуляции)
+              по правилам сабмишн грэпплинга.
+            img.mainImg(src='../img/videos/34/main.jpg' alt='main')
+            p.
+              Каждый из семи поединков, представленных на видео, потребовал от Таис максимальной концентрации и быстроты. Каждая победа давалась ей с большим трудом, поражение отнимало много сил.
+            p.
+              Тем, кто любит настоящую соревновательную смешанную борьбу, кому нравятся напряжённые и бескомпромиссные поединки на татами между мужчиной и женщиной, мы рекомендуем посмотреть этот фильм  (<b>ВИДЕО 34</b>).
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 14
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/34/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/34/'+n+'.jpg')
+            p.
+              Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 34</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

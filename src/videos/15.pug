@@ -1,0 +1,41 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 15')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 15
+            h4 Двое мужчин против одной женщины.  Часть 2.  2011 год
+            p.
+              В этом фильме вы можете увидеть, что произошло несколько дней спустя после  окончания смешанного пляжного турнира в Санкт-Петербурге  
+              (<b>ВИДЕО 11</b> и <b>ВИДИО 14</b>).  <b>Алекс</b> (175 см / 70 кг) и <b>Виллиан</b> (172 см / 80 кг) настояли на продолжении борьбы. 
+              <b>Таис</b> (170 см / 59 кг) приняла вызов и боролась с мужчинами ещё девять раз.
+            img.mainImg(src='../img/videos/15/main.jpg' alt='main')
+            p.
+              Все схватки проходили либо на песчаном пляже, либо на травянистом берегу озера. Был прекрасный Солнечный день, который помог нам
+              сделать красочное видео.<br>
+              Борьба была практически равная, особенно между Таис и Виллианом. Если Вам нравится спортивный миксрестлинг (смешенная борьба),
+              то посмотрите наш фильм (<b>ВИДЕО 15</b>), возможно он Вам понравится.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 22
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/15/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/15/'+n+'.jpg')
+            p.
+              Нашего видео нет в свободном доступе. <b>ВИДЕО 14</b> можно приобрести на <a href="https://gum.co/Mzzys">Gumroad</a>.
+    +footer("../")

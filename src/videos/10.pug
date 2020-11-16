@@ -1,0 +1,40 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 10')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 10
+            h4 Смешанная борьба.  Лучшие бои.  Часть 1.  2011 год
+            p.
+              В первой части нашего фильма два парня противостояли  <b>Таис</b> (170 см / 58 кг).  Один из них - наш старый знакомый  <b>Виллиан</b> (172см / 80 кг),  
+              другой - <b>Паша</b> (176 см / 65 кг),  который участвовал в смешанной борьбе в первый раз. Поединки проходили как в зале, так и на пляже.
+            p.
+              Борьба велась до сдачи по правилам <b>САБМИШН ГРЭППЛИНГА</b>. Из всего множества видео смешанных поединков, накопленных к этому времени в клубе, мы отобрали наиболее динамичные на наш взгляд. Во всех схватках участники боролись реально и хотели одержать победу. В нашем фильме в одних раундах победы добивалась Таис, в других - её соперники.
+            img.mainImg(src='../img/videos/10/main.jpg' alt='main')
+            p.
+              Смотрите наш фильм  (<b>ВИДЕО 10</b>),  если Вам нравится состязательная смешанная борьба (миксрестлинг) в зале и на природе.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 12
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/10/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/10/'+n+'.jpg')
+            p.
+              Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 10</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

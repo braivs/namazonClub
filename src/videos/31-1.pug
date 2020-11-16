@@ -1,0 +1,41 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 31-1')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 31-1
+            h4 Смешанная борьба.  Лучшие бои.  Часть 5.1.  2013 год
+            p.
+              Пятый фильм из серии <b>«Смешанная борьба. Лучшие бои»</b> мы разбили на две части. Связано это с тем, что хотя все бои и проходили 
+              в один день, но в один фильм не уложились из-за ограничений, накладываемых на размер клипа.<br>
+              Снова  <b>Таис</b> (170 см/ 61 кг) и <b>Виллиан</b> (172 см / 80) - "извечные" соперники на татами. 
+              Они очень хорошо знают друг друга и примерно равны по силам. Бои между ними, как правило, бескомпромиссные и интересные с технической точки зрения.
+            img.mainImg(src='../img/videos/31-1/main.jpg' alt='main')
+            p.
+              Этот день не стал исключением. Первая часть фильма включает в себя пять боев.
+              Мы рекомендуем посмотреть Фильм (<b>ВИДЕО 31-1</b>) тем из вас, кто интересуется реальной борьбой на победу между мужчиной и женщиной!
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 11
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/31-1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/31-1/'+n+'.jpg')
+            p.
+              Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 31-1</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

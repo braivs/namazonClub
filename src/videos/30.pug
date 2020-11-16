@@ -1,0 +1,41 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 30')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 30
+            h4 Смешанная борьба.  Лучшие бои.  Часть 4.  2013 год
+            p.
+              Это уже четвертый видео из серии под названием <b>«Смешанная борьба. Лучшие бои»</b>, в котором Вы можете увидеть борьбу между двумя старыми
+              соперниками: <b>Таис</b> (170 см/ 61 кг) и <b>Виллианом</b> (172 см / 80). Борцы знают друг друга очень хорошо, и почти равны по силам.
+            p.
+              В фильме представлено четыре с половиной минуты (три раунда) жесткой, агрессивной борьбы на татами, в которой как Таис, так и Виллиан, стремятся одержать победу во что бы то ни стало. Преимущество в каждом раунде постоянно переходит от одного участника к другому, то оно оказывается на стороне мужчины, то, наоборот, на стороне женщины.
+            img.mainImg(src='../img/videos/30/main.jpg' alt='main')
+            p.
+              В самом конце боя победитель определяется ...<br>
+              Посмотрите фильм (<b>ВИДЕО 30</b>), чтобы узнать, кто это был!
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 11
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/30/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/30/'+n+'.jpg')
+            p.
+              Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 30</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

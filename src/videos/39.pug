@@ -1,0 +1,41 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 39')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 39
+            h4 Смешанная борьба. Виллиан против Таис. Часть 1. 2014
+            p.
+              В отличии от Александра  (см. <a href="../videos/38.html">ВИДЕО 38</a>) <b>Виллиан</b> весит немного меньше (82 кг), но много быстрее, подвижнее и техничнее. В поединках 
+              Виллиана с Александром обычно побеждает Виллиан. Однако, по словам <b>Таис</b> (62 кг), ей легче бороться именно с Виллианом, 
+              так как чаще самой удаётся продемонстрировать то или иное техническое действие.
+            img.mainImg(src='../img/videos/39/main.jpg' alt='main')
+            p.
+              В настоящем видео представлено шесть поединков.  Во всех отдельных схватках борьба была энергичной и бескомпромисной, что хорошо видно
+              на скриншотах к фильму.<br>
+              Смотрите наш фильм <b>ВИДЕО 39</b>, если Вам нравится соревновательная смешанная борьба.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 21
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/39/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/39/'+n+'.jpg')
+            p.
+              Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 39</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

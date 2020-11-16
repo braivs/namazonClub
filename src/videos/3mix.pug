@@ -1,0 +1,52 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 3')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 3
+            h4 Пляжная борьба. Смешанный турнир. Сентябрь 2010
+            p.
+              Фильм включает в себя шесть смешанных соревновательных поединков. Мужчин на турнире представлял наш друг из Москвы <b>Алекс</b> (175 см / 68 кг), 
+              который "осмелился" сразиться с двумя весьма сильными женщинами:  <b>Таис</b> (170 см / 60 кг) и <b>Натальей Мысик</b> (180 см / 70 кг).
+            p.
+              Все поединки проходили по правилам <a href="#">сабмишн грэпплинга</a> без ограничения по времени каждой отдельной схватки.<br>
+              Наталья превосходила Алекса ростом и не уступала в весе. Алексу было тяжело, но он уверенно и достойно провёл с Натиальей первую схватку. Затем Алексу пришлось бороться с техничной и быстрой Таис, что отняло у него много сил. Затем снова поединок с мощной Мысик ...
+            img.mainImg(src='../img/videos/3mix/main.jpg' alt='main')
+            p.
+              Кто интересуется спортивной смешанной борьбой (миксрестлингом) и хочет узнать, как всё происходило и чем закончилось, смотрите наш фильм  (ВИДЕО 3)
+            h5 Наталья Мысик против Алекса 
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 15
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/3mix/wm1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/3mix/wm1/'+n+'.jpg')
+            h5 Алекс против Таис
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 18
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/3mix/wm2/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/3mix/wm2/'+n+'.jpg')
+            p Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 3</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

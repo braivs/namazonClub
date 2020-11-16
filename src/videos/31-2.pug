@@ -1,0 +1,40 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 31-2')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 31-2
+            h4 Смешанная борьба.  Лучшие бои.  Часть 5.2.  2013 год
+            p.
+              Это вторая часть пятого фильма из серии под названием  <b>«Смешанная борьба.  Лучшие бои»</b>. Она включает в себя четыре поединка между <b>Таис</b>
+              (170 см / 61 кг) и <b>Виллианом</b> (172 см / 80 кг). (Прочтите, пожалуйста, описание к первой части нашего фильма  (<b>ВИДЕО 31-1</b>)).
+            img.mainImg(src='../img/videos/31-2/main.jpg' alt='main')
+            p.
+              Наши смешанные поединки по борьбе всегда чисто соревновательные (не полусоревновательные!) и в большинстве из них Вы можете увидеть техничную и бескомпромиссную борьбу. Кроме того, у нас нет мужчин или женщин, на татавми есть только бойцы.
+            p.
+              Чтобы узнать окончательный результат (счёт) в поединке Таис с Виллианом в этот день, просто посмотрите наш фильм (<b>ВИДЕО 31-2</b>).
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 12
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/31-2/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/31-2/'+n+'.jpg')
+            p.
+              Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 31-2</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

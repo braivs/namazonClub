@@ -1,0 +1,51 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 14')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 14
+            h4 Двое мужчин против одной женщины.  Часть 1.  2011 год
+            p.
+              В фильме представлены четыре поединка <b>Таис</b> (170 см / 59 кг)  с  <b>Алексом</b> (175 см / 70 кг) и  <b>Виллианом</b> (172 см / 80 кг)  
+              в рамках смешанного пляжного турнира (С.-Петербург, июль 2011 года). Кроме того Вы сможете посмотреть борьбу  <b>Алекса</b>  
+              и  <b>Виллиана</b>  между собой.
+            img.mainImg(src='../img/videos/14/main.jpg' alt='main')
+            p.
+              Поединки с Алексом у Таис сложились относительно легко, а вот борьба с Виллианом проходила с переменным успехом.
+              Если Вам нравится спортивный миксрестлинг (смешанная борьба) на песке, то Вам может понравиться наш фильм. Посмотрев (<b>ВИДЕО 14</b>),  Вы узнаете кого из мужчин  удалось победить Таис в этот раз, а кого нет.
+            h5 Таис против Алекса
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 8
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/14/smeshannyj-plyazhnyj-turnir-2011-4/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/14/smeshannyj-plyazhnyj-turnir-2011-4/'+n+'.jpg')
+            h5 Таис против Виллиана
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 4
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/14/smeshannyj-plyazhnyj-turnir-2011-5/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/14/smeshannyj-plyazhnyj-turnir-2011-5/'+n+'.jpg')
+            p.
+              Нашего видео нет в свободном доступе. <b>ВИДЕО 14</b> можно приобрести на <a href="https://gum.co/iEgJx">Gumroad</a>.
+    +footer("../")

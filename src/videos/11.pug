@@ -1,0 +1,40 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 11')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 11
+            h4 Алекс против Елены. Пляжная борьба. 2011 год
+            p.
+              В фильме представлены два поединка между <b>Алексом</b> (175 см / 70 кг) и самой молодой участницей наших соревнований - 
+              <b>Еленой Васильевой</b> (168 см / 61 кг). Борьба велась (по правилам <b>САБМИШН ГРЭППЛИНГА</b> без огранчения времени в каждой отдельной
+              схватке) за третье место в смешанном турнире, который прошёл на пляже Санкт-Петербурга в июле 2011 года. Все поединки получились
+              очень упорными, никто не хотел уступать. Особенно тяжёлой была первая схватка, достаточно сказать, что <b>она длилась около 12 минут</b>.
+            img.mainImg(src='../img/videos/11/main.jpg' alt='main')
+            p.
+              Мы предлагаем посмотреть наш фильм  (<b>ВИДЕО 11</b>),  если Вас интересует борьба до сдачи между мужчиной и женщиной (миксрестлинг).
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 27
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/11/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/11/'+n+'.jpg')
+            p.
+              Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 11</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

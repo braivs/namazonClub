@@ -1,0 +1,38 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 5')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 5
+            h4 Виллиан против Таис.  Миксрестлинг - смешанная борьба.  2011 год
+            p.
+              В нашем фильме Вы увидите девять раундов спортивной, соревновательной борьбы между мужчиной и женщиной - членом нашего клуба, 
+              постоянным спарринг-партнёром наших девушек, <b>Виллианом</b> (172 см / 80 кг) и сильнейшей намазонкой <b>Таис</b> (170 см / 60 кг).
+            img.mainImg(src='../img/videos/5/main.jpg' alt='main')
+            p.
+              <b>ВИДЕО 5</b> - это первый фильм из нашей новой серии, посвящённой <b>СМЕШАННОЙ БОРЬБЕ</b>.
+              У нас всё честно, никакой постановки поединков. Кто интересуется соревновательной смешанной борьбой, смотрите наши фильмы.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 24
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/5/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/5/'+n+'.jpg')
+            p Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 5</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")
