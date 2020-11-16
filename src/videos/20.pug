@@ -1,0 +1,45 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 20')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 20
+            h4 ММА. Юлия Федутенко против Кары Теллер. Июль 2012
+            p.
+              <b>Юлия Федутенко</b> (клуб смешанных единоборств "Тиброн", Санкт-Петербург, 174 см / 59 кг) встретилась с <b>Карой Теллер</b> 
+              (клуб "Витязь", Москва, 169 см / 56 кг) в ММА турнире <b>Первая Невская Арена</b>, который прошёл 1 июля 2012 года. 
+              Основной особенностью турнира было то, что все его бои проходили на природе.
+            img.mainImg(src='../img/videos/20/main.jpg' alt='main')
+            p.
+              <b>Юлия</b> – в большей степени ударница, которая не очень уверенно чувствует себя в борьбе. <b>Кара</b> зарекомендовала себя как очень
+              стойкий и универсальный боец. В предыдущих своих поединках она, как правило, добивалась побед удушением в партере.
+            p.
+              Поединок состоял из трёх четырёхминутных раундов. В результате, чистой победы никто из девушек не добился и победительница была определена судейским решением.
+            p.
+              Если Вас интересуют женские бои (драки) в экзотической обстановке (на лесной полянке), то Вам может понравиться и наш фильм.<br>
+              Смотрмите (<b>ВИДЕО 20</b>) !
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 28
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/20/mma-pervaya-nevskaya-arena-2012-1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/20/mma-pervaya-nevskaya-arena-2012-1/'+n+'.jpg')
+            p.
+              Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 20</b> можно приобрести в магазине на 
+              <a href='https://gumroad.com/products/DILr/'>Gumroad</a>
+    +footer("../")

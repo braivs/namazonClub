@@ -1,0 +1,47 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 18')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 18
+            h4 ММА.  Кара Теллер против Дарьи Балиной и Таис.  Май 2012
+            p.
+              В очередной свой визит в Санкт-Петербург наша гостья из Москвы <b>Кара Теллер</b> (169 см / 54 кг) провела два ММА боя. Один против дебютантки 
+              наших соревнований <b>Дарьи Балиной</b> (клуб женской самообороны "Пантера", 162 см / 56 кг), другой против <b>Таис</b> (клуб "Намазон", 170 см / 60 кг). Оба поединка состояли из двух раундов с минутными перерывами между ними.
+            img.mainImg(src='../img/videos/18/main.jpg' alt='main')
+            h5 <u>ММА</u> Дарья Балина против Кары Теллер
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 15
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/18/mma-sportivnyj-prazdnik-2012-1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/18/mma-sportivnyj-prazdnik-2012-1/'+n+'.jpg')
+            h5 <u>ММА</u> Кара Теллер против Таис
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 11
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/18/mma-sportivnyj-prazdnik-2012-2/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/18/mma-sportivnyj-prazdnik-2012-2/'+n+'.jpg')
+            p Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 18</b> можно приобрести в магазине на 
+              <a href='https://gumroad.com/products/vJLWS/'>Gumroad</a>
+    +footer("../")

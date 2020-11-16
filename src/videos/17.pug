@@ -1,0 +1,61 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 17')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 17
+            h4 ММА и сабмишн грэпплинг. Февраль 2012
+            p.
+              В фильме представлены два ММА боя <b>Кары Теллер</b>  (Москва, 169 см / 54 кг). Соперницей Кары в первом бою была <b>Светлана Соловьёва</b> 
+              (Санкт-Петербург, 169 см / 56 кг), во втором - <b>Таис</b> (Санкт-Петербург, 170 см / 59 кг).<br>
+              Кроме того, Вы сможете посмотреть интересный  борцовский  поединок (по правилам - САБМИШН ГРЭППЛИНГА) между Карой и Светланой.
+            img.mainImg(src='../img/videos/17/main.jpg' alt='main')
+            p Светлана Соловьёва - физически очень сильная девушка, к моменту боя поднимала на бицепс 37,5 кг и выжимала на кистевом динамометре 56,3 кг (больше собственного веса). Кара Теллер уже успела зарекомендовала себя опытным и неуступчивым бойцом. Таис - лучшая файтерша клуба Намазон.
+            p Если Вы любите бескомпромиссную борьбу сильных женщин, если Вас привлекают жёсткие ММА бои, смотрите наш фильм (<b>ВИДЕО 17</b>).
+            h5 <u>ММА</u> Светлана Соловьёва против Кары Теллер
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 12
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/17/mma-kara-svetlany-2012-1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/17/mma-kara-svetlany-2012-1/'+n+'.jpg')
+            h5 <u>ММА</u> Кара Теллер против Таис
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 7
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/17/mma-kara-svetlany-2012-2/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/17/mma-kara-svetlany-2012-2/'+n+'.jpg')
+            h5 <u>Борьба. Сабмишн грэпплинг.</u> Светлана Соловьёва против Кары Теллер
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample3' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample3.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 9
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/17/mma-kara-svetlany-2012-3/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/17/mma-kara-svetlany-2012-3/'+n+'.jpg')
+            p Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 18</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

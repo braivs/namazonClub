@@ -1,0 +1,39 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 13')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 13
+            h4 Валентина Перфильева против Надежды Ахмеровой. Кикбоксинг.  2011 год
+            p.
+              В фильме представлены два боя по правилам кикбоксинга (с лоукиками) между двумя очаровательными и амбициозными девушками: <b>Валентиной Перфильевой</b> (172 см / 60 кг), каратисткой по основной специализации, и <b>Надеждой Ахмеровой</b> (168 см / 58 кг), уже имевшей опыт в поединках по правилам кикбоксинга.
+              Оба боя были жёсткими и агрессивными. Девушки наносили друг другу удары ногами и руками, некоторые из которых были точными и сильными.
+            img.mainImg(src='../img/videos/13/main.jpg' alt='main')
+            p.
+              Фильм  ВИДЕО 13  включает в себя два боя, состоявший из двух раундов каждый.<br>
+              Если Вам нравится кикбоксинг, то возможно Вам понравится и наш фильм. Смотрите  <b>ВИДЕО 13</b>  и Вы узнаете, кто из девушек оказалась сильнее.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 34
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/13/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/13/'+n+'.jpg')
+            p.
+              Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 13</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

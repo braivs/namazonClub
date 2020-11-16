@@ -1,0 +1,40 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 21')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 21
+            h4 ММА. Дарья Балина против Ольги.  Июль 2012
+            p.
+              В фильме представлен второй бой ММА турнира <b>Первая Невская Арена</b> (июль 2012 года). Это был поединок между <b>Дарьей Балиной</b>
+              (клуб женской самообороны "Пантера", Санкт-Петербург, 162 см / 56 кг) и дебютанткой наших соревнований <b>Ольгой</b> (Санкт-Петербург, 170 см / 63 кг).
+            img.mainImg(src='../img/videos/21/main.jpg' alt='main')
+            p.
+              В этом бою было всё: кураж, обмен ударами в стойке, борьба в партере, попытки добивания.<br>
+              Как и в первом бою турнира между Юлией Федутенко и Карой Теллер (<b>ВИДЕО 20</b>), трёх раундов оказалось недостаточно, чтобы одна из девушек смогла добиться чистой пробеды. Результат поединка был определён судейским решением.
+            p Смотрите наш фильм (<b>ВИДЕО 21</b>), если Вы интересуетесь женскими боями (драками) на природе.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 38
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/21/mma-pervaya-nevskaya-arena-2012-2/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/21/mma-pervaya-nevskaya-arena-2012-2/'+n+'.jpg')
+            p.
+              Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 21</b> можно приобрести в магазине на 
+              <a href='https://gum.co/Izkfe'>Gumroad</a>
+    +footer("../")
