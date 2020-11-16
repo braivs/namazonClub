@@ -23,6 +23,7 @@ function pugMainHTMLs () {
       pretty: true
   }))
   .pipe(gulp.dest('./docs/'))
+  .pipe(browserSync.stream())
 }
 function pugVideos () {
   return gulp.src('./src/videos/*.pug')
@@ -30,6 +31,7 @@ function pugVideos () {
       pretty: true
   }))
   .pipe(gulp.dest('./docs/videos/'))
+  .pipe(browserSync.stream())
 }
 
 function watch () {
@@ -43,7 +45,6 @@ function watch () {
   gulp.watch('./src/includes/*.pug', pugMainHTMLs);
   gulp.watch('./src/videos/*.pug', pugVideos);
   gulp.watch('./src/includes/*.pug', pugVideos);
-	gulp.watch('./docs/**/*.html').on('change', browserSync.reload); 
 }
 
 exports.watch = watch; //for gulp watch start
