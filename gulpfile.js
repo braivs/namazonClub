@@ -33,6 +33,14 @@ function pugVideos () {
   .pipe(gulp.dest('./docs/videos/'))
   .pipe(browserSync.stream())
 }
+function pugArticles () {
+  return gulp.src('./src/articles/*.pug')
+  .pipe(pug({
+    pretty: true
+  }))
+  .pipe(gulp.dest('./docs/articles/'))
+  .pipe(browserSync.stream())
+}
 
 function watch () {
   browserSync.init({
@@ -41,10 +49,12 @@ function watch () {
     }
   })
   gulp.watch('./src/sass/*.sass', style);
-  gulp.watch('./src/*.pug', pugMainHTMLs);
   gulp.watch('./src/includes/*.pug', pugMainHTMLs);
-  gulp.watch('./src/videos/*.pug', pugVideos);
   gulp.watch('./src/includes/*.pug', pugVideos);
+  gulp.watch('./src/includes/*.pug', pugArticles);
+  gulp.watch('./src/*.pug', pugMainHTMLs);
+  gulp.watch('./src/videos/*.pug', pugVideos);
+  gulp.watch('./src/articles/*.pug', pugArticles);
 }
 
 exports.watch = watch; //for gulp watch start
