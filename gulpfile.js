@@ -19,8 +19,8 @@ function styleSass () {
 
 function HTMLpug () {
   return gulp.src([
-    '!./src/include/*.pug',
-    './src/**/*.pug'
+    './src/**/*.pug',
+    '!./src/includes/*.pug'
   ])
   .pipe(pug({
       pretty: true

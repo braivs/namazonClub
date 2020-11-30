@@ -1,0 +1,38 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 1')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Видео 1
+            h4 Сабмишн грэпплинг. Турнир. Часть 1. Июнь 2010
+            p.
+              Девушки боролись по правилам  <a href="#">сабмишн грэпплинга</a>.  В соревновании приняли участие три файтерши:
+              <b>Таис</b> (170 см / 58 кг),
+              <b>Мария Рылёва</b> (172 см / 57 кг) и <b>Надежда Ахмерова</b> (168 см / 58 кг).<br>
+              Турнир проходил в два круга, в настоящем фильме  (<b>ВИДЕО 1</b>)  представлены все поединки первого круга.<br>
+              Фаворитами турнира считались Таис и Мария Рылёва как более опытные в сабмишн грэпплинге. Таис - многократная победительница сорвнований по сабмишн грэпплингу, Мария сильно прибавила за последнее время и также могла претендовать на победу, Надежда специализировалась в кикбоксинге и ММА, этот турнир был для неё дебютом в сабмишн грэпплинге.
+            img.mainImg(src='../img/videos/1/main.jpg' alt='main')
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Скриншоты фильма
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 16
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/1/'+n+'.jpg')
+            p Нашего видео нет в свободном доступе. В данный момент <b>ВИДЕО 1</b> можно приобрести в ручном режиме, написав на почту 
+              <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+    +footer("../")

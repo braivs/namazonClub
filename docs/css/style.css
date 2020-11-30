@@ -78,33 +78,36 @@ body {
     .mainCards button:hover {
       background-color: #1B8BBA; }
 
-.videoAll, .order, .videos {
+.videoAll, .order, .videos, .girls {
   padding-top: 10px;
   background: white; }
-  .videoAll h3:first-of-type, .order h3:first-of-type, .videos h3:first-of-type {
+  .videoAll h3:first-of-type, .order h3:first-of-type, .videos h3:first-of-type, .girls h3:first-of-type {
     color: #1B8BBA; }
-  .videoAll .row-text, .order .row-text, .videos .row-text {
+  .videoAll .row-text, .order .row-text, .videos .row-text, .girls .row-text {
     margin-left: 0; }
-    .videoAll .row-text:last-child, .order .row-text:last-child, .videos .row-text:last-child {
+    .videoAll .row-text:last-child, .order .row-text:last-child, .videos .row-text:last-child, .girls .row-text:last-child {
       padding-bottom: 20px; }
-  .videoAll .card-row, .order .card-row, .videos .card-row {
+  .videoAll .card-row, .order .card-row, .videos .card-row, .girls .card-row {
     margin-left: 15px;
     margin-bottom: 20px; }
-    .videoAll .card-row:last-child, .order .card-row:last-child, .videos .card-row:last-child {
+    .videoAll .card-row:last-child, .order .card-row:last-child, .videos .card-row:last-child, .girls .card-row:last-child {
       padding-bottom: 20px; }
-  .videoAll .card, .order .card, .videos .card {
+  .videoAll .card, .order .card, .videos .card, .girls .card {
     width: 205px;
     background-color: #FAF0E6;
     text-align: center; }
-    .videoAll .card .card-img-top, .order .card .card-img-top, .videos .card .card-img-top {
+    .videoAll .card .card-img-top, .order .card .card-img-top, .videos .card .card-img-top, .girls .card .card-img-top {
       width: 176px;
       margin: 5px auto 0;
       border-radius: 0; }
-    .videoAll .card .card-body, .order .card .card-body, .videos .card .card-body {
+    .videoAll .card .card-body, .order .card .card-body, .videos .card .card-body, .girls .card .card-body {
       padding: 5px;
       text-align: center;
       line-height: 1.2;
       font-size: 14px; }
+
+.girls .cardGirls {
+  background-color: #AFD8F1; }
 
 .videos .row {
   margin-top: 10px; }
