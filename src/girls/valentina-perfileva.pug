@@ -1,0 +1,66 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Валентина Перфильева')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Участницы соревнований 2010 - 2011 годов
+            h4 ВАЛЕНТИНА ПЕРФИЛЬЕВА 
+            img.mainImgSmall(src='../img/girls/valentina-perfileva/valentina.jpg' alt='main')
+            p.
+              <b>Валентина Перфильева</b> ( 172 см / 60 кг ) - участница соревнований по САБМИШН ГРЭППЛИНГУ, проводимых клубом "НАМАЗОН",
+              победительница Международного турнира боевых искусств ВОСТОК-ЗАПАД в номнации КАРАТЭ (КУМИТЭ).
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | САБМИШН ГРЭППЛИНГ
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 8
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/valentina-perfileva/subgr/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/valentina-perfileva/subgr/'+n+'.jpg')
+            <br>
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample2')
+              | КИКБОКСИНГ
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 4
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/valentina-perfileva/kick/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/valentina-perfileva/kick/'+n+'.jpg')
+            <br>
+            h4 <u>Поединки с участием <b>ВАЛЕНТИНЫ ПЕРФИЛЬЕВОЙ</b> в нашем ВИДЕО</u>
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.table-warning
+              theat
+                tr
+                  th(scope="col") Валентина Перфильева и Мария Рылёва
+                  th(scope="col") Валентина Перфильева и Наталья Мысик
+                tr
+                  td <a href="../videos/12.html">ВИДЕО 12. Сабмишн грэпплинг. Турнир. Апрель 2010</a> 
+                  td <a href="../videos/4.html">ВИДЕО 4. Сабмишн грэпплинг. Турнир "Рождественский Кубок 2011"</a> 
+                tr
+                  td
+                  td <a href="../videos/12.html">ВИДЕО 12. Сабмишн грэпплинг. Турнир. Апрель 2010</a>
+                
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.table-warning
+              theat
+                tr
+                  th(scope="col") Валентина Перфильева и Ксения Волошина
+                  th(scope="col") Валентина Перфильева и Надеждой Ахмеровой
+                tr
+                  td <a href="../videos/4.html">ВИДЕО 4. Сабмишн грэпплинг. Турнир "Рождественский Кубок 2011"</a>
+                  td <a href="../videos/13.html">ВИДЕО 13. Кикбоксинг. Валентина Перфильева - Надежда Ахмерова. 2011</a>
+    +footer("../")

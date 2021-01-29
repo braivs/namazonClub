@@ -1,0 +1,48 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Ирина')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Участницы соревнований 2010 - 2011 годов
+            h4 ИРИНА 
+            img.mainImg(src='../img/girls/irina/irina.jpg' alt='main')
+            p.
+              <b>Ирина</b> ( 176 см / 70 кг ) - одна из сильнейших девушек, принимавших участие в турнирах и отдельных поединков по САБМИШН
+              ГРЭППЛИНГУ,  проводимых клубом "НАМАЗОН" в период 2008-2010 года.<br>
+              Ирина всегда боролась бескомпромиссно, с полной отдачей. Она могла составить серьёзную конкуренцию любой сопернице.
+            h4 САБМИШН ГРЭППЛИНГ
+            p <b>Ирина</b> против <b>Изиды</b> (Ирины Дергачёвой) - известной украинской бодибилдерши
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Смотреть фото
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 10
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/irina/subgr/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/irina/subgr/'+n+'.jpg')
+            h4 ПЛЯЖНАЯ БОРЬБА
+            p <b>Ирина</b> против <b>Таис</b>
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample2')
+              | Смотреть фото
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 6
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/irina/beachgr/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/irina/beachgr/'+n+'.jpg')
+    +footer("../")

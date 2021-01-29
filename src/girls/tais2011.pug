@@ -1,0 +1,91 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Таис')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Участницы соревнований 2010 - 2011 годов
+            h4 ТАИС 
+            img.mainImg(src='../img/girls/tais2011/8.jpg' alt='main')
+            p.
+              <b>Таис</b> ( 170 см / 59 кг )  -  многократная  победительница  чемпионатов  клуба  "НАМАЗОН"  по борьбе САБМИШН ГРЭППЛИНГ,
+              сильнейший ММА боец клуба среди женщин.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | ТАИС. ФОТОАЛЬБОМ
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 12
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/tais2011/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/tais2011/'+n+'.jpg')
+            <br>
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample2')
+              | САБМИШН ГРЭППЛИНГ
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 8
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/tais2011/subgr/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/tais2011/subgr/'+n+'.jpg')
+            <br>
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample3' role='button' aria-expanded='false' aria-controls='collapseExample3')
+              | ММА
+            #collapseExample3.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 8
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/tais2011/mma/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/tais2011/mma/'+n+'.jpg')
+            <br>
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample4' role='button' aria-expanded='false' aria-controls='collapseExample4')
+              | КАРАТЭ
+            #collapseExample4.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 4
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/tais2011/karate/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/tais2011/karate/'+n+'.jpg')
+            h4 <u>Поединки с участием ТАИС в нашем ВИДЕО</u>
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.table-warning
+              theat
+                tr
+                  th(scope="col") Таис и Мария Рылёва
+                  th(scope="col") Таис и Надежда Ахмерова
+                tr
+                  td <a href="../videos/1.html">ВИДЕО 1. Сабмишн грэпплинг. Турнир. Часть 1. Июнь 2010</a> 
+                  td <a href="../videos/1.html">ВИДЕО 1. Сабмишн грэпплинг. Турнир. Часть 1. Июнь 2010</a>
+                tr
+                  td <a href="../videos/2.html">ВИДЕО 2. Сабмишн грэпплинг. Турнир. Часть 2. Июнь 2010</a> 
+                  td <a href="../videos/2.html">ВИДЕО 2. Сабмишн грэпплинг. Турнир. Часть 2. Июнь 2010</a>
+                tr
+                  td <a href="../videos/6.html">ВИДЕО 6. Мария Рылёва против Таис. Март 2011</a>  	
+                
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.table-warning
+              theat
+                tr
+                  th(scope="col") Таис и Елена Васильева
+                  th(scope="col") Таис и Власта
+                tr
+                  td <a href="../videos/8.html">ВИДЕО 8. Пляжный турнир. Сабмишн грэпплинг. Июнь 2011</a>
+                  td <a href="../videos/8.html">ВИДЕО 8. Пляжный турнир. Сабмишн грэпплинг. Июнь 2011</a>
+                tr
+                  td <a href="../videos/16.html">ВИДЕО 16. Молодость против опыта. Сабмишн грэпплинг. Июнь 2011</a>
+    +footer("../")
