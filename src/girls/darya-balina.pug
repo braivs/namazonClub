@@ -1,0 +1,58 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Дарья Балина')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Участницы соревнований 2012 - 2013 годов
+            h4 Дарья Балина 
+            img.mainImg(src='../img/girls/darya-balina/main.jpg' alt='main')
+            p.
+              <b>Дарья Балина</b> - молодая файтерша из Санкт-Петербурга (162 см / 56 кг), изучающая единоборства в клубе женской самообороны "Пантера". 
+              В клубе "Намазон" Дарья приняла участие в двух сложных для неё ММА поединках, проявив волю к победе. В последнем бою Дарья встретилась с девушкой
+              превосходящей её по весу на 7 кг и смогла свести поединок к ничьей.
+            p.
+              Первый ММА бой в клубе "Намазон" Дарья Балина провела с нашей гостьей из Москвы Карой Теллер (169 см /56 кг). Схватка продолжалась два раунда с большим 
+              преимуществом более опытной Кары, которая и одержала победу удушением в конце второго раунда.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Смотреть фото
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 17
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/darya-balina/mma-sportivnyj-prazdnik-2012-1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/darya-balina/mma-sportivnyj-prazdnik-2012-1/'+n+'.jpg')
+            p.
+              Второй раз Дарья дралась по правилам ММА в рамках ММА турнира «Первая Невская Арена». Соперницей Дарьи была Ольга (170 см / 63кг) – тоже дебютантка ММА
+              турниров. Весь поединок состоял из трёх раундов по 4 минуты с минутными перерывами между раундами. Ольга превосходила Дарью по весу на 7 кг и обладала более
+              «тяжёлым» ударом. В общем Дарье немного «досталось», но она выстояла – в результате заслуженная ничья.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample2')
+              | Смотреть фото
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 38
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/darya-balina/mma-pervaya-nevskaya-arena-2012-2/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/darya-balina/mma-pervaya-nevskaya-arena-2012-2/'+n+'.jpg')
+            h4 <u>ММА. Статистика результатов за 2012 год</u>
+            p число побед /число поражений / число ничьих - 0 - 1 - 1 (на 1 июля 2012 года)
+            hr
+            p.
+              Видео ММА боёв Дарьи Балиной в 2012 году (Video 18 и Video 21) можно приобрести в нашем магазине на <a href="https://gumroad.com/namazonclub">Gumroad</a>.
+
+
+    +footer("../")

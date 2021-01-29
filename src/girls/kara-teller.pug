@@ -1,0 +1,130 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Кара Теллер')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Участницы соревнований 2012 - 2013 годов
+            h4 Кара Теллер 
+            img.mainImg(src='../img/girls/kara-teller/k01.jpg' alt='main')
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Другие фото
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 3
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/kara-teller/k0'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/kara-teller/k0'+n+'.jpg')
+            p.
+              <b>Кара Теллер</b> (клуб «Витязь», Москва) очень женственная в обычной жизни натура и упорный, неуступчивый боец на 
+              татами или ринге , специализируется в каратэ, самбо, ММА и … уличных боях, выступая как уличный боец 
+              (street fighter). При росте 169 см и весе 55 кг она уверенно борется и бьётся с девушками, превосходящими 
+              её по весу.<br>
+              В клубе «Намазон» Кара в основном выступала в ММА боях.
+            h4 <u>Кара Теллер в ММА боях</u>
+            h4 Кара против Елены Васильевой. Рождественский Кубок 2012
+            img.mainImg(src='../img/girls/kara-teller/mma-rozhdestvenskij-kubok-2012-1/1.jpg' alt='main')
+            p.
+              Это был очень напряжённый поединок. Три раунда по 4 минуты с минутными перерывами между раундами.<br>
+              Два первых раунда <a href="#">Елена</a> (Санкт-Петербург, 167 см / 60 кг) имела подавляющее преимущество, Каре пришлось очень тяжело.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Другие фото
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 12
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/kara-teller/mma-rozhdestvenskij-kubok-2012-1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/kara-teller/mma-rozhdestvenskij-kubok-2012-1/'+n+'.jpg')
+            p.
+              В третьем раунде стало заметно, что Елена устала. Каре удалось перехватить инициативу (сказался её бойцовский характер) и в результате одержать победу
+              удушением.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample2')
+              | Смотреть фото
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 8
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/kara-teller/mma-rozhdestvenskij-kubok-2012-2/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/kara-teller/mma-rozhdestvenskij-kubok-2012-2/'+n+'.jpg')
+            p Это был очень упорный и драматичный поединок, пожалуй, один из лучших ММА боёв в клубе.
+            h4 Кара против Светланы Соловьёвой. 2012
+            img.mainImg(src='../img/girls/kara-teller/mma-kara-svetlany-2012-1/1.jpg' alt='main')
+            p.
+              Нет сомнений, что <b>Светлана Соловьёва</b> (Санкт-Петербург, 169 см / 56 кг) превосходила Кару в физической силе. Так она выжимает на кистевом 
+              динамометре больше своего собственного веса – 56,3 кг! На стороне Кары был опыт единоборств.<br>
+              Если в обмене ударами в стойке Светлана ещё могла оказать Каре сопротивление, то после перехода боя в партер преимущество Кары стало очевидным.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample3' role='button' aria-expanded='false' aria-controls='collapseExample3')
+              | Другие фото
+            #collapseExample3.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 13
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/kara-teller/mma-kara-svetlany-2012-1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/kara-teller/mma-kara-svetlany-2012-1/'+n+'.jpg')
+            p.
+              Кара победила удушением за 1 минуту 13 секунд.
+            h4 Кара против Дарьи Балиной. 2012
+            img.mainImg(src='../img/girls/kara-teller/mma-sportivnyj-prazdnik-2012-1/1.jpg' alt='main')
+            p.
+              Кара вышла на бой с <b>Дарьей Балиной</b> (Санкт-Петербург, клуб женской самообороны "Пантера", 162 см / 56 кг) в роли фаворита. 
+              Если удары руками и ногами у Дарьи были поставлены относительно неплохо, то в борьбе она чувствовала себя неуверенно 
+              (издержки подготовки с упором на самооборону).
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample4' role='button' aria-expanded='false' aria-controls='collapseExample4')
+              | Другие фото
+            #collapseExample4.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 17
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/kara-teller/mma-sportivnyj-prazdnik-2012-1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/kara-teller/mma-sportivnyj-prazdnik-2012-1/'+n+'.jpg')
+            p.
+              Формат поединка был прежний, три раунда по 4 минуты с перерывом между ними в течение 1 минуты. Каре хватило для победы двух раундов.<br>
+              Первый раунд прошёл в стойке. Кара переиграла Дарью в «ударке». Во втором раунде бой перешёл в борьбу, Кара, что стало для неё уже традицией,
+              победила свою соперницу удушением.
+            h4 <u>Кара Теллер в борьбе по правилам Сабмишн Грэпплинг</u>
+            h4 Кара против Светланы Соловьёвой. 2012
+            img.mainImg(src='../img/girls/kara-teller/mma-kara-svetlany-2012-3/9.jpg' alt='main')
+            p.
+              После скоротечного ММА боя девушки решили продолжить выяснять отношения в борцовском поединке. Правила – сабмишн грэпплинг, ограничения по времени 
+              не были предусмотрены.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample5' role='button' aria-expanded='false' aria-controls='collapseExample5')
+              | Другие фото
+            #collapseExample5.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 9
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/kara-teller/mma-kara-svetlany-2012-3/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/kara-teller/mma-kara-svetlany-2012-3/'+n+'.jpg')
+            p.
+              Борьба получилась интересной, обе соперницы входили в одну весовую категорию. Более физически сильная <b>Светлана</b> (Санкт-Петербург, 169 см / 56 кг) 
+              практически весь поединок находилась сверху, Кара из позиции лёжа на спине пыталась провести атаку на руку соперницы и выполнить болевой приём. 
+              Однако, время шло и Светлане явно не хватало техники для победы, а Каре – силы. В результате девушки устали (в первую очередь Светлана) 
+              и поединок был прекращён. <b>Ничья.</b>
+            h4 <u>ММА. Статистика результатов за 2012 год</u>
+            p число побед /число поражений / число ничьих - 4 - 3 - 0 (на 1 июля 2012 года)
+            <hr>
+            p Видео ММА поединков Кары Теллер в клубе "Намазон" (Video 9, 17, 18 and 20) можно приобрести в нашем магазине на на <a href="https://gumroad.com/namazonclub">Gumroad</a>.
+
+    +footer("../")
