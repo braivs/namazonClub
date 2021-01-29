@@ -195,6 +195,11 @@ footer span img {
   margin-right: -1px;
 }
 
+@media (max-width: 1200px) {
+  .navbar ul li {
+    padding-right: 15px;
+  }
+}
 @media (max-width: 420px) {
   body img.mainImgSmall {
     width: 100%;
