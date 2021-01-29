@@ -1,0 +1,44 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Ксения Волошина')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Участницы соревнований 2010 - 2011 годов
+            h4 КСЕНИЯ ВОЛОШИНА
+            img.mainImgSmall(src='../img/girls/kseniya-voloshina/kseniya.jpg' alt='main')
+            p.
+              <b>Ксения Волошина</b> ( 160 см / 64 кг ) - участница соревнований по САБМИШН ГРЭППЛИНГУ, проводимых клубом 
+              "НАМАЗОН",<br>
+              призёр турнира "Рождественский Кубок 2011".
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | САБМИШН ГРЭППЛИНГ
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 8
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/kseniya-voloshina/subgr/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/kseniya-voloshina/subgr/'+n+'.jpg')
+            
+            h5 <u>Поединки с участием <b>КСЕНИИ ВОЛОШИНОЙ</b> в нашем ВИДЕО</u>
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.table-warning
+              theat
+                tr
+                  th(scope="col") Ксения Волошина и Наталья Мысик
+                  th(scope="col") Ксения Волошина и Валентина Перфильева
+                tr
+                  td <a href="../videos/4.html">ВИДЕО 4. Сабмишн грэпплинг. Турнир "Рождественский Кубок 2011"</a> 
+                  td <a href="../videos/4.html">ВИДЕО 4. Сабмишн грэпплинг. Турнир "Рождественский Кубок 2011"</a> 
+    +footer("../")

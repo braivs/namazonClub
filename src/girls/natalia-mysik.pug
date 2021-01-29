@@ -1,0 +1,53 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Наталья Мысик')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Участницы соревнований 2010 - 2011 годов
+            h4 НАТАЛЬЯ МЫСИК
+            img.mainImgSmall(src='../img/girls/natalia-mysik/natalia.jpg' alt='main')
+            p.
+              <b>Наталья Мысик</b> ( 180 см / 70 кг ) - участница соревнований по САБМИШН ГРЭППЛИНГУ, проводимых клубом 
+              "НАМАЗОН",<br>
+              победительница турнира "Рождественский Кубок 2011".
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | САБМИШН ГРЭППЛИНГ
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 7
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/natalia-mysik/subgr/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/natalia-mysik/subgr/'+n+'.jpg')
+            
+            h5 <u>Поединки с участием <b>НАТАЛЬИ МЫСИК</b> в нашем ВИДЕО</u>
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.table-warning
+              theat
+                tr
+                  th(scope="col") Наталья Мысик и Мария Рылёва
+                  th(scope="col") Наталья Мысик и Валентина Перфильева
+                tr
+                  td <a href="../videos/12.html">ВИДЕО 12. Сабмишн грэпплинг. Турнир. Апрель 2010</a> 
+                  td <a href="../videos/4.html">ВИДЕО 4. Сабмишн грэпплинг. Турнир "Рождественский Кубок 2011"</a> 
+                tr
+                  td 
+                  td <a href="../videos/12.html">ВИДЕО 12. Сабмишн грэпплинг. Турнир. Апрель 2010</a>
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.table-warning
+              theat
+                tr
+                  th(scope="col") Наталья Мысик и Ксения Волошина
+                tr
+                  td <a href="../videos/4.html">ВИДЕО 4. Сабмишн грэпплинг. Турнир "Рождественский Кубок 2011"</a> 
+    +footer("../")

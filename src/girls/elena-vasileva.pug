@@ -1,0 +1,57 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Елена Васильева')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Участницы соревнований 2010 - 2011 годов
+            h4 ЕЛЕНА ВАСИЛЬЕВА
+            img.mainImgSmall(src='../img/girls/elena-vasileva/elena.jpg' alt='main')
+            p.
+              Елена Васильева ( 168 см / 61 кг ) - самая молодая и исключительно способная участница соревнований в клубе "Намазон".
+              Специализация - САБМИШН ГРЭППЛИНГ, ДЗЮДО, ММА, АРМРЕСТЛИНГ (кандидат в мастера спорта РФ).
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | САБМИШН ГРЭППЛИНГ
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 8
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/elena-vasileva/subgr/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/elena-vasileva/subgr/'+n+'.jpg')
+            <br>
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample2')
+              | ММА
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 4
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/elena-vasileva/mma/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/elena-vasileva/mma/'+n+'.jpg')
+            <br>
+            h5 <u>Поединки с участием <b>ЕЛЕНЫ ВАСИЛЬЕВОЙ</b> в нашем ВИДЕО</u>
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.table-warning
+              theat
+                tr
+                  th(scope="col") Елена Васильева и Таис
+                  th(scope="col") Елена Васильева и Власта
+                tr
+                  td <a href="../videos/8.html">ВИДЕО 8. Пляжный турнир. Сабмишн грэпплинг. Июнь 2011</a> 
+                  td <a href="../videos/8.html">ВИДЕО 8. Пляжный турнир. Сабмишн грэпплинг. Июнь 2011"</a> 
+                tr
+                  td <a href="../videos/16.html">ВИДЕО 16. Молодость против опыта. Сабмишн грэпплинг. Июнь 2011</a>
+                  td 
+    +footer("../")

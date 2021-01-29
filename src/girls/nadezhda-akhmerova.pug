@@ -1,0 +1,65 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Надежда Ахмерова')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Участницы соревнований 2010 - 2011 годов
+            h4 НАДЕЖДА АХМЕРОВА
+            img.mainImgSmall(src='../img/girls/nadezhda-akhmerova/nadezhda.jpg' alt='main')
+            p.
+              Надежда Ахмерова ( 167 см / 60 кг )  -  участница чемпионатов по САБМИШН ГРЭППЛИНГУ, организованных 
+              клубом "Намазон"<br>
+              Надежда также может принимать участие в соревнованиях по кикбоксингу и ММА.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | САБМИШН ГРЭППЛИНГ
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 8
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/nadezhda-akhmerova/subgr/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/nadezhda-akhmerova/subgr/'+n+'.jpg')
+            <br>
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample2')
+              | КИКБОКСИНГ
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 8
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/nadezhda-akhmerova/kick/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/nadezhda-akhmerova/kick/'+n+'.jpg')
+            <br>
+            h4 <u>Поединки с участием <b>НАДЕЖДЫ АХМЕРОВОЙ</b> в нашем ВИДЕО</u>
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.table-warning
+              theat
+                tr
+                  th(scope="col") Надежда Ахмерова и Мария Рылёва
+                  th(scope="col") Надежда Ахмерова и Таис
+                tr
+                  td <a href="../videos/1.html">ВИДЕО 1. Сабмишн грэпплинг. Турнир. Часть 1. Июнь 2010</a> 
+                  td <a href="../videos/1.html">ВИДЕО 1. Сабмишн грэпплинг. Турнир. Часть 1. Июнь 2010"</a> 
+                tr
+                  td <a href="../videos/2.html">ВИДЕО 2. Сабмишн грэпплинг. Турнир. Часть 2. Июнь 2010</a>
+                  td <a href="../videos/2.html">ВИДЕО 2. Сабмишн грэпплинг. Турнир. Часть 2. Июнь 2010</a>
+                
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.table-warning
+              theat
+                tr
+                  th(scope="col") Надежда Ахмерова и Валентина Перфильева
+                tr
+                  td <a href="../videos/13.html">ВИДЕО 13. Кикбоксинг. Надежда Ахмерова - Валентина Перфильева. 2011</a>
+    +footer("../")
