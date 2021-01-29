@@ -2,7 +2,7 @@ body {
   background: url("../img/background.jpg");
 }
 body img.mainImgSmall {
-  width: 378px;
+  width: auto;
 }
 body h1 {
   font-size: 60px;
@@ -193,4 +193,10 @@ footer span img {
   height: 25px;
   opacity: 0.5;
   margin-right: -1px;
+}
+
+@media (max-width: 420px) {
+  body img.mainImgSmall {
+    width: 100%;
+  }
 }
