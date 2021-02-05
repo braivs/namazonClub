@@ -40,12 +40,12 @@ mixin header(path='')
               a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
                 | СОРЕВНОВАНИЯ
               .dropdown-menu(aria-labelledby='navbarDropdown')
-                a.dropdown-item(href='#') Архив
-                a.dropdown-item(href='#') 2011
-                a.dropdown-item(href='#') 2012
-                a.dropdown-item(href='#') 2013 - 2014
+                a.dropdown-item(href=path+'competitions/competitionsAll.html') Все соревнования
                 a.dropdown-item(href='#') 2015 - 2017
-                a.dropdown-item(href='#') Анонсы
+                a.dropdown-item(href='#') 2013 - 2014
+                a.dropdown-item(href='#') 2012
+                a.dropdown-item(href='#') 2011
+                a.dropdown-item(href='#') Архив
             li.nav-item.active
               a.nav-link(href='#') ОБРАТНАЯ СВЯЗЬ
 //-
