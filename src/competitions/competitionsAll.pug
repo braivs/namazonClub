@@ -5,7 +5,7 @@ include ../includes/footer.pug
 
 doctype html
 html(lang='ru')
-  +head('../','Соревнования')
+  +head('../','Все соревнования')
   body
     +header("../")
     main
@@ -15,22 +15,22 @@ html(lang='ru')
           .col
             h3 Результаты прошедших соревнований 
             h3 Подкатегории
-            a(href='#') 2015-2017
+            a(href='competitions2015-2017.html') 2015-2017
             include ../includes/cardsCompetitions2015-2017.pug
         .row.row-text
           .col
-            a(href='#') 2013-2014
+            a(href='competitions2013-2014.html') 2013-2014
             include ../includes/cardsCompetitions2013-2014.pug
         .row.row-text
           .col
-            a(href='#') 2012
+            a(href='competitions2012.html') 2012
             include ../includes/cardsCompetitions2012.pug
         .row.row-text
           .col
-            a(href='#') 2011
+            a(href='competitions2011.html') 2011
             include ../includes/cardsCompetitions2011.pug
         .row.row-text
           .col
-            a(href='#') Архив
+            a(href='competitionsArchive.html') Архив
             include ../includes/cardsCompetitionsArchive.pug
   +footer("../")

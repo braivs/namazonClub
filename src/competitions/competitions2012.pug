@@ -1,0 +1,19 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Соревнования 2012')
+  body
+    +header("../")
+    main
+      +slider("../")
+      .container.videoAll
+        .row.row-text
+          .col
+            h3 Результаты прошедших соревнований 
+            h3 2012
+            include ../includes/cardsCompetitions2012.pug
+  +footer("../")
