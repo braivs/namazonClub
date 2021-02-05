@@ -1,0 +1,66 @@
+include ../../includes/head.pug
+include ../../includes/header.pug
+include ../../includes/slider.pug
+include ../../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../../','Женские силовые единоборства на Масленицу 2016')
+  link(rel="stylesheet", href="../../css/ekko-lightbox.css")
+  body
+    +header("../../")
+    main
+      +slider('../../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Результаты прошедших соревнований
+            h4 Женские силовые единоборства на Масленицу 2016
+            img.mainImg(src='../../img/competitions/2016/Shrove_Tuesday/armwrestling/1.jpg' alt='main')
+            p.
+              10 марта в клубе НАМАЗОН прошло женское силовое многоборье, приуроченное к <b>Масленице 2016</b>. Соревнования
+              прошли в трёх номинациях: <b>армрестлинге, легрестлинге</b> и <b>борьбе</b>, победить в которой можно было 
+              заставив соперницу сдаться или удержать её в пине.<br>
+              Была одна весовая категория 60+ и три участницы:
+            ul
+              li.
+                <b>Вардугина Виктория</b> - известная армрестлерша и неоднократная победительница силовых единоборств, 
+                организованных клубом Намазон;
+              li.
+                <b>Смородина Виктория</b> - амбициозная спортсменка, специализирующаяся в комбате, боксе, ушу и 
+                пауэрлифтинге;
+              li.
+                <b>Григоренко Оксана</b>, представляющая клуб Намазон.
+            p.
+              В армрестлинге победу на обеих руках одержала фаворитка - <b>Вика Вардугина</b>, уверенно положив обеих своих
+              соперниц.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Фото армрестлинг
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 13
+                      - n = n+1
+                      a.col-sm-4(href='../../img/competitions/2016/Shrove_Tuesday/armwrestling/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/competitions/2016/Shrove_Tuesday/armwrestling/'+n+'.jpg')
+            p.
+              В легрестлинге <b>Вика Вардугина</b> разделила 1-е и 2-е место с <b>Оксаной Григоренко</b>.
+            p.
+              Наиболее интересно и зрелищно проходила борьба. Девушки боролись каждая с каждой в два круга. 
+              Чтобы одержать победу надо было либо заставить соперницу капитулировать, либо удержать её в пине до
+              счёта 7. Время отдельных поединков, как и перерыв между ними, составляло 5 минут.<br>
+              Первой в борьбе была <b>Оксана Григоренко</b>, ощутимую конкуренцию которой составила занявшая второе 
+              место <b>Виктория Смородина</b>.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample2')
+              | Фото борьба
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 29
+                      - n = n+1
+                      a.col-sm-4(href='../../img/competitions/2016/Shrove_Tuesday/wrestling/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/competitions/2016/Shrove_Tuesday/wrestling/'+n+'.jpg')
+            p В целом получилось интересно, небольшое число участниц компенсировалось их высоким уровнем.
+    +footer("../../")
