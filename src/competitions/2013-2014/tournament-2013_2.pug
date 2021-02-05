@@ -1,0 +1,55 @@
+include ../../includes/head.pug
+include ../../includes/header.pug
+include ../../includes/slider.pug
+include ../../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../../','Женские силовые единоборства. Турнир. Октябрь 2013 ')
+  link(rel="stylesheet", href="../../css/ekko-lightbox.css")
+  body
+    +header("../../")
+    main
+      +slider('../../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Результаты прошедших соревнований
+            h4 Женские силовые единоборства. Турнир. Октябрь 2013
+            ul
+              li 
+                a(href="tournament-2013.html") <u>стр. 1</u>
+              li стр. 2
+              li
+                a(href="tournament-2013_3.html") <u>стр. 3</u>
+            h4.text-center <u>Итоги первого тура (четвертьфиналов):</u>
+            h5.text-center <u>ЛИЗА Серговская - ЛИДА Ослоповских</u>
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center
+              tr
+                td Участницы
+                td Вес, кг
+                td Перетягивание
+                td Армрестлинг
+                td Легрестлинг
+                td Сумо (Мерси)
+                td Баллы
+              tr
+                td.text-left ЛИЗА Серговская
+                td 57
+                td 0
+                td 1
+                td 1
+                td 0
+                td 2
+              tr
+                td.text-left <b>ЛИДА Ослоповских</b>
+                td 53
+                td 2
+                td 1
+                td 1
+                td 2
+                td <b>6</b>
+            ul
+              li <a href="tournament-2013.html"><u><< Назад</u></a>
+              li <a href="tournament-2013_3.html"><u>Вперёд >></u></a>
+    +footer("../../")
