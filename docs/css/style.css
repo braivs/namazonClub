@@ -11,6 +11,9 @@ body h1 {
 body h2 {
   font-size: 25px;
 }
+body .my-table-color {
+  background-color: #FAF0E6;
+}
 
 .logo {
   margin-top: 25px;

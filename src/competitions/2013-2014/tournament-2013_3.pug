@@ -1,0 +1,164 @@
+include ../../includes/head.pug
+include ../../includes/header.pug
+include ../../includes/slider.pug
+include ../../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../../','Женские силовые единоборства. Турнир. Октябрь 2013 ')
+  link(rel="stylesheet", href="../../css/ekko-lightbox.css")
+  body
+    +header("../../")
+    main
+      +slider('../../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Результаты прошедших соревнований
+            h4 Женские силовые единоборства. Турнир. Октябрь 2013
+            ul
+              li 
+                a(href="tournament-2013.html") <u>стр. 1</u>
+              li 
+                a(href="tournament-2013_2.html") <u>стр. 2</u>
+              li стр. 3
+            h4.text-center <u>Итоги второго тура (полуфиналов):</u>
+            h5.text-center <u>МАША Барсукова - ЛИДА Ослоповских</u>
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.my-table-color
+              tr
+                td Участницы
+                td Вес, кг
+                td Перетягивание
+                td Армрестлинг
+                td Легрестлинг
+                td Сумо (Мерси)
+                td Баллы
+              tr
+                td.text-left МАША Барсукова
+                td 56
+                td 0
+                td -
+                td -
+                td -
+                td 0
+              tr
+                td.text-left <b>ЛИДА Ослоповских</b>
+                td 53
+                td 2
+                td -
+                td -
+                td -
+                td <b>2</b>
+            h5.text-center <u>ЯРОСЛАВА Шувалова - ВИКА Вардугина</u>
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.my-table-color
+              tr
+                td Участницы
+                td Вес, кг
+                td Перетягивание
+                td Армрестлинг
+                td Легрестлинг
+                td Сумо (Мерси)
+                td Баллы
+              tr
+                td ЯРОСЛАВА Шувалова
+                td 56
+                td 0
+                td -
+                td -
+                td -
+                td 0
+              tr
+                td <b>ВИКА Вардугина</b>
+                td 59
+                td 2
+                td -
+                td -
+                td -
+                td <b>2</b>
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Смотреть фото
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 3
+                      - n = n+1
+                      a.col-sm-4(href='../../img/competitions/2013-2014/silovye-edinoborstva-2013/yaroslava-vika/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/competitions/2013-2014/silovye-edinoborstva-2013/yaroslava-vika/'+n+'.jpg')
+            p.
+              По итогам полуфиналов явное преимущество было у <b>Лидии</b> против Маши и <b>Вики</b> против Ярославы. Они и 
+              вышли в финал наших соревнований.
+            h4.text-center <u>Финал</u>
+            h5.text-center <u>ЛИДА Ослоповских - ВИКА Вардугина</u>
+            p.
+              В финальном поединке сошлись Лида и Вика. Им была предложена борьба submission, при этом обе пробовали
+              свои силы в этом единоборстве впервые в жизни. Поединок был на редкость упорным и почти равным. 
+              Несмотря на значительное преимущество в весе Вика долго не могла добиться победы над упорно 
+              сопротивлявшейся Лидой, которая показала себя упорным и сильным борцом.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample2')
+              | Смотреть фото
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 11
+                      - n = n+1
+                      a.col-sm-4(href='../../img/competitions/2013-2014/silovye-edinoborstva-2013/lida-vika/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/competitions/2013-2014/silovye-edinoborstva-2013/lida-vika/'+n+'.jpg')
+            p В результате <b>ВИКА Вардугина</b> - первая, <b>ЛИДИЯ Ослоповских</b> - вторая.
+            h4.text-center <u>Абсолютная номинация</u>
+            p.
+              Кроме 3-х пар любительской номинации была сформирована отдельная номинация — <b>абсолютная</b>, в которой соперницы 
+              сразу определяли сильнейшую в единственном туре. В абсолютную номинацию попала <b>Юлия Боровик</b>, которая в силу 
+              явного превосходства над прочими участницами в весе (91 кг) была поставлена в пару с опытной <b>Таис</b>.
+            h5.text-center <u>ЮЛИЯ Боровик - ТАИС</u>
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.my-table-color
+              tr
+                td Участницы
+                td Вес, кг
+                td Перетягивание
+                td Армрестлинг
+                td Легрестлинг
+                td Сумо (Мерси)
+                td Баллы
+              tr
+                td ЮЛИЯ Боровик
+                td 91
+                td 2
+                td 0
+                td 1
+                td 0
+                td 3
+              tr
+                td <b>ТАИС</b>
+                td 60
+                td 0
+                td 2
+                td 1
+                td 2
+                td <b>5</b>
+            p.
+              Мощная Юля не оставила никаких шансов Таис в перетягивании каната. Она надеялась на успех и в армрестлинге, 
+              но руки у Таис оказались явно сильнее. В легрестлинге Таис пришлось нелегко, но ей удалось свести поединки 
+              к ничьей. В итоге всё должен был решить последний раунд — борьба до капитуляции. Этот поединок показал, что 
+              Юля очень сильная соперница. Если бы не огромный опыт Таис, ей вряд ли удалось бы одержать победу.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample3' role='button' aria-expanded='false' aria-controls='collapseExample3')
+              | Смотреть фото
+            #collapseExample3.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 7
+                      - n = n+1
+                      a.col-sm-4(href='../../img/competitions/2013-2014/silovye-edinoborstva-2013/tais-yulia/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/competitions/2013-2014/silovye-edinoborstva-2013/tais-yulia/'+n+'.jpg')
+            p <b>ТАИС</b> - первая в абсолютной номинации, <b>ЮЛИЯ Боровик</b> заняла второе место.
+            hr
+            p.
+              Финальную борьбу <b>ВИКТОРИИ Вардугиной</b> с <b>ЛИДИЕЙ Ослоповских</b> и <b>ТАИС</b> с <b>ЮЛИЕЙ БОРОВИК</b> 
+              смотрите в нашем фильме <b>Видео 33</b>, который можно приобрести на 
+              <a href="https://gumroad.com/namazonclub">Gumroad</a>.
+            ul
+              li <a href="tournament-2013_2.html"><u><< Назад</u></a>
+              li Вперёд
+    +footer("../../")
