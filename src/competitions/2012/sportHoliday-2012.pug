@@ -1,0 +1,86 @@
+include ../../includes/head.pug
+include ../../includes/header.pug
+include ../../includes/slider.pug
+include ../../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../../','8 мая 2012. Спортивный праздник в клубе')
+  link(rel="stylesheet", href="../../css/ekko-lightbox.css")
+  body
+    +header("../../")
+    main
+      +slider('../../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Результаты прошедших соревнований
+            h4 8 мая 2012. Спортивный праздник в клубе 
+            img.mainImg(src='../../img/videos/18/mma-sportivnyj-prazdnik-2012-1/14.jpg' alt='main')
+            p.
+              8 мая 2012. Спортивный праздник в клубе<br>
+              <a href="../../girls/tais2013.html">Таис</a> (Санкт-Петербург, 170 см / 60 кг) – лучшая файтерша клуба,
+              не имеющая до этого поражений;<br>
+              <a href="../../girls/kara-teller.html">Кара Теллер</a>  (Москва, 169 см / 56 кг) – перспективная молодая
+              файтерша, одержавшая к этому моменту победу над двумя девушками из клуба «Намазон»;<br>
+              <a href="../../girls/darya-balina.html">Дарья Балина</a>  (Санкт-Петербург, клуб женской самообороны 
+              "Пантера", 162 см / 56 кг). – дебютантка наших соревнований, интенсивно занимающаяся в последнее время
+              боями без правил.<br>
+              Кроме того на празднике были борцовские поединки (сабмишн грэпплинг) и соревнования по легрестлингу.
+            h4 <u>Бой первый.</u> Кара Теллер против Дарьи Балиной 
+            p.
+              Поединок был интересен уже тем. что в нём принимала участие дебютантка соревнований Дарья. Весь первый раунд
+              девушки бились в стойке. Раунд остался полностью за Карой, она работала на длинной дистанции и несколько раз
+              точными ударами рук потрясла Дарью. Начало второго раунда походило на первый, но в середине раунда девушки 
+              "свалились" в борьбу, в которой Кара оказалась сильней и победила своим любимым удушением.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Смотреть фото
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 17
+                      - n = n+1
+                      a.col-sm-4(href='../../img/videos/18/mma-sportivnyj-prazdnik-2012-1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/videos/18/mma-sportivnyj-prazdnik-2012-1/'+n+'.jpg')
+            h5 <u>Бой второй.</u> Кара Теллер против Таис
+            p.
+              <b>Кара</b> и <b>Таис</b> уже встречались раньше и неплохо знали друг друга. В этом бою девушки 
+              подавляющее время боролись в партере. Таис имела некоторое преимущество, но Кара умело защищалась. 
+              В конце первого раунда Таис не выполнила команду судьи на ковре, вступила с ним в разговоры и получила
+              в результате предупреждение. В результате первый раунд остался за Карой. Во втором раунде Таис удалось
+              реализовать своё преимущество в борьбе. Она заставила Кару сдаться, выполнив удушение.<br>
+              Однако, после более внимательного рассмотрения боя, полученное Таис ЗАМЕЧАНИЕ было заменено на 
+              ДИСКВАЛИФИКАЦИЮ. Окончательная победа была присуждена Каре Теллер. Общий счёт в их встречах стал 2-1
+              в пользу Таис.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Смотреть фото
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 11
+                      - n = n+1
+                      a.col-sm-4(href='../../img/videos/18/mma-sportivnyj-prazdnik-2012-2/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/videos/18/mma-sportivnyj-prazdnik-2012-2/'+n+'.jpg')
+            p.
+              Кроме того на празднике были борцовские поединки по правилам сабмишн грэпплинга, а также соревнования по 
+              легрестлингу.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample3' role='button' aria-expanded='false' aria-controls='collapseExampl3')
+              | Смотреть фото
+            #collapseExample3.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 14
+                      - n = n+1
+                      a.col-sm-4(href='../../img/competitions/2012/mma-sportivnyj-prazdnik-2012-3/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/competitions/2012/mma-sportivnyj-prazdnik-2012-3/'+n+'.jpg')
+            p В борьбе приняли участие как женщины, так и мужчины в М-М, Ж-Ж и М-Ж парах.
+            hr
+            p.
+              ММА поединки между девушками Вы можете увидеть в нашем фильме (<b>Видео 18</b>), который можно купить на 
+              <a href="https://gumroad.com/namazonclub">Gumroad</a>.
+
+
+    +footer("../../")
