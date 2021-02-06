@@ -203,7 +203,7 @@ footer span img {
     padding-right: 15px;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 1026px) {
   body img.mainImgSmall {
     width: 100%;
   }

@@ -1,0 +1,117 @@
+include ../../includes/head.pug
+include ../../includes/header.pug
+include ../../includes/slider.pug
+include ../../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../../','Турнир по борьбе для начинающих. Женщины. Май 2014')
+  link(rel="stylesheet", href="../../css/ekko-lightbox.css")
+  body
+    +header("../../")
+    main
+      +slider('../../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Результаты прошедших соревнований
+            h4 Турнир по борьбе для начинающих. Женщины. Май 2014 
+            p.
+              Как показывает практика, любая девушка уже так или иначе владеет навыками борьбы и инстинктом 
+              самозащиты и даже может участвовать в специальных спортивных соревнованиях. Надо только поверить
+              в себя и не бояться соперниц.<br>
+              Наш турнир проходил по правилам сабмишн грэпплинга, дополненных возможностью победить удержанием 
+              (пином) до счёта 10.
+            img.mainImg(src='../../img/videos/36/3.jpg' alt='main')
+            p.
+              В соревновании приняли участие пять девушек (весовая категория от 65.8 до 72.5 кг): <b>Кристина Швец</b> 
+              (67.4 кг), <b>Дарья Уварова</b> (66.5 кг), <b>Ирина Джанаева</b> (70.7 кг), <b>Нина Трофимова</b> 
+              (66.1 кг) и <b>Виктория Вардугина</b> (70.7 кг).<br>
+              Все девушки за исключением Виктории принимали участие в соревнованиях клуба Намазон в первый раз.
+              Вика перед этим выиграла <a href="tournament-2013.html">женские силовые единоборства</a> в 
+              октябре 2013 года, заставив капитулировать в финальном поединке по правилам сабмишн грэпплинга 
+              неуступчивую Лиду Ослоповских. Вика - физически сильная девушка, успешно выступает в студенческих 
+              соревнованиях по арм спорту.
+            p.
+              В каждом поединке девушки боролись до двух побед. Каждый отдельный раунд был ограничен по времени 
+              4 минутами.
+            h5 <u>Предварительные поединки</u>
+            p.
+              Всего было три предварительных поединка. В первом <b>Виктория Вардугина</b> в двух раундах (удержанием
+              в первом и удушением во втором) победила <b>Нину Трофимову</b>
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Смотреть фото
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 3
+                      - n = n+1
+                      a.col-sm-4(href='../../img/videos/36/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/videos/36/'+n+'.jpg')
+            p.
+              Во втором поединке сошлись <b>Дарья Уварова</b> и <b>Ирина Джанаева</b>. В двух раундах победила Дарья, в первом
+              болевым приёмом на руку, во втором - удержанием.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample2')
+              | Смотреть фото
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 3;
+                    while n < 16
+                      - n = n+1
+                      a.col-sm-4(href='../../img/videos/36/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/videos/36/'+n+'.jpg')
+            p.
+              Наиболее напряжённым оказался третий поединок между <b>Кристиной Швец</b> и <b>Викторией Вардугиной</b>. Для
+              определения победительницы девушкам пришлось бороться все три раунда. В первом удушением победила Кристина, 
+              во втором и третьем тоже удушением победу одержала Виктория.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample3' role='button' aria-expanded='false' aria-controls='collapseExample3')
+              | Смотреть фото
+            #collapseExample3.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 16;
+                    while n < 28
+                      - n = n+1
+                      a.col-sm-4(href='../../img/videos/36/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/videos/36/'+n+'.jpg')
+            h5 <u>Финальные поединки</u>
+            p.
+              По результатам предварительных боёв третье место было присуждено <b>Кристине Швец</b>. За четвёртое место 
+              встретились <b>Нина Трофимова</b> и <b>Ирина Джанаева</b>. Победа осталась за Ниной, которая два раза заставила
+              сдаться соперницу (в первом раунде, проведя болевой приём на руку, во втором - выполнив удушение).
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample4' role='button' aria-expanded='false' aria-controls='collapseExample4')
+              | Смотреть фото
+            #collapseExample4.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 4
+                      - n = n+1
+                      a.col-sm-4(href='../../img/videos/37/1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/videos/37/1/'+n+'.jpg')
+            p.
+              В финальном поединке встретились <b>Дарья Уварова</b> и <b>Викторияи Вардугина</b>. Первый раунд не выявил 
+              победительницу, хотя и прошёл с некоторым преимуществом Виктории. Во втором Виктория одержала победу удержанием.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample5' role='button' aria-expanded='false' aria-controls='collapseExample5')
+              | Смотреть фото
+            #collapseExample5.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 4;
+                    while n < 23
+                      - n = n+1
+                      a.col-sm-4(href='../../img/videos/37/2/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/videos/37/2/'+n+'.jpg')
+            p.
+              В результате Виктория Вардугина,  Дарья Уварова  и  Кристина Швец  заняли первое, второе и третье место 
+              соответственно.
+            img(src="../../img/competitions/2013-2014/tournament-2014/DSC03831.JPG", alt="")
+            p.
+              На фотографии слева направо Виктория, Дарья и Кристина
+            hr
+            p.
+              Предварительные поединки турнира есть на <b>Видео 36</b>, финальные - на <b>Видео 37</b>. Наше видео 
+              можно приобрести на <a href="https://gumroad.com/namazonclub">Gumroad</a>. 
+    +footer("../../")

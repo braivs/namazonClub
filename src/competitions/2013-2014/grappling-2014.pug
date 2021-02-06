@@ -1,0 +1,111 @@
+include ../../includes/head.pug
+include ../../includes/header.pug
+include ../../includes/slider.pug
+include ../../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../../','Турнир по сабмишн грэпплингу на призы клуба "НАМАЗОН". Октябрь 2014 ')
+  link(rel="stylesheet", href="../../css/ekko-lightbox.css")
+  body
+    +header("../../")
+    main
+      +slider('../../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Результаты прошедших соревнований
+            h4 Турнир по сабмишн грэпплингу на призы клуба "НАМАЗОН". Октябрь 2014 
+            p.
+              В октябрьском турнире по сабмишн грэпплингу в основном приняли участие девушки, которые уже раньше встречались
+              между собой в  "<a href="tournament-2014.html">Турнире по борьбе для начинающих</a>", который прошёл в клубе в 
+              мае 2014 года. И снова, как и в майском турнире, первое место завоевала <b>Виктория Вардугина</b> (65.3 кг), 
+              второе - <b>Кристина Швец</b> (68.9 кг), третьей стала новичок наших соревнований <b>Зоя Дорофеева</b> (56.0 кг).
+            img.mainImg(src='../../img/videos/41/kz/6.jpg' alt='main')
+            p.
+              Борьба проходила по правилам сабмишн грэпплинга. Кроме того, можно было победить, выполнив удержание
+              (пин) до счёта 5.<br>
+              Турнир проходил в два круга. В поединках первого круга борьба велась в течение 4 минут. Если за это 
+              время победительница не была выявлена, то после двухминутного перерыва поединок продолжался дальше в 
+              течение дополнительных двух минут.<br>
+              Во втором круге дополнительное время после основных 4 минут и двухминутного перерыва составляло 10 
+              минут!
+            p.
+              Ниже мы приводим фотографии поединков победительницы и призёров нашего турнира.
+            h5 <u>Кристина Швец против Зои Дорофеевой</u>
+            p.
+              Новичок наших соревнований Зоя на самом деле оказалась совсем не новичком в единоборствах. За её 
+              плечами было несколько лет тренировок в Русском стиле. В результате, несмотря на разницу в весе более
+              12 килограммов (Кристина 68,9 кг, Зоя 56,0 кг), оба поединка между девушками оказались очень 
+              напряжёнными. Достаточно сказать, что в первом круге соревнования, победительница в этой паре ни в 
+              первые 4 минуты борьбы, ни в дополнительные 2 минуты так и не была выявлена. Ничья.<br>
+              Во втором круге более сильная Кристина одержала победу удержанием (пином) в основное время.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Смотреть фото
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 13
+                      - n = n+1
+                      a.col-sm-4(href='../../img/videos/41/kz/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/videos/41/kz/'+n+'.jpg')
+            h5 <u>Виктория Вардугина против Зои Дорофеевой</u>
+            p.
+              Виктория "разобралась" с Зоей относительно легко, проведя удушение в основное время как в первом, 
+              так и во втором круге.<br>
+              Отметим, что и у Зои были реальные возможности одержать победу, но реализовать свои шансы она не смогла.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample2')
+              | Смотреть фото
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 8
+                      - n = n+1
+                      a.col-sm-4(href='../../img/videos/41/vz/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/videos/41/vz/'+n+'.jpg')
+            h5 <u>Виктория Вардугина против Кристины Швец</u>
+            p.
+              Кристина и Виктории уже встречались между собой в "<a href="tournament-2014.html">Турнире по борьбе для 
+              новичков</a>". Тогда победу одержала Вика. К настоящему турниру Кристина подготовилась лучше, стала 
+              более опытной, Вика же перешла в более лёгкую весовую категорию и на момент поединка была легче своей
+              соперницы более, чем на 3 кг. Таким образом, результат поединка между Кристиной и Викой был 
+              непредсказуем, на лицо явная интрига и ожидалась интересная борьба.<br>
+              Так и получилось. В первом круге в основное и дополнительное время выявить победительницу не удалось.
+              Ничья.<br>
+              Во втором круге только на 10 минуте дополнительного время Виктории удалось одолеть Кристину. Удушение.<br>
+              Соперницы устали, решающее значение имела физическая подготовка и выносливость девушек. Всё это только 
+              придало решающей схватке Виктории и Кристины дополнительную остроту.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample3' role='button' aria-expanded='false' aria-controls='collapseExample3')
+              | Смотреть фото
+            #collapseExample3.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 14
+                      - n = n+1
+                      a.col-sm-4(href='../../img/videos/42/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/videos/42/'+n+'.jpg')
+            p.
+              В результате <b>Виктория Вардугина</b>, <b>Кристина Швец</b> и <b>Зоя Дорофеева</b> заняли первое, второе и 
+              третье место соответственно.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample4' role='button' aria-expanded='false' aria-controls='collapseExample4')
+              | Фото награждения
+            #collapseExample4.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 3
+                      - n = n+1
+                      a.col-sm-4(href='../../img/competitions/2013-2014/grappling-2014/a0'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/competitions/2013-2014/grappling-2014/a0'+n+'.jpg')
+            <br>
+            img.mainImgSmall(src='../../img/competitions/2013-2014/grappling-2014/2014-sg-tournament-winners.jpg' alt='main')
+            p На фотографии слева направо Зоя, Кристина и Виктория.
+            hr
+            p.
+              Поединки Зои с Кристиной и Викой есть на <b>Видео 41</b>, борьба Виктории с Кристиной - на <b>Видео 42</b>. 
+              Наше видео можно приобрести на <a href="https://gumroad.com/namazonclub">Gumroad</a>. 
+
+    +footer("../../")
