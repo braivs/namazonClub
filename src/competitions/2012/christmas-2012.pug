@@ -1,0 +1,91 @@
+include ../../includes/head.pug
+include ../../includes/header.pug
+include ../../includes/slider.pug
+include ../../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../../','Турнир по сабмишн грэпплингу на призы клуба "НАМАЗОН". Октябрь 2014 ')
+  link(rel="stylesheet", href="../../css/ekko-lightbox.css")
+  body
+    +header("../../")
+    main
+      +slider('../../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Результаты прошедших соревнований
+            h4 Рождественский Кубок 2012. ММА турнир
+            img.mainImg(src='../../img/videos/9/main.jpg' alt='main')
+            p.
+              В ММА боях приняли участие <a href="../../girls/elena-vasileva2013.html">Елена Васильева</a> 
+              (Санкт-Петербург) - 168 см / 60 кг, <a href="../../girls/kara-teller.html">Кара Теллер</a> (Москва) 
+              - 169 см / 54 кг и <a href="../../girls/tais2013.html">Таис</a> (Санкт-Петербург) - 170 см / 59 кг. 
+              Турнир прошёл в один круг. Девушки в итоге должны были провести по два боя. Каждый бой состоял из
+              трёх раундов по 4 минуты, перерывы между раундами составили 1 минуту.
+            h5 <u>Бой первый. Елена Васильева против Кары</u>
+            p.
+              В двух первых раундах инициатива была на стороне Елены, которая провела несколько красивых бросков и 
+              имела все шансы "добить" соперницу в партере. Отметим, что Кара при этом умело защищалась.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Смотреть фото
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 12
+                      - n = n+1
+                      a.col-sm-4(href='../../img/videos/9/mma-rozhdestvenskij-kubok-2012-1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/videos/9/mma-rozhdestvenskij-kubok-2012-1/'+n+'.jpg')
+            p.
+              В третьем раунде инициатива постепенно перешла к Каре. Ей удалось сесть в полный маунт, вынудив Елену перейти 
+              к защите. Во время одной из попыток сбросить свою соперницу Елена «отдала» свою голову, чем и воспользовалась 
+              наша гостья из Москвы, практически безукоризненно выполнив удушение.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample2')
+              | Смотреть фото
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 12;
+                    while n < 20
+                      - n = n+1
+                      a.col-sm-4(href='../../img/videos/9/mma-rozhdestvenskij-kubok-2012-1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/videos/9/mma-rozhdestvenskij-kubok-2012-1/'+n+'.jpg')
+            h5 <u>Бой второй.</u> Кара против Таис 
+            p.
+              Таис победила Кару в первом раунде. Энергичная атака, состоящая в основном из ударов ногами 
+              (подавляющее большинство из которых не попали в цель) завершилась переводом поединка в партер, где
+              Таис удалось занять положение сверху.<br>
+              В этой позиции Таис попыталась провести болевой приём на руку соперницы. Кара вывернулась, но при этом
+              позволила сопернице захватить свою голову. В результате Таис победила удушением.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample3' role='button' aria-expanded='false' aria-controls='collapseExample3')
+              | Смотреть фото
+            #collapseExample3.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 20
+                      - n = n+1
+                      a.col-sm-4(href='../../img/videos/9/mma-rozhdestvenskij-kubok-2012-3/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/videos/9/mma-rozhdestvenskij-kubok-2012-3/'+n+'.jpg')
+            h5 <u>Бой третий.</u> Елена Васильева против Таис
+            p.
+              Третий бой был столь же скоротечный, что и второй. Таис победила Елену уже в первом раунде. 
+              После перехода борьбы в партер Таис удалось провести свой любимый болевой приём на руку.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample4' role='button' aria-expanded='false' aria-controls='collapseExample4')
+              | Смотреть фото
+            #collapseExample4.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 15
+                      - n = n+1
+                      a.col-sm-4(href='../../img/videos/9/mma-rozhdestvenskij-kubok-2012-4/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/videos/9/mma-rozhdestvenskij-kubok-2012-4/'+n+'.jpg')
+            p В результате <b>Таис</b> первая, <b>Кара</b> - вторая и <b>Елена Васильева</b> заняла третье место.
+            hr
+            p.
+              Во всех трёх схватках девушки дрались жёстко и бескомпромиссно. Если Вам нравятся такие поединки, то, купив наш
+              фильм (Видео 9) на <a href="https://gumroad.com/namazonclub">Gumroad</a>, Вы сможете всё увидеть сами.
+
+    +footer("../../")
