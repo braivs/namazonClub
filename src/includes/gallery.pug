@@ -1,0 +1,11 @@
+mixin gallery(title, ref, firstElem, maxElem, techName)
+  a.btn.btn-primary.screensBtn(data-toggle='collapse' href="#"+techName role='button' aria-expanded='false' aria-controls=techName)
+    | !{title}
+  .collapse(id=techName)
+    .col-md-12.text-center
+        .row.justify-content-center
+          - var n = firstElem;
+          while n <= maxElem
+            a.col-sm-4(href=ref+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+              img.img-fluid(src=ref+n+'.jpg')
+            - n = n + 1  

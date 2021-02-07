@@ -41,6 +41,8 @@ function watch () {
 }
 
 exports.watch = watch; //for gulp watch start
+exports.pug = HTMLpug;
+
 gulp.task('default', function () {
 	watch(); //for gulp start
 })
