@@ -9,6 +9,18 @@ body
     font-size: 25px
   .my-table-color
     background-color: #FAF0E6
+body#index
+  background: url('../img/backgroundIndex.jpg')
+  main
+    .carousel-inner 
+      margin: 100px 0 50px 0
+      img
+        margin: 0 auto
+    button
+      background-color: #3300FF
+      width: 100px
+    button:nth-of-type(2)
+      margin-left: 50px
 
 .logo 
   margin-top: 25px
@@ -145,6 +157,16 @@ footer
       height: 25px
       opacity: .5
       margin-right: -1px
+footer#index
+  padding: 0 
+
+@media (max-width: 800px)
+  body#index
+    main
+      .carousel-inner 
+        img
+          width: 100%
+
 @media (max-width: 1200px)
   .navbar 
     ul
@@ -156,3 +178,9 @@ footer
   body
     img.mainImgSmall
       width: 100%
+
+@media (max-width: 285px)
+  body#index
+    main
+      button:nth-of-type(2)
+        margin-left: 0   
