@@ -1,0 +1,54 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('../','VIDEO 41 ')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 41 
+            h4 Submission Grappling tournament. Part 1. October, 2014
+            p.
+              Our HD video featuring the submission grappling mini-tournament that was held in 13 Oct 2014, has been divided into two parts : <b>VIDEO 41</b> and <b>VIDEO 42</b>. The first part includes four fights of  <b>Zoya Dorofeeva</b> (56 kg / 123.5 lb), who is a newcomer of our competitions.
+            img.mainImg(src='../img/videos/41/2014-sg-zoya-victoria.jpg' alt='2014-sg-zoya-victoria')
+            p.
+              Previous to that, Zoya was involved in Russian hand-to-hand fighting. Now, here, her opponents were two girls who had competed with each other in the May 2014 Grappling tournament for beginners – <b>Christina Shvets</b> (68.9 kg / 151.9 lb) and <b>Victoria Vardugina</b> (65.3 kg / 144.0 lb). The rules now were the same as then – Pins-and-Submissions, which meant that a wrestler, in order to win an individual fight, must either to force her opponent to submit or to hold her in a pin for a count of five.
+              Zoya proved to be a brave and tough fighter. In spite of being much outweighed by her opponents, she fought stubbornly against them, doing her best not to submit.
+              Suffice it to say that in the 1st fight of Zoya vs Christina, neither the 4 minutes of the regular time nor the 2 extra minutes could create a winner. Only in their 2nd fight, after a hard struggle Zoya found herself on her back and Christina earned a pinfall win over her.
+            h5.
+              Christina Shvets vs Zoya Dorofeeva
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 13
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/41/kz/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/41/kz/'+n+'.jpg')
+            p.
+              As for Victoria, she appeared to be an even more difficult opponent for Zoya. She defeated her twice in their fights, both times with a choke hold. However, Zoya had a few good chances to defeat Vika not only in their first fight but also in their second one. Unfortunately for Zoya, due to her inexperience in such competitions, she wasn’t able to materialize any of those chances.
+            h5 Victoria Vardugina vs Zoya Dorofeeva
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 8
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/41/vz/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/41/vz/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 41</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")
