@@ -1,0 +1,45 @@
+include includes/head.pug
+include includes/headerEng.pug
+include includes/sliderEng.pug
+include includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('','Main')
+  body
+    +header
+    main
+      +slider
+      .container.mainCards
+        .row
+          .col-md-6
+            h3
+              a(href='articles/submissionEng.html') Submission Grappling (Wrestling) as Single Combat
+            img(src='img/main/sg.jpg' alt='')
+            p.
+              <b>Submission grappling</b> (Submission wrestling) is a non-striking hybrid style formed of wrestling, jiu jitsu, sambo, and many other submission fighting styles which consists in applying submission holds and choking tech-niques in order  to make the  opponent  aban-don the fight.   Submission  grappling  plays an important  role in  the  practice of <b>Mixed Martial Arts (MMA)</b> and is considered an effective form of <b>self-defense</b>. 
+            button(type='button', onclick="location.href='articles/submissionEng.html';") Read more...
+          .col-md-6
+            h3
+              a(href='articles/mixEng.html') Mixed Wrestling (Mixwrestling)
+            img(src='img/main/mw.jpg' alt='')
+            p.
+              Our fighting club is attended by both girls and young men. For the girls it’s more comfortable to practice many of wrestling techniques on male partners (we are grateful to the men for their assistance!).
+              Sporting mixed wrestling is also practiced with us. In this case, the competitors for the fights are selected based on their weight categories and physical strength. 
+            button(type='button', onclick="location.href='articles/mixEng.html';") Read more...
+        .row
+          .col-md-6
+            h3
+              a(href='articles/mmaEng.html') MMA (Mixed Martial Arts)
+            img(src='img/main/mma.jpg' alt='')
+            p.
+              <b>MMA</b> ((Mixed Martial Arts) is a full contact com-bat  sport  that  allows the use of both striking and grappling arts while both standing and on the ground, including wrestling, Brazilian jiu-jitsu, sambo, judo, boxing, kickboxing, Muay Thai, karate and other styles. The roots of mo-dern mixed martial arts can be traced back to the ancient  Olympic  combat  sport of Pankration. 
+            button(type='button', onclick="location.href='articles/mmaEng.html';") Read more...
+          .col-md-6
+            h3
+              a(href='competitions/2015-2017/maslenitsa-2016Eng.html') Female power competitions for the Maslenitsa Festival, 2016 
+            img(src='img/main/2016-power competition on Shrove Tuesday.jpg' alt='')
+            p.
+              The female power competition for this year's Maslenitsa Festival took place at the Namazon Club on Thursday, March 10th. It was held in three nominations: armwrestling, leg-wrestling and pins-and-submissions wrestling where a wrestler could win a fight by either submission or pin. There were three participants in all who competed in the same weight category - up to 60 kg.
+            button(type='button', onclick="location.href='competitions/2015-2017/maslenitsa-2016Eng.html';") Read more...
+    +footer

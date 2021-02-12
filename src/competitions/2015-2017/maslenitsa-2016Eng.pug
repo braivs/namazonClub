@@ -1,0 +1,56 @@
+include ../../includes/head.pug
+include ../../includes/headerEng.pug
+include ../../includes/sliderEng.pug
+include ../../includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('../../','Female power competitions for the Maslenitsa Festival, 2016')
+  link(rel="stylesheet", href="../../css/ekko-lightbox.css")
+  body
+    +header("../../")
+    main
+      +slider('../../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 2015 - 2016
+            h4 Female power competitions for the Maslenitsa Festival, 2016
+            img.mainImg(src='../../img/competitions/2016/Shrove_Tuesday/armwrestling/1.jpg' alt='main')
+            p.
+              The female power competition for this year's Maslenitsa Festival took place at the Namazon Club on Thursday, March 10th. It was held in three nominations: armwrestling, leg-wrestling and pins-and-submissions wrestling where a wrestler could win a fight by either submission or pin. There were three participants in all who competed in the same weight category - up to 60 kg:
+            ul
+              li.
+                Viktoria Vardugina - a well-known armwrestler who won numerous combative sports competitions at the Namazon Club;
+              li.
+                Viktoria Smorodina – an ambitious fighter specializing in Wushu, boxing and powerlifting;
+              li.
+                Oxana Grigorenko – the Namazon Club representer.
+            p.
+              The winner in the "armwrestling" nomination became Viktoria Vardugina who confidently defeated her both opponents in both left and right hand fights.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Armwrestling photos
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 13
+                      - n = n+1
+                      a.col-sm-4(href='../../img/competitions/2016/Shrove_Tuesday/armwrestling/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/competitions/2016/Shrove_Tuesday/armwrestling/'+n+'.jpg')
+            p.
+              In the leg-wrestling contest, Viktoria Vardugina and Oxana Grigorenko divided 1st and 2nd places.
+            p.
+              The pins-and-submission fights were the most thrilling part of the competition. The three ladies wrestled each against each other. The fights were won by holding the opponent in a pin for a count of 7, or forcing her into submission. The time limit of the fights was 5 minutes from start to end. Oxana Grigorenko was the absolute winner of the competition. Viktoria Smorodina who proved to be a fairly even match for Oxana won the 2nd place.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample2')
+              | Wrestling photos
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 29
+                      - n = n+1
+                      a.col-sm-4(href='../../img/competitions/2016/Shrove_Tuesday/wrestling/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/competitions/2016/Shrove_Tuesday/wrestling/'+n+'.jpg')
+            p Anyway it was an interesting sporting event. Even though there were only few participants, it was well compensated with their high fitness and wrestling level.
+    +footer("../../")

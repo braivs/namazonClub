@@ -1,0 +1,29 @@
+mixin slider(path='')
+  .container
+    #carouselExampleIndicators.carousel.slide.carousel-fade(data-ride='carousel' data-interval='8000')
+      ol.carousel-indicators
+        li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+        li(data-target='#carouselExampleIndicators' data-slide-to='1')
+        li(data-target='#carouselExampleIndicators' data-slide-to='2')
+        li(data-target='#carouselExampleIndicators' data-slide-to='3')
+        li(data-target='#carouselExampleIndicators' data-slide-to='4')
+        li(data-target='#carouselExampleIndicators' data-slide-to='5')
+      .carousel-inner
+        .carousel-item.active
+          img.d-block.w-100(src=path+'img/sliderEng/slide1.jpg' alt='...')
+        .carousel-item
+          img.d-block.w-100(src=path+'img/sliderEng/slide2.jpg' alt='...')
+        .carousel-item
+          img.d-block.w-100(src=path+'img/sliderEng/slide3.jpg' alt='...')
+        .carousel-item
+          img.d-block.w-100(src=path+'img/sliderEng/slide4.jpg' alt='...')
+        .carousel-item
+          img.d-block.w-100(src=path+'img/sliderEng/slide5.jpg' alt='...')
+        .carousel-item
+          img.d-block.w-100(src=path+'img/sliderEng/slide6.jpg' alt='...')
+      a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.sr-only Previous
+      a.carousel-control-next(href='#carouselExampleIndicators' role='button' data-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.sr-only Next

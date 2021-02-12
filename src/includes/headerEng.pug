@@ -1,0 +1,50 @@
+mixin header(path='')
+  header
+    .container.logo
+      .row
+        .col-12
+          h1 Namazon
+          h2 Club of single combats for women
+    .container
+      nav.navbar.navbar-expand-lg
+        a.navbar-brand(href=path+"homeEng.html")
+          img(src=path+'img/logo.jpg' alt='')
+        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+          //- span.navbar-toggler-icon
+          <span class="" role="button"><i class="fa fa-bars" aria-hidden="true" style="color:#e6e6ff"></i></span>
+
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.mr-auto
+            li.nav-item.active
+              a.nav-link(href=path+'homeEng.html') HOME
+            li.nav-item.active
+              a.nav-link(href='https://gumroad.com/namazonclub') SHOP
+            li.nav-item.dropdown
+              a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                | VIDEO
+              .dropdown-menu(aria-labelledby='navbarDropdown')
+                a.dropdown-item(href=path+'videoAllEng.html') All categories
+                a.dropdown-item(href=path+'videoWrestlingEng.html') Wrestling
+                a.dropdown-item(href=path+'videoMMAEng.html') MMA
+                a.dropdown-item(href=path+'videoBoxingEng.html') Kickboxing, Myay Thai
+                a.dropdown-item(href=path+'videoMixEng.html') Mixed wrestling
+                a.dropdown-item(href=path+'orderEng.html') How to order?
+            li.nav-item.dropdown
+              a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                | GIRLS
+              .dropdown-menu(aria-labelledby='navbarDropdown')
+                a.dropdown-item(href=path+'girls/girlsAllEng.html') All girls
+                a.dropdown-item(href=path+'girls/girls2010-2011Eng.html') 2010 - 2011
+                a.dropdown-item(href=path+'girls/girls2012-2013Eng.html') 2012 - 2013
+            li.nav-item.dropdown
+              a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                | COMPETITIONS
+              .dropdown-menu(aria-labelledby='navbarDropdown')
+                a.dropdown-item(href=path+'competitions/competitionsAllEng.html') All competitions
+                a.dropdown-item(href=path+'competitions/competitions2015-2017Eng.html') 2015 - 2017
+                a.dropdown-item(href=path+'competitions/competitions2013-2014Eng.html') 2013 - 2014
+                a.dropdown-item(href=path+'competitions/competitions2012Eng.html') 2012
+                a.dropdown-item(href=path+'competitions/competitions2011Eng.html') 2011
+                a.dropdown-item(href=path+'competitions/competitionsArchiveEng.html') Archive
+            li.nav-item.active
+              a.nav-link(href='#') CONTACT US

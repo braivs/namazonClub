@@ -1,0 +1,153 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','MMA (Mixed Martial Arts)')
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.mainCards
+        .row
+          .col
+            h3 MMA (Mixed Martial Arts)  
+        .row
+          .col-xl-2
+            img(src='../img/main/mma.jpg' alt='')
+          .col-xl-10
+            p.
+              <b>MMA</b> ((Mixed Martial Arts) is a full contact com-bat  sport  that  allows the use of both striking and grappling arts while both standing and on the ground, including wrestling, Brazilian jiu-jitsu, sambo, judo, boxing, kickboxing, Muay Thai, karate and other styles. The roots of mo-dern mixed martial arts can be traced back to the ancient  Olympic  combat  sport of Pankration. 
+            p.
+              MMA is often called fighting without rules. Actually, it's not quite correct. Though the rules in MMA fights can be fairly tough, we follow some certain rules during the MMA competitions in our Club. These rules are shown below.
+          .col
+            h5 <b>I. Weight classes</b>
+            p.
+              The unified weight division system for women has not been designated yet. In our club we designate limits for seven different weight classes:
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center
+              theat
+                tr
+                  th(scope="col") WEIGHT CLASS NAME
+                  th(scope="col") IN KILOGRAMS (kg)
+                  th(scope="col") IN POUNDS (lb)
+                tr
+                  td FLYWEIGHT 
+                  td 45.4 	
+                  td 100
+                tr
+                  td BANTAMWEIGHT
+                  td 48.5
+                  td 107
+                tr
+                  td FEATHERWEIGHT
+                  td 52.2
+                  td 115
+                tr
+                  td LIGHTWEIGHT 	
+                  td 56.7
+                  td 125
+                tr
+                  td WELTERWEIGHT
+                  td 61.2 	
+                  td 135
+                tr
+                  td MIDDLEWEIGHT
+                  td 65.8
+                  td 145
+                tr
+                  td LIGHT HEAVYWEIGHT
+                  td 72.5
+                  td 160
+            h5 <b>II. Legal techniques:</b>
+            ul
+              li all punches and kicks;
+              li all chokes(no direct attack to the trachea);
+              li all joint locks;
+              li all knee bars and heel hooks;
+              li all takedowns, throws, foot sweeps... .
+            h5 <b>III.  Illegal techniques:</b>
+            ul
+              li eye gouging of any kind;
+              li biting or spitting at an opponent;
+              li butting with the head;
+              li hair pulling;
+              li fish hooking;
+              li groin attacks of any kind;
+              li holding or grabbing the fence;
+              li holding opponent’s attire or gloves;
+              li intentionally placing a finger into any orifice, or into any cut or laceration of your opponent;
+              li downward pointing of elbow strikes;
+              li small joint manipulation (control of three or more fingers/toes is necessary);
+              li strikes to the spine or back of the head;
+              li heel kicks to the kidney;
+              li throat strikes of any kind, including, without limitation, grabbing the trachea.;
+              li clawing, pinching, twisting the flesh or grabbing the clavicle;
+              li the use of abusive language in fighting area;
+              li any unsportsmanlike conduct that causes an injury to opponent;
+              li attacking an opponent on or during the break;
+              li attacking an opponent who is under the care of the referee;
+              li timidity (avoiding contact, or consistent dropping of mouthpiece, or faking an injury);
+              li interference from a mixed martial artists seconds;
+              li throwing an opponent out of the ring or caged area;
+              li flagrant disregard of the referee’s instructions;
+              li attacking an opponent after the bell has sounded the end of the period of unarmed combat.
+            h5 <b>IV.  Penalties:</b>
+            ul
+              li any techniques from article IV;
+              li fleeing the mat;
+              li when a competitor backs away from the action (i.e. away from takedowns and/or away from the ground).
+            h5 <b>V.  Ways to victory:</b>
+            h6 <b>Knockout (KO)</b> 
+            p KO is as soon as a fighter becomes unconscious due to strikes, his opponent is declared the winner. As MMA rules allow ground fighting, the fight is stopped to prevent further injury to an unconscious fighter.
+            h6 <b>Technical Knockout (TKO)</b>
+            u Referee Stoppage
+            p The referee may stop a match in progress if:
+            ul
+              li a fighter becomes dominant to the point where the opponent is unable to intelligently defend himself from attacks, which may occur as quickly as a few seconds;;
+              li a fighter appears to have developed a severe injury: the referee will call for a time out if a fighter's ability to continue is in question as a result of apparent injuries, such as a large cut. The ring doctor will inspect the fighter and stop the match if the fighter is deemed unable to continue safely, rendering the opponent the winner. However, if the match is stopped as a result of an injury from illegal actions by the opponent, either a disqualification or no contest will be issued instead.
+            u Corner Stoppage 
+            p  A fighter's corner men may announce defeat on the fighter's behalf by throwing in the towel during the match in progress or between rounds.
+            u  Retirement 
+            p  If a fighter feels unable to continue after the conclusion of a round, s/he may inform or have the corner inform the referee that s/he forfeits the match to his opponent. 
+            h6 <b>Submission</b>
+            p A fighter may admit defeat during a match by: 
+            ul
+              li a tap on the opponent's body;
+              li a tap on the mat or floor;
+              li verbal announcement.
+            h6 <b>Technical Submission</b>
+            p.
+              A referee may intervene and call a stop to the contest when:<br>
+              - a fighter appears to be unconscious from a grappling hold;<br>
+              - a fighter appears to have suffered a serious injury from a grappling hold.
+            h6 <b>Decision</b>
+            p If the match goes the distance, then the outcome of the bout is determined by three judges. The judging criteria are organization-specific: 
+            u Unanimous Decision 
+            p If all three judges on the panel score a bout unanimously in favor of one fighter. 
+            u Split Decision 
+            p If two judges on the panel score a bout in favor of one fighter, with one judge scoring the bout in favor of the other. 
+            u Majority Decision 
+            p If two judges on the panel score a bout in favor of one fighter, with one judge scoring the bout a draw. 
+            u Draw 
+            p If all three judges on the panel score a bout unanimously in favor of neither fighter. 
+            u Split Draw
+            p  If one judge on the panel score a bout in favor of one fighter, the second in favor of his opponent, and the third in favor of neither fighter. 
+            u Majority Draw 
+            p  If two judges score the bout a draw, with one judge scoring the bout in favor of one fighter. 
+            h6 <b>Technical Decision</b> 
+            p If a fighter behind or even on points commits an intentional foul during the course of the match, and the opponent is unable to continue due to the injury or injuries inflicted by the foul at any subsequent point in the fight, the match is stopped and awarded to injured fighter. 
+            h6 <b>Technical Draw</b> 
+            p If a fighter <b>ahead on points</b> commits an intentional foul during the course of the match, and the opponent is unable to continue due to the injury or injuries inflicted by the foul at any subsequent point in the fight, the match is stopped and is awarded a draw.
+            h6 <b>Forfeit</b> 
+            p A fighter or his representative may forfeit a match prior to the beginning of the match, thereby losing the match.
+            h6 <b>Disqualification</b> 
+            p A "warning" will be given when a fighter commits a foul or illegal action or does not follow the referee's instruction. Three warnings will result in a disqualification. Moreover, if a fighter is injured and unable to continue due to a deliberate illegal technique from his opponent, the opponent will be disqualified.
+            h6 <b>No Contest</b> 
+            p In the event that both fighters commit a violation of the rules, or a fighter is unable to continue due to an injury from an accidental illegal technique, the match will be declared a "No Contest".
+            h5 <b>VI.  Attire</b>
+            p It is allowed to fighters latitude in their choice of attire but open finger gloves, a mouthguard and a protective cup are mandatory. It is within a fighter's discretion to tape parts of their body but you can not wear a gi top, gi pants, wrestling shoes, kneepads, elbow pads, shin guards or ankle supports.
+            h5 <b>VII.  Rounds</b>
+            p Uses three 5-minute rounds. There is a two minute rest period between each round.
+    +footer("../")
