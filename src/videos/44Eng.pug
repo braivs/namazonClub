@@ -1,0 +1,52 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+mixin lightbox(img)
+  a.col-sm-4(href=img data-toggle='lightbox' data-gallery='example-gallery')
+    img.img-fluid(src=img)
+
+doctype html
+html(lang='en')
+  +head('../','VIDEO 44')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col-12
+            h3 VIDEO 44 
+            h4 The female power competition for the Maslenitsa Festival, 2016. Wrestling
+            p.
+              You can read the report on the competitions, the main part of which was these fights, <a href="../competitions/2015-2017/maslenitsa-2016Eng.htm"> here </a>. There you will find a short report on the fights, as well as a lot of photos. For extra beauty, we have added a couple of photos from each fight here. 
+          .col-12.d-flex.justify-content-center
+        .row.mx-auto
+          .col-12.d-flex.justify-content-center
+            p Viktoria Smorodina vs Viktoria Vardugina
+          .col-sm-6
+            +lightbox("../img/videos/44/1_V.Smorodina_vs_V.Vardugina.jpg")
+          .col-sm-6
+            +lightbox("../img/videos/44/2_V.Smorodina_vs_V.Vardugina.jpg")
+        .row.mx-auto.text-center
+          .col-12
+            p Oksana Grigorenko vs Viktoria Vardugina
+          .col-sm-6
+            +lightbox("../img/videos/44/1_O.Grigorenko_vs_V.Vardugina.jpg")
+          .col-sm-6
+            +lightbox("../img/videos/44/2_O.Grigorenko_vs_V.Vardugina.jpg")
+        .row.mx-auto
+          .col-12.d-flex.justify-content-center
+            p Oksana Grigorenko vs Viktoria Smorodina
+          .col-sm-6 
+            +lightbox("../img/videos/44/1_O.Grigorenko_vs_V.Smorodina.jpg")
+          .col-sm-6
+            +lightbox("../img/videos/44/2_O.Grigorenko_vs_V.Smorodina.jpg")
+        .row.mx-auto
+          .col-12
+            hr
+            p.
+              You can buy VIDEO 44 at <a href='https://gumroad.com/namazonclub'> Gumroad </a> 
+    +footer("../")

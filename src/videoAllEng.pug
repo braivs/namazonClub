@@ -1,0 +1,40 @@
+include includes/head.pug
+include includes/headerEng.pug
+include includes/sliderEng.pug
+include includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('','Videos of the competitions and individual fights at the Namazon Club')
+  body
+    +header
+    main
+      +slider
+      .container.videoAll
+        .row.row-text
+          .col
+            h3 Videos of the competitions and individual fights at the Namazon Club
+            h3 Subcategories
+            a(href='videoWrestlingEng.html') Wrestling
+            p.
+              This subcategory includes only videos of woman-on-woman wrestling matches that are mostly carried out according to the rules of  <a href="articles/submissionEng.html">SUBMISSION GRAPPLING</a>
+            include includes/cardsWrestlingEng.pug
+        .row.row-text
+          .col
+            a(href='videoMMAEng.html') MMA
+            p.
+              This subcategory is exclusive for the videos of  <a href="articles/mmaEng.html">FEMALE MMA FIGHTS</a>,  both in a gym and outdoors.
+            include includes/cardsMMAEng.pug
+        .row.row-text
+          .col
+            a(href='videoBoxingEng.html') Kickboxing, Muay Thai
+            p.
+              This subcategory is for the videos containing female  <b>MUAY THAI</b>  and  <b>KICKBOXING</b>  fights, both in a gym and outdoors..
+            include includes/cardsBoxingEng.pug
+        .row.row-text
+          .col
+            a(href='videoMixEng.html') Mixed Wrestling
+            p.
+              Namazon’s man-on-woman wrestling matches are all highly competitive and carried out according to the rules of  <a href="articles/submissionEng.html">SUBMISSION GRAPPLING</a>,  with no time limit in any individual fight.
+            include includes/cardsMixEng.pug
+    +footer
