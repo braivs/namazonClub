@@ -1,0 +1,20 @@
+include includes/head.pug
+include includes/header.pug
+include includes/slider.pug
+include includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('','Написать нам')
+  body
+    +header
+    main
+      +slider
+      .container.order
+        .row
+          .col
+            h2 Написать нам 
+            p Наша почта: <a href='mailto:namazonclub@gmail.com'>namazonclub@gmail.com</a>
+            p Группа Вконтакте: <a href='https://vk.com/namazon'>https://vk.com/namazon</a>
+            p Группа Facebook: <a href='https://www.facebook.com/groups/namazonclub'>https://www.facebook.com/groups/namazonclub</a>
+    +footer
