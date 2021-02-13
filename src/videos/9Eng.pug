@@ -1,0 +1,60 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','VIDEO 9')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 9
+            h4 MMA tournament "Christmas Cup 2012"
+            p.
+              In this tournament participated three fighters: <b>Elena Vasilyeva</b> (St. Petersburg,  5’6” / 132 lb), <b>Kara Teller</b>, Namazon Club’s newcomer (Moscow,  5’7” / 119 lb), Tais (St. Petersburg,  5’7” / 130 lb). The tournament was held in one round. So eventually, the girls had to have two fights each. Each fight consisted of three 4 minute rounds with 1 minute rest between each round.
+            img.mainImg(src='../img/videos/9/main.jpg' alt='main')
+            p The girls fought hard and uncompromisingly in all the three fights.
+            p If you like competitive fights where there are strikes with arms and legs as well as wrestling with armlocks and chokes, then you will have to love our film.
+            h5 <u>First fight</u>  Elena Vasilyeva vs Kara Teller
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 17
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/9/mma-rozhdestvenskij-kubok-2012-1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/9/mma-rozhdestvenskij-kubok-2012-1/'+n+'.jpg')
+            h5 <u>Second fight</u>  Kara Teller vs Tais
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 20
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/9/mma-rozhdestvenskij-kubok-2012-3/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/9/mma-rozhdestvenskij-kubok-2012-3/'+n+'.jpg')
+            h5 <u>Second fight</u>  Kara Teller vs Tais
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample3' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample3.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 13
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/9/mma-rozhdestvenskij-kubok-2012-4/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/9/mma-rozhdestvenskij-kubok-2012-4/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 9</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

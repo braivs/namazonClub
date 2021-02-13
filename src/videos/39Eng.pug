@@ -1,0 +1,37 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('../','VIDEO 39')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 39
+            h4 Mixed wrestling. Villian vs Tais. Part 1. 2014
+            p.
+              In comparison with Alexandr whom you can see on our  <a href="38Eng.html">VIDEO 38</a>,  <b>Villian</b> doesn’t look so big and strong. He weighs only 180 pounds. But he is much faster and far more experienced and skilled in wrestling. In their personal fights with each other Villian usually comes out a winner. However, <b>Tais</b> who is 44 lb lighter than Villian says that it’s easier for her to fight Villian than Alexandr because in her fights against him she is better able to successfully apply her technique.
+            img.mainImg(src='../img/videos/39/main.jpg' alt='main')
+            p.
+              This video features six competitive fights. They were all real! You can judge by the screens below how intense the fights were and how uncompromised the struggle in them was. If you like competitive mixed wrestling, then the <b>VIDEO 39</b> is also for you.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Screenshots
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 21
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/39/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/39/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 39</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

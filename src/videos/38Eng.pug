@@ -1,0 +1,37 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('../','VIDEO 38')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 38
+            h4 Mixed Wrestling.  Alexander against Tais.  2014
+            p.
+              Here you can see another real wrestling fight between a man and woman. <b>Alexandr</b> (5'10" / 187 lb) is pretty big and very strong. <b>Tais</b> (5'7" / 137 lb) has difficulties applying her technique due to his size. However, she is strong and fast enough to efficiently use Alex's relative slowness.
+            img.mainImg(src='../img/videos/38/main.jpg' alt='main')
+            p.
+              If you are a lover of real competitive mixed wrestling and enjoy aggressive and uncompromised struggle between a man and woman on a mat, then we recommend you to watch this video.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 24
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/38/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/38/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 38</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

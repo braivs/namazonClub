@@ -1,0 +1,39 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','VIDEO 31-2 ')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 31-2 
+            h4 Mixed Wrestling - the Best Fights. Part 5.2.  2013
+            p.
+              This is the second part of the fifth video of the series titled <b>«Mixed wrestling - the best fights»</b>. It includes four fights between <b>Tais</b> (5'7" / 135 lb) and <b>Villian</b> (5'8" / 177 lb). Read the description of the Part 5.1.
+            img.mainImg(src='../img/videos/31-2/main.jpg' alt='main')
+            p.
+              Our mixed wrestling contests are always purely competitive (not semi-competitive!) and in the most of them you can see high standard wrestling performance. Besides, we have no men or women on the mat – there are fighters only.
+            p.
+              To find out the final result of our fights on that day (who scored the most submissions in the match and became a winner), just watch the video.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 12
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/31-2/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/31-2/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 31-2</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

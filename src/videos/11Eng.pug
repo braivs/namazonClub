@@ -1,0 +1,39 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','VIDEO 11')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 11
+            h4 Alex vs Elena Vasilyeva (Gladiatriks), Mixed Beach Wrestling. July, 2011
+            p.
+              Alex vs Elena Vasilyeva. Mixed Beach Wrestling. July, 2011<br>
+              This film features two fights for the 3rd place between <b>Elena Vasilyeva</b> (5’6” / 135 lb) and <b>Alex</b> (5’9” / 154 lb), which have been held as part of the mixed wrestling tournament (St. Petersburg, July 2011). Each individual fight had no time limit, according to the rules of the tournament.<br>
+              The struggle between Elena and Alex proved to be extremely hard and exhausting. Suffice it to say that their first fight lasted more than 12 minutes.
+            img.mainImg(src='../img/videos/11/main.jpg' alt='main')
+            p.
+              If you like sporting mixed wrestling, where there are choke holds, body scissors and head scissors, then we believe you will love our film. Watch our film and you will know who - <b>Elena</b> or <b>Alex</b> - took the 3rd place in this mixed tournament.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 27
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/11/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/11/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 11</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

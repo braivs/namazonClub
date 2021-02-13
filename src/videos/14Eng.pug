@@ -1,0 +1,51 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('../','VIDEO 14')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 14
+            h4 Two men against one woman.  Mixed wrestling on a beach. Part 1. 2011
+            p.
+              Two men against one woman.  Mixed wrestling. Part 1. 2011<br>
+              This video features a short improvised mixed wrestling tournament that was held on one of the beaches of St. Petersburg. The men were represented by <b>Alex</b> (5’9” / 154 lb) and <b>Villian</b> (5'8” / 177 lb). The female fighter was <b>Tais</b> (5’7” / 130 lb), the strongest girl of the Namazon Club. The competition was organized in two rounds.<br>
+              In the 1st part of the video series you will be able to see two short male and four mixed fights.
+            img.mainImg(src='../img/videos/14/main.jpg' alt='main')
+            p.
+              If you like sporting mixed wrestling (in a submission grappling style) on a beach, then you will have to love our film. Purchase it if you want to see mixed fights with a strong and skilled female wrestler!
+            h5 Tais vs Alex
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 8
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/14/smeshannyj-plyazhnyj-turnir-2011-4/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/14/smeshannyj-plyazhnyj-turnir-2011-4/'+n+'.jpg')
+            h5 Tais vs Villian
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 4
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/14/smeshannyj-plyazhnyj-turnir-2011-5/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/14/smeshannyj-plyazhnyj-turnir-2011-5/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 14</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

@@ -1,0 +1,65 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','VIDEO 25')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 25
+            h4 Mixed Wrestling - the Best Fights.  Part 2.  2011
+            p.
+              This is the second video of the series titled <b>"Mixed wrestling - the best fights"</b>. Here you can see <b>Villian</b> (5'7" / 177 lb) wrestle three strong female fighters: <b>Tais</b> (5'7" / 130 lb), <b>Elena Vasilyeva</b> (5'6" / 135 lb) and <b>Lyudmila</b> (5'11" / 154 lb).<br>
+              Certainly any one of the three ladies could be a real challenge for you! Tall blonde Lyudmila, a newcomer in the competitions is engaged in Muay Thai. Strong, ambitious Elena competes successfully in armwrestling, submission grappling and MMA. Tais is the strongest and most experienced fighter among all.
+            p.
+              This video features five submission grappling fights (Tais and Elena wrestled Villian twice). The fights take place both in a gym on a mat and outdoors on a sandy beach and on grass. If you like mixed wrestling, then don’t miss this video.
+            img.mainImg(src='../img/videos/25/main.jpg' alt='main')
+            p.
+              This video features five submission grappling fights (Tais and Elena wrestled Villian twice).The fights take place both in a gym on a mat and outdoors on a sandy beach and on grass. 
+            p.
+              If you like mixed wrestling, then don’t miss this video.
+            h5 Villian vs Elena Vasilyeva
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 21
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/25/villian-elena/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/25/villian-elena/'+n+'.jpg')
+            h5 Villian vs Lyudmila
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 3
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/25/villian-lyudmila/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/25/villian-lyudmila/'+n+'.jpg')
+            h5 Villian vs Tais
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample3' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample3.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 6
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/25/villian-tais/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/25/villian-tais/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 25</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

@@ -1,0 +1,49 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','VIDEO 18')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 18
+            h4 MMA. Kara Teller vs Darya Balina and Tais.  May, 2012
+            p.
+              The first match is between the experienced fighter <b>Kara Teller</b> (Moscow,  5’7” / 119 lb) and the newcomer <b>Darya Balina</b> (St. Petersburg,  5’4” / 124 lb). Almost the whole fight is fought standing up where Kara clearly dominates. Darya turns out to be very strong and holds out for nearly two rounds.
+            img.mainImg(src='../img/videos/18/main.jpg' alt='main')
+            p.
+              The second fight (Kara Teller vs Tais), unlike the first one, consists of mainly mat wrestling. For two rounds Tais struggles to win the fight with a chokehold or submission lock, occasionally taking hits from her opponent. The final result is quite surprising.
+            h5 <u>ММА</u> Darya Balina vs Kara Teller 
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 15
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/18/mma-sportivnyj-prazdnik-2012-1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/18/mma-sportivnyj-prazdnik-2012-1/'+n+'.jpg')
+            h5 <u>ММА</u> Kara Teller vs Tais
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 11
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/18/mma-sportivnyj-prazdnik-2012-2/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/18/mma-sportivnyj-prazdnik-2012-2/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 18</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

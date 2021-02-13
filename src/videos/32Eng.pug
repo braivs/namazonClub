@@ -1,0 +1,39 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('../','VIDEO 32')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 32
+            h4 Mixed Wrestling.  Artem vs Tais. 2013
+            p.
+              This unusual wrestling match took place during a summer vacation which <b>Tais</b> (5'7" / 135 lb) spent in the south of Ukraine in 2013.  <b>Artem</b> (5'11" / 177 lb), who now was Tais’s opponent, had already had some experience in competitive wrestling against women (including several fights with well-known bodybuilder <b>Izida</b> at her early career stage).
+            img.mainImg(src='../img/videos/32/main.jpg' alt='main')
+            p.
+              Artem is not a very strong guy but he is ambitious enough because he challenged Tais to this “duel”, wanting to show her - and himself - that he CAN be a fighter! He invited her to wrestle in the woods near the banks of the Dnieper River. Nice sunny weather was favoring the exciting physical contest under the open sky, while the colorful scenic beauty of the nature emphasized the unusualness of the event – the competitive fight between the man and woman.
+            p.
+              If you love this type of wrestling and are curious to see who kicked who's ass, then watch this video!
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 10
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/32/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/32/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 32</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

@@ -1,0 +1,38 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('../','VIDEO 21')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 21
+            h4 MMA. Darya Balina vs Olga. July, 2012
+            p.
+              This is the second MMA fight at the <b>"First Nevsky Arena Tournament"</b>. <b>Darya Balina</b> (5'4" / 124 lb) and  <b>Olga</b> (5'7" / 139 lb) are young participants, who don't have yet enough experience in MMA fights, but that doesn't make their fight less interesting or entertaining; their punches are still strong, the struggle is tough.
+            img.mainImg(src='../img/videos/21/main.jpg' alt='main')
+            p.
+              The girls are fighting three full rounds, and no one of them wants to give up.
+            p If you don't like fights with a great amount of punches and kicks then you might perhaps be a little bit disappointed when watching this fight. However, if you love real, hard, uncompromising fights then you’ll definitely like their match.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 38
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/21/mma-pervaya-nevskaya-arena-2012-2/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/21/mma-pervaya-nevskaya-arena-2012-2/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 21</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

@@ -1,0 +1,51 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','VIDEO 3')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 3
+            h4 Beach Wrestling.  Mixed Tournament.  Two girls vs one man.  September, 2010
+            p.
+              <b>Alex</b>  came to St. Petersburg at the weekend and offered  Tais  (5'7" / 132 lb) and  <b>Natalia Mysik</b>  (5'11" / 154 lb) to hold a mixed tournament on beach wrestling. He had been practicing wrestling a lot recently, and had become physically stronger - 5'9" / 150 lb, which allowed him to count on a successful performance.
+            p.
+              The mixed beach tournament went in three rounds. The fights between the girls were hard enough, especially in the first two rounds. The mixed contests started with Alex’s convincing win over Natalia . Then the luck turned away from Alex ...
+            p.
+              If you like <b>mixed competitive wrestling</b>, then we believe you will love our film. Watch how everything was!
+            img.mainImg(src='../img/videos/3mix/main.jpg' alt='main')
+            h5 Natalia Mysik  vs  Alex 
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 15
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/3mix/wm1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/3mix/wm1/'+n+'.jpg')
+            h5 Alex  vs  Tais
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 18
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/3mix/wm2/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/3mix/wm2/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 3</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

@@ -1,0 +1,38 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','VIDEO 13')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 13
+            h4 Valentina Perfilyeva vs Nadezhda Akhmerova. Kickboxing.  2011
+            p.
+              In this video you will be able to see two kickboxing fights with low kicks allowed. <b>Valentina Perfilyev</b>a  (5'8" / 132 lb) is specialized in karate (kumite), while <b>Nadezhda Akhmerova</b>  (5'6" / 128 lb) goes in for kickboxing.
+            img.mainImg(src='../img/videos/13/main.jpg' alt='main')
+            p.
+              Both fights were hard and uncompromising, with the girls kicking and punching each other aggressively, exchanging strikes, a lot of which were accurate and strong.<br>
+              If you like kickboxing, then you will possibly love this film. Watch it and you will know which girl and how won in the end.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 34
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/13/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/13/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 13</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

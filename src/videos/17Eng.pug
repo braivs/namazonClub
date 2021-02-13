@@ -1,0 +1,60 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','VIDEO 17')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 17
+            h4 MMA and Submission Grappling. February, 2012
+            p.
+              Our video features two ММА fights: <b>Kara Teller</b> (Moscow, 5’7” / 123 lb)  vs  <b>Tais</b> (St. Petersburg,  5’7” / 130 lb) and <b>Kara Teller</b> (Moscow,  5’7” / 119 lb)  vs  <b>Svetlana Solovyeva</b> (St. Petersburg,  5’7” / 123 lb). Kara and Tais could be seen in our previous film (Video 9), while for Svetlana it was the first MMA fight.
+            img.mainImg(src='../img/videos/17/main.jpg' alt='main')
+            p In the second part of the movie you will be able to see a very tough submission grappling fight between Kara and Svetlana Solovyova. Sveta had surpassed her opponent in strength at the time, while Kara in this pair had been more experienced and technically skilled. .
+            p To find out who won, you will have to watch our film.
+            h5 <u>MMA</u>  Svetlana Solovyeva vs Kara Teller
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 12
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/17/mma-kara-svetlany-2012-1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/17/mma-kara-svetlany-2012-1/'+n+'.jpg')
+            h5 <u>ММА</u> Kara Teller vs Tais
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 7
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/17/mma-kara-svetlany-2012-2/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/17/mma-kara-svetlany-2012-2/'+n+'.jpg')
+            h5 <u>Submission Grappling</u>  Svetlana Solovyeva vs Kara Teller
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample3' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample3.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 9
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/17/mma-kara-svetlany-2012-3/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/17/mma-kara-svetlany-2012-3/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 17</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

@@ -1,0 +1,37 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','VIDEO 10 ')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 10 
+            h4 Mixed Wrestling - the Best Fights. Part 1.  2011
+            p.
+              We are beginning a new series titled «Mixed wrestling - the best fights». In the first part of our film there are two gyes confronting <b>Tais</b> (5'7" / 128 lb). One of them - <b>Pasha</b> (5'9" / 143 lb) - is relatively light and fast. The other - <b>Villian</b> (5'8" / 177 lb) - is heavy (compared with Tais) and slow. We have selected, in our view, the most interesting fights of Pasha and Villian against Tais on both a mat and a beach
+            p.
+              If you want to see highly competitive mixed wrestling matches fought in a submission grappling style, then watch our film.
+            img.mainImg(src='../img/videos/10/main.jpg' alt='main')
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 12
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/10/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/10/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 10</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

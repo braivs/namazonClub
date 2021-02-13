@@ -1,0 +1,39 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('../','VIDEO 20')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 20
+            h4 MMA. Yulia Fedutenko vs Kara Teller. July, 2012
+            p.
+              <b>Yulia Fedutenko</b> (5'8" / 130 lb) - the mixed martial arts Club "Tibron", St. Petersburg.  <b>Kara Teller</b> (5'7" / 123 lb) - the Vityaz Club, Moscow. This is the first MMA fight at the "<b>First Nevsky Arena Tournament</b>". Both girls are well technically skilled. There is everything in this match - hard punches and kicks alternate with a close power struggle.
+            img.mainImg(src='../img/videos/20/main.jpg' alt='main')
+            p.
+              The girls are fighting three full rounds. Yulia feels more confident in fighting standing up, while Kara tries to win the fight on the ground.
+            p.
+              If you like hard and uncompromising fights between athletic and attractive women then you will certainly like this one.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 28
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/20/mma-pervaya-nevskaya-arena-2012-1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/20/mma-pervaya-nevskaya-arena-2012-1/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 20</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

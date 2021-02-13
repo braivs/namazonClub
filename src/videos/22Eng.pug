@@ -1,0 +1,37 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','VIDEO 22')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 22
+            h4 Irina and Elena Vasilyeva vs Villian. Mixed Wrestling. 2011
+            p.
+              In these wrestling matches <b>Villian</b> (5’8” / 177 lb) takes on two experienced women (though not both at once but one after the other). <b>Irina</b> (5’9” / 154 lb) is a strong woman and she’s been engaged in Muay Thai and pole dancing. <b>Elena</b> (5’6” / 135 lb), the youngest one of the three participants, is a talented and very ambitious fighter. She’s had a lot of good performances in armwrestling, submission grappling and MMA competitions.
+            img.mainImg(src='../img/videos/22/main.jpg' alt='main')
+            p.
+              If you like mixed wrestling and want to enjoy some competitive mixed wrestling matches fought in a submission grappling style then this video is for you.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 10
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/22/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/22/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 22</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

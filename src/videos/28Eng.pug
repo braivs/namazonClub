@@ -1,0 +1,49 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','VIDEO 28')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 28 
+            h4 Mixed Wrestling - the Best Fights. Part 3.  2013
+            p.
+              This is the third video of the series titled "<b>Mixed wrestling - the best fights</b>". Here you can see two separate wrestling matches of <b>Tais</b> (5'7" / 132 lb) against two male opponents: <b>Villian</b> (5'8" / 177 lb) and <b>Alexander</b> (5’10’’ / 205 lb). Although Tais is a strong and experienced fighter, she had a tough time in these fights, especially against big Alexander who was 73 lb heavier than her.
+            img.mainImg(src='../img/videos/28/main.jpg' alt='main')
+            p.
+              To find out what was the result of this uneven challenge, watch this video.
+            h5 Tais vs Alexander
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 2
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/28/tais-alexander/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/28/tais-alexander/'+n+'.jpg')
+            h5 Tais vs Villian
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample3' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample3.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 8
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/28/tais-villian/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/28/tais-villian/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 28</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

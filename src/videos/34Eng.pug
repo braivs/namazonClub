@@ -1,0 +1,39 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','VIDEO 34')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 34
+            h4 Mixed Wrestling.  Alexander and Villian against Tais.  2013
+            p.
+              In this video you can see a few competitive wrestling fights of <b>Tais</b> (5’7” / 133 lb) against two different male opponents, <b>Villian</b> (5’7” / 173 lb) and <b>Alexander</b> (5’10” / 183 lb), who do not only outweigh her by at least more than 40 pounds, but also are superior to her in physical strength. The rules of the fights are simple – the winner is the one who makes the other submit.
+            img.mainImg(src='../img/videos/34/main.jpg' alt='main')
+            p.
+              In total, there are seven fights included in the video. Actually 14 minutes of intense action with hard and strenuous struggle. It required of Tais a great amount of concentration and speed to withstand the attacks of the big and strong men. Each of her victories was hard-won, while each defeat took away a lot of energy from her.
+            p.
+              If you are a lover of real competitive mixed wrestling and enjoy aggressive and uncompromised struggle between a man and woman on a mat, then we recommend you to watch this video.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 14
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/34/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/34/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 34</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

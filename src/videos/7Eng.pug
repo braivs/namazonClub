@@ -1,0 +1,38 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','VIDEO 7 ')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 7 
+            h4 Gray Wolf (Alex) vs Red Riding Hood (Tais).  Extreme fight in cold weather.  April 2011
+            p.
+              <b>Alex</b> (5'7" / 150 lb) hadn’t forgotten the loss to <b>Tais</b> (5'7" / 128 lb) in their previous beach wrestling match (<b>Video 3</b>), and now having a transit stay in St. Petersburg, he tried to take every opportunity to rematch. He hadn't enough time to go to the sports hall, so it was decided to hold the rematch just in the forest on the lake shore.<br>
+              There was a strong cold wind blowing on the shore. Tais came there wearing a red cap …
+            p.
+              Who eventually won the fight between the modern Little Red Cap and Gray Wolf? Watch our film and find out! If you like sporting mixed wrestling, then this film is for you.
+            img.mainImg(src='../img/videos/7/main.jpg' alt='main')
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 19
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/7/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/7/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 7</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

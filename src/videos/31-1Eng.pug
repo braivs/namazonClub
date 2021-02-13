@@ -1,0 +1,38 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('../','VIDEO 31-1')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 31-1
+            h4 Mixed Wrestling - the Best Fights.  Part 5.1.  2013
+            p.
+              This is the first part of the fifth video of the series titled "<b>Mixed wrestling - the best fights</b>". The reason why we decided to divide the entire video into two parts is that all the fights had taken place in one day but they could not all go in one video due to the site-imposed file size limits. <b>Tais</b> (5'7" / 135 lb) and <b>Villian</b> (5'8" / 177 lb) know each other very well and are about equal in terms of wrestling ability. The fights between them are usually extremely competitive, uncompromisingly hard and interesting from a technical point of view.
+            img.mainImg(src='../img/videos/31-1/main.jpg' alt='main')
+            p.
+              On this day it was no exception. This part of the video includes the first five fights of the day.<br>
+              Highly recommended for those of you who like real competitive mixed!
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 11
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/31-1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/31-1/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 31-1</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

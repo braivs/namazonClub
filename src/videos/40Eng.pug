@@ -1,0 +1,38 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('../','VIDEO 40')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 40
+            h4 Mixed wrestling. Villian vs Tais. Part 2. 2014
+            p.
+              <b>VIDEO 40</b> is the continuation of  <a href="39Eng.html">VIDEO 39</a>.  Here you can see six more wrestling fights between <b>Villian</b> (180 lb) and <b>Tais</b> (136 lb), which took place in 2014. The two competitors knew each other very well, since they have wrestled each other many times over the years and their fights have been always aggressive and competitive.
+            img.mainImg(src='../img/videos/40/main.jpg' alt='main')
+            p.
+              It is interesting to note that, although their fights are, in general, evenly matched, Tais still has a certain advantage over Villian. She knows well how to efficiently use her legs to handle her opponents, while Villian is not a master of that kind of technique and, besides, his legs are easily hurt and more vulnerable to submission holds when on the ground.<br>
+              If you are a fan of competitive wrestling between a man and woman, then watch this <b>VIDEO</b>!
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Screenshots
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 28
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/40/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/40/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 40</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")
