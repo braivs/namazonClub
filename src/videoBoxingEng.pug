@@ -1,0 +1,20 @@
+include includes/head.pug
+include includes/headerEng.pug
+include includes/sliderEng.pug
+include includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('','Kickboxing, Muay Thai')
+  body
+    +header
+    main
+      +slider
+      .container.videoAll
+        .row.row-text
+          .col
+            h3 Kickboxing, Muay Thai
+            p.
+              This subcategory is for the videos containing female  <b>MUAY THAI</b>  and  <b>KICKBOXING</b>  fights, both in a gym and outdoors..
+            include includes/cardsBoxingEng.pug
+    +footer

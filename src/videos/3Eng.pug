@@ -1,0 +1,37 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Видео 3')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 3
+            h4 Beach Wrestling. Mixed Tournament. September, 2010
+            img(src='../img/videos/3/ww/16.jpg' alt='main')
+            p.
+              Female (Namazonian) wrestlers at the tournament were  <b>Tais</b> (5’7” / 132 lb)  and  <b>Natalia Mysik</b> (5’11” / 154 lb).  Their male opponent was Alex (5’9” / 150 lb).  Namely, due to the three fights between Natalia and Tais,  <b>VIDEO 3</b> can go in the  <b>WRESTLING</b>  section of the website, where the  <b>FEMALE  WRESTLING</b>  matches are presented.
+            p.
+              In these fights the rules were <b>SUBMISSION</b> only, no time limits indicated. This time Tais wrestled a woman who was not only heavier than her but physically stronger as well. The struggle was very tough! Both women fought in an aggressive manner, trying to gain an upper position and apply a good pin or submission hold. Especially dramatic were the first two fights during which the wrestlers struggled mostly on wet sand and the advantages were changing.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 42
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/3/ww/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/3/ww/'+n+'.jpg')
+            hr
+            p.
+              <b>ВИДЕО 4</b> можно приобрести в магазине <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

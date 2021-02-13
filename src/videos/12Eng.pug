@@ -1,0 +1,38 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','VIDEO 12')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 12
+            h4 Submission Grappling. Tournament. April, 2010
+            p.
+              This film is a video report from the Submission Grappling tournament (April 2010), where participated <b>Natalia Mysik</b> (5'11" / 154 lb), <b>Maria Rylyova</b> (5'8" / 126 lb) and Valentina Perfilyeva (5'8" / 132 lb). The wrestlers were of different weight categories. In a manner of speaking, it was a club competition in the total weight category.<br>
+              Natalia was one of the favorites in the tournament (as the heaviest wrestler). Another favorite was Maria (as the most skilled). There was a fine struggle between Maria and Valentina, who were near equally matched. Natalia showed some superiority over Valentina in the fights against her.
+            img.mainImg(src='../img/videos/12/main.jpg' alt='main')
+            p.
+              However, how the fights between our favorites ended up, who and how won, you will know if you watch our film.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 16
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/12/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/12/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 12</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

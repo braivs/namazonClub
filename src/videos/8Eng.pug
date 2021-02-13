@@ -1,0 +1,61 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','VIDEO 8')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 8
+            h4 Beach Tournament.  Submission Grappling.  June,  2011
+            p.
+              Two new girls - <b>Elena Vasilyeva</b> (5'6" / 135 lb) and <b>Irina (Vlasta)</b> (5’9’’ / 154 lb) - took part in the beach wrestling tournament alongside with <b>Tais</b> (5’7” / 130 lb). Elena is specialized in submission grappling, judo and armwrestling and Irina in submission grappling, muay thai and pole dancing.<br>
+              The tournament was held in two rounds. The fights had no time limit. Especially tough and hard was the struggle for the 2nd place between the newcomers. Young and skilled Elena fought bravely against older Irina.
+            img.mainImg(src='../img/videos/8/main.jpg' alt='main')
+            p.
+              If you like female wrestling not only indoors, but under the open sky as well, this film will suit you.
+            h5 Elena Vasilyeva  vs  Tais
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 15
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/8/1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/8/1/'+n+'.jpg')
+            h5 Irina (Vlasta)  vs  Tais
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 9
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/8/plyazhnyj-turnir-2011-2/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/8/plyazhnyj-turnir-2011-2/'+n+'.jpg')
+            h5 Elena Vasilyeva  vs  Irina (Vlasta)
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample3' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample3.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 17
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/8/plyazhnyj-turnir-2011-3/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/8/plyazhnyj-turnir-2011-3/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 8</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

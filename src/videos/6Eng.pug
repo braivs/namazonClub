@@ -1,0 +1,38 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','VIDEO 6')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 6
+            h4 Maria Rylyova vs Tais.Submission Grappling + Armwrestling. March, 2011
+            img.mainImg(src='../img/videos/6/2.jpg' alt='main')
+            p.
+              <b>Tais</b> (5’7” / 128 lb) is a numerous winner of Submission Grappling competitions organized by our club. <b>Maria Rylyova</b> (5’8” / 126 lb) is a winner of the Namazon Club Championship on Submission Grappling in 2010, master of sports in armwrestling.<br>
+              The girls started with an arm wrestling contest with both arms (lying on the floor). There was no winner. After that, they continued their competition on the wrestling mat. They fought several rounds in submission grappling.
+            p.
+              If you like skillful wrestling of approximately equally matched women, you will love this film.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 33
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/6/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/6/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 6</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

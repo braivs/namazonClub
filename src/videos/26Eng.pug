@@ -1,0 +1,37 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('../','VIDEO 26')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 26
+            h4 Female Beach Wrestling. Part 1. June, 2011
+            p.
+              This video features a sand-wrestling contest between two ambitious women,  <b>Tais</b>  (5'7" / 130 lb) and  <b>Elena Vasilyeva</b>  (5'6" / 134 lb). Tais, who has competed in various grappling and MMA tournaments, has more experience than her younger opponent. But Elena is not a pushover either. She’s also taken part in 
+            img.mainImg(src='../img/videos/26/main.jpg' alt='main')
+            p.
+              The two women fought nine rounds with submission grappling rules. It was an interesting and exciting wrestling match with a lot of different pins, chokes and submission holds. The both wrestlers struggled arduously for every single point. The weaker woman didn’t give up easily.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 31
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/26/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/26/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 26</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

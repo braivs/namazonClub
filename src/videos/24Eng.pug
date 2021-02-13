@@ -1,0 +1,39 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('../','VIDEO 24')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 24
+            h4 Lyudmila vs Tais. Submission Grappling. October, 2011
+            p.
+              <b>Lyudmila</b> (5’11” / 154 lb) is a strong sportswoman engaged in Muay Thai, but she is a newcomer in our Club’s competitions, while <b>Tais</b> (5’7” / 130 lb) is a repeat winner at the competitions, specializing in Submission Grappling and MMA.
+            img.mainImg(src='../img/videos/24/main.jpg' alt='main')
+            p.
+              As you can see, Lyudmila is much heavier and taller than Tais. In this match, the girls wrestled three rounds. Lyudmila managed to place Tais in a very difficult position at the beginning of the first round.
+            p.
+              Watch the video and you will see what followed and how it all ended. If you like real mat wrestling between some of the fittest and beautiful women then this video is for you.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 14
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/24/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/24/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 24</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

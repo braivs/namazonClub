@@ -1,0 +1,38 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('../','Видео 4')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 4
+            h4 "Christmas Cup 2011". Tournament on Submission Grappling
+            img(src='../img/videos/4/19.jpg' alt='main')
+            p.
+              In the tournament participated:  <b>Natalia Mysik</b>  (5'11" / 154 lb),  <b>Ksenia Voloshina</b>  (5'3" / 141 lb) and  <b>Valentina Perfilyeva</b>  (5'8" / 139 lb).  A feature of the competition was a big disparity in weight and height between the wrestlers.<br>
+              One of them (Natalia) was much heavier and taller than the others. Using this advantage, she frequently put her opponents in pinning holds, especially School Girl Pins, which she would then easily turn into armlocks or chokes. One of these chokes even resulted in her opponent’s knockout.<br>
+              Beyond the tournament, there was a prize fight between  Tais  (5'7" / 132 lb) and Natalia Mysik.
+            p If you like long pinning holds, head scissors and chokes in women’s fights, you will love this film.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 42
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/4/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/4/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 4</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

@@ -1,0 +1,20 @@
+include includes/head.pug
+include includes/headerEng.pug
+include includes/sliderEng.pug
+include includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('','Wrestling')
+  body
+    +header
+    main
+      +slider
+      .container.videoAll
+        .row.row-text
+          .col
+            h3 Wrestling
+            p.
+              This subcategory includes only videos of woman-on-woman wrestling matches that are mostly carried out according to the rules of <a href="articles/submissionEng.html">SUBMISSION GRAPPLING</a>
+        include includes/cardsWrestlingEng.pug
+    +footer

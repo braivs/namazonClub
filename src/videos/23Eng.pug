@@ -1,0 +1,39 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('../','VIDEO 23')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 23
+            h4 Irina (Vlasta)  vs Tais.  Submission Grappling.  May, 2011
+            p.
+              <b>Irina</b>  (5’9” / 154 lb)   s a strong young athlete engaged in Muay Thai and pole dancing, but she is still a newcomer in her wrestling matches in the Namazon Club’s tournaments. <b>Tais</b>  (5’7” / 130 lb)  is a well-known, strong and skilled lady who is specialized in Submission Grappling and ММА.
+            img.mainImg(src='../img/videos/23/main.jpg' alt='main')
+            p.
+              In this competitive match Irina, using her height and weight advantage, tried to force her experienced opponent into a hard body-to-body fight. You will see what came out of it if you watch our video.
+            p.
+              If you like real female wrestling and want to see two trained women struggling hard against each other in a competitive ground fight, then this video is just for you.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 19
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/23/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/23/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 23</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

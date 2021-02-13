@@ -1,0 +1,39 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','VIDEO 2')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 2
+            h4 Submission Grappling. Tournament.  Part 2.  June, 2010
+            p.
+              This is the continuation of the movie 1. It features all the matches of the second round.<br>
+              Here you can see another aggressive fight between the two favorites: <b>Tais</b> (5'7" / 128 lb) and <b>Maria Rylyova</b> (5'7" / 126 lb). And especially dramatic were the fights of <b>Nadezhda Akhmerova</b> (5'6" / 128 lb). Thus, in the struggle with Tais, Nadezhda was knocked down… however, she managed to continue the match.<br>
+              In the fight with Maria, Nadezhda gave her a hell of a struggle. The advantage shifted back and forth between the two girls.
+            p.
+              If you want to see all this and are interested to know the final result, watch the film!
+            img.mainImg(src='../img/videos/2/main.jpg' alt='main')
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 27
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/2/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/2/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 2</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")
