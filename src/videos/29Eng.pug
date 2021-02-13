@@ -1,0 +1,40 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='en')
+  +head('../','VIDEO 29')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+            
+        .row.mx-auto
+          .col
+            h3 VIDEO 29
+            h4 Elena Vasilyeva  vs Tais.   Submission Grappling.  June,  2013
+            p.
+              <b>Elena</b>  (5'7" / 157 lb) is a strong and ambitious young woman. She has fought  <b>Tais</b> (5'7" / 130 lb) many times, two years ago, but then she disappeared from the Club. Now she’s back again, stronger, heavier and more skillful and confident than ever.
+            img.mainImg(src='../img/videos/29/2013-sg-elena-vasilyeva-tais.jpg' alt='2013-sg-elena-vasilyeva-tais')
+            p.
+              From the very first minute it is clear that she wants to give a real fight to her experienced rival. Although Tais is a very strong lady, she’s immediately in trouble against aggressive Elena. And after 15 minutes of intense wrestling, she is forced to admit her defeat.<br>
+              For the first time, Tais loses a competitive submission match to Elena.
+            p If you are curious to see how it happened, watch this video.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 12
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/29/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/29/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 29</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

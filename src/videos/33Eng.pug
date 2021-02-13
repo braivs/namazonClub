@@ -1,0 +1,50 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('../','Video 33')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Video 33
+            h4 Crossfit tournament. Submission Grappling.  October, 2013
+            p.
+              This video features two submission grappling matches which were held as the final part of a Crossfit tournament organized by the St. Petersburg Athletic Center in cooperation with the Namazon Club.<br>
+              The matches were to determine the winners in the two weight categories: up to 70 kg / 155 lb between <b>Lidia Oslopovskih</b> (53 kg / 117 lb) and <b>Victoria Vardugina</b> (69 kg / 152 lb) and in the absolute category between <b>Yulia Borovik</b> (91 kg / 201 lb) and <b>Tais</b> (61 kg / 135 lb).
+            img.mainImg(src='../img/videos/33/2013-sg-lydia-victoria.jpg' alt='2013-sg-lydia-victoria')
+            p.
+              In spite of the significant weight difference between the opponents in each pair, their struggle on the mat was strenuous, entertaining and exciting. The girls fought hard and bravely to win this last decisive part of the tournament.
+            h5 Lidia Oslopovskih  vs  Victoria Vardugina
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 11
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/33/lida-vika/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/33/lida-vika/'+n+'.jpg')
+            h5 Yulia Borovik  vs  Tais
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 7
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/33/tais-yulia/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/33/tais-yulia/'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>VIDEO 33</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.
+    +footer("../")

@@ -1,0 +1,38 @@
+include ../includes/head.pug
+include ../includes/header.pug
+include ../includes/slider.pug
+include ../includes/footer.pug
+
+doctype html
+html(lang='en')
+  +head('../','VIDEO 35')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 35
+            h4 Pins matches. Lidiya Oslopovskih, a newcomer in the Namazon Club's wrestling competitions. 2013
+            p.
+              Lovely young lady,  <b>Lidiya Oslopovskih</b> (53 kg / 117 lbs), is a newcomer to the Namazon wrestling competitions. She is a small but agile fighter, with a very well built body. In this video you can see her three fights with the strongest and most experienced woman of the club, <b>Tais</b> (60 кг / 132 lb).
+            img.mainImg(src='../img/videos/35/2013-sg-lydia-tais.jpg' alt='2013-sg-lydia-tais')
+            p.
+              It’s somewhat interesting and exciting to watch the way how Lidiya struggles, especially on the ground. The rules required the opponents to wrestle to submission only, regardless if one wrestler would pin the other to submission or use another move. This time Tais decided to use a little "naughty" tactic for success.
+            p If you like to watch competitive mat wrestling between two strong and fit women and if you like to see some long pin holds, as well as some hard attempts of the bottom lady to bridge out of these pins, then this video is highly recommended for you.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 7
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/35/0'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/35/0'+n+'.jpg')
+            hr
+            p.
+              You can buy <b>Video 35</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>.  
+    +footer("../")

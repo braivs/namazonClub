@@ -1,0 +1,45 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('../','VIDEO 36')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 VIDEO 36
+            h4.
+              Female submission grappling tournament between beginners. <u>Preliminary fights</u>.<br>
+              Weight class: 145 to 160 lb. May, 2014
+            p.
+              In this competition participate five fighters: Christina (67.4 kg / 148.6 lb), Daria (66.5 kg / 146.6 lb), Irina (70.7 kg / 155.9 lb), Nina (66.1 kg / 145.7 lb) and Victoria (70.7 kg / 155.9 lb). Rules: fights with submissions or pins counted to 10.
+            img(src='../img/videos/36/2014-sg-daria-irina.jpg' alt='')
+            p.
+              All the girls except Victoria Vardugina, who has already wrestled once before in the Namazon Club, are beginners in submission grappling and participate for the first time here in the competition with us.<br>
+              About a half a year ago, in October 2013, Vika won a women's  <a href="33Eng.html">crossfit/wrestling</a> competition  in our club by bringing an uncompromising wrestler Lidiya Oslopovskih to submission in the final fight. Vika is a physically strong young woman who not only learns how to wrestle, but also competes successfully in college arm wrestling tournaments.
+            p.
+              Our competition today is notable for a typically FEMALE wrestling. The rules require the winner of a match to win at least 2 rounds out of 3. Each round has 4 minutes of time limit.<br>
+              The video includes three matches, the first two ones of which consist of two rounds and the last one (Vika vs Christina) goes three rounds.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SCREENSHOTS
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 28
+                      - n = n+1
+                      a.col-sm-4(href='../img/videos/36/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/videos/36/'+n+'.jpg')
+            p.
+              We recommend you to watch this movie (Video 36) if you like to see some ambitious, athletic girls with beautiful bodies competing with each other in a hard-fought contest where everything is allowed: choking, pinning and submission holds.
+            hr
+            p.
+              You can buy <b>VIDEO 36</b> on <a href='https://gumroad.com/namazonclub'>Gumroad</a>. 
+    +footer("../")
