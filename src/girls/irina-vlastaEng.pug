@@ -1,0 +1,54 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Irina (Vlasta)')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Participants of competitions 2010 - 2011
+            h4 IRINA (VLASTA)
+            img.mainImgSmall(src='../img/girls/irina-vlasta/vlasta.jpg' alt='main')
+            p.
+              <b>Irina (Vlasta)</b> ( 5'9" / 154 lb ) - the participant of club's tournaments on SUBMISSION GRAPPLING.<br>
+              She engaged in muay thai and polе dance.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SUBMISSION GRAPPLING
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 4
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/irina-vlasta/subgr/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/irina-vlasta/subgr/'+n+'.jpg')
+            <br>
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample2')
+              | BEACH WRESTLING
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 4
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/irina-vlasta/beachgr/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/irina-vlasta/beachgr/'+n+'.jpg')
+            <br>
+            h4 <u>Results of fights</u>
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.table-warning
+              theat
+                tr
+                  th(scope="col") Vlasta (Irina) vs. Tais
+                  th(scope="col") Vlasta (Irina) vs. Elena Vasilyeva
+                tr
+                  td <a href="../videos/8Eng.html">VIDEO 8. Beach Tournament.Submission Grappling. June, 2011</a> 
+                  td <a href="../videos/8Eng.html">VIDEO 8. Beach Tournament.Submission Grappling. June, 2011</a> 
+    +footer("../")

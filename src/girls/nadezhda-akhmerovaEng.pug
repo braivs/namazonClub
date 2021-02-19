@@ -1,0 +1,64 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('../','Nadezhda Akhmerova')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Participants of competitions 2010 - 2011
+            h4 NADEZHDA AKHMEROVA
+            img.mainImgSmall(src='../img/girls/nadezhda-akhmerova/nadezhda.jpg' alt='main')
+            p.
+              <b>Nadezhda Akhmerova</b> ( 5'6" / 132 lb )  -  the participant of club's tournaments on SUBMISSION GRAPPLING.<br>
+              She can participate in competitions on kickboxing and MMA also.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SUBMISSION GRAPPLING
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 8
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/nadezhda-akhmerova/subgr/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/nadezhda-akhmerova/subgr/'+n+'.jpg')
+            <br>
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample2')
+              | KICKBOXING
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 8
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/nadezhda-akhmerova/kick/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/nadezhda-akhmerova/kick/'+n+'.jpg')
+            <br>
+            h4 <u>Results of fights</u>
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.table-warning
+              theat
+                tr
+                  th(scope="col") Nadezhda Akhmerova vs. Maria Rylyova
+                  th(scope="col") Nadezhda Akhmerova vs. Tais
+                tr
+                  td <a href="../videos/1Eng.html">VIDEO 1. Submission grappling. Tournament. Part 1. June, 2010</a> 
+                  td <a href="../videos/1Eng.html">VIDEO 1. Submission grappling. Tournament. Part 1. June, 2010</a> 
+                tr
+                  td <a href="../videos/2Eng.html">VIDEO 2. Submission grappling. Tournament. Part 2. June, 2010</a>
+                  td <a href="../videos/2Eng.html">VIDEO 2. Submission grappling. Tournament. Part 2. June, 2010</a>
+                
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.table-warning
+              theat
+                tr
+                  th(scope="col") Nadezhda Akhmerova vs. Valentina Perfilyeva
+                tr
+                  td <a href="../videos/13Eng.html">VIDEO 13. Kickboxing. Nadezhda Akhmerova vs Valentina Perfilyeva. 2011</a>
+    +footer("../")

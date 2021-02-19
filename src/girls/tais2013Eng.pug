@@ -1,0 +1,83 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Tais')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Participants of competitions 2012 - 2013
+            h4 Tais
+            img.mainImg(src='../img/girls/tais2013/main.jpg' alt='main')
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | Other photos
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 6
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/tais2013/tais-0'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/tais2013/tais-0'+n+'.jpg')
+            p.
+              <b>Tais</b> (5’7” / 130 lb) is a skilled and strong woman who is specialized in various combative sports. She competes successfully in Submission Grappling and MMA competitions. She has a beautiful, flexible body and a character of a dominant fighter. But, as a woman in daily life out of gym, Tais is warm, open and approachable. She's a very pleasant and comfortable person to be with. If you’ve ever met her you would never think that this charming, lovely lady could be a formidable opponent for you on a mat. You’d hardly believe, looking at her, that she’d be able to beat you up without getting in trouble, or pin you down helplessly, or squeeze you senseless between her beautiful, powerful thighs. However, she’s really very good in doing all these things!
+            h4 <u>Tais in MMA fights</u>
+            h4 Tais vs Elena Vasilyeva. Christmas Cup 2012
+            img.mainImg(src='../img/girls/tais2013/mma-rozhdestvenskij-kubok-2012-4/1.jpg' alt='main')
+            p.
+              The fight was scheduled for 3 four-minute rounds with a one-minute rest period between each round. As it happened, though, it didn’t take the fighters long to determine a winner. Tais defeated <a href="elena-vasileva2013Eng.html">Lena</a>  (5'6" / 132 lb) already in the first round.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample2')
+              | Other photos
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 15
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/tais2013/mma-rozhdestvenskij-kubok-2012-4/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/tais2013/mma-rozhdestvenskij-kubok-2012-4/'+n+'.jpg')
+            p After having mounted her opponent, Tais could freely deliver punches to Kara’s head from the top position, but she chose to make her submit with an arm lock.
+            h4 Tais vs Kara Teller. 2012
+            img.mainImg(src='../img/girls/tais2013/mma-kara-svetlany-2012-2/1.jpg' alt='main')
+            p.
+              During 2012 Tais has had three fights with <a href="kara-tellerEng.html">Kara Teller</a> (5'7" / 119 lb). Two of them Tais won with the victory by fall. In the third fight she was disqualified for arguing with the referee, and Kara was declared a winner.<br>
+              The photo album below shows some pics of the second fight between Tais and Kara. In that fight Tais destroyed her opponent already in round 1.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample3' role='button' aria-expanded='false' aria-controls='collapseExample3')
+              | Other photos
+            #collapseExample3.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 7
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/tais2013/mma-kara-svetlany-2012-2/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/tais2013/mma-kara-svetlany-2012-2/'+n+'.jpg')
+            p.
+              Note that unlike in their first match, Kara managed to offer good resistance, and even counterattack a couple of times, fighting furiously, but the fight was too difficult and the chances were not in her favor at all.
+            h4 <u>Tais in Submission Grappling fights</u>
+            p.
+              Tais has won all the submission grappling tournaments organized by the Namazon Club in 2008–2011. As a wrestler she was second to none, both on a mat and on sand beaches.<br>
+              Besides, Tais won many individual wrestling fights against particularly strong opponents. For example, she defeated such well-known Ukrainian bodybuilders as <b>Irina Dergacheva</b> (Izida) and <b>Anna Mihailenko</b>, bringing them to submission, and she more than once beat <b>Alesya Veresova</b> who had been a multiple champion of Byelorussia in arm wrestling and is recently a freestyle wrestling coach.
+            p.
+              In <b>2012</b>, in a competitive submission fight, Tais overpowered <b>Varvara Akulova</b> (5'9" / 165 lb) who during her early years had been twice recognized by the Guinness Book of Records as the strongest girl in the world, and who at the present day is a master of sports in weightlifting and powerlifting.
+            img.mainImg(src='../img/girls/tais2013/tais-varvara.jpg' alt='main')
+            p <b>Tais</b> vs <b>Varvara Akulova</b>
+            p.
+              In <b>June 2013</b>, Tais again met her old rival,  <a href="elena-vasileva2013Eng.html">Elena Vasilyeva</a>  (5'7" / 157 lb), who had been away from Namazon Club for nearly two years, and during that time had gained weight and strength and had greatly improved her wrestling ability.<br>
+              It was a hard fought and fairly even match, with submissions coming from both sides. And after more than 20 minutes of struggling, Lena finally defeated her more experienced opponent. Thus, Tais lost the wrestling match for the first time versus Elena.
+            img.mainImg(src='../img/girls/tais2013/2013-sg-elena-vasilyeva-tais.jpg' alt='main')
+            p <b>Tais</b> vs <b>Elena Vasilyeva</b>
+            h4 <u>Results for 2012 MMA Tournaments</u>
+            p Win-loss-draw record – 3:1:0  (for May 8, 2012)
+            <hr>
+            p.
+              In our store on <a href="https://gumroad.com/namazonclub">Gumroad</a> you can purchase full videos of Tais’s fights 2012-2013 – MМА fights (Videos 9, 17 and 18), submission grappling fights (Videos 19, 29, 33 and 35) and mixed wrestling fights (Videos 28, 30, 31-1, 31-2, 32 and 34).
+    +footer("../")

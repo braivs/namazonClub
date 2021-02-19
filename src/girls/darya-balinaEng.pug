@@ -1,0 +1,53 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Darya Balina')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Participants of competitions 2012 - 2013
+            h4 Darya Balina 
+            img.mainImg(src='../img/girls/darya-balina/main.jpg' alt='main')
+            p.
+              <b>Darya Balina</b> is a young fighter from St. Petesburg  (5’4” / 124 lb). She trains herself in martial arts in the female self-defense Club "Panther". At the Club "Namazon" she had a pair of hard-fought MMA fights where she displayed stamina and a will to win. In her last fight there Darya faced an opponent who exceeded her in weight about 15 pounds, and in spite of this disadvantage, she was able to avoid defeat.
+            p.
+              The first MMA fight that Darya Balina had at the Namazon Club was against our guest from Moscow  <a href="kara-tellerEng.html">Kara Teller</a>  (5’7” / 123 lb). It went two rounds with the more experienced Kara prevailing, who won by a choke in the middle of the 2nd round.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | See photos
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 17
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/darya-balina/mma-sportivnyj-prazdnik-2012-1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/darya-balina/mma-sportivnyj-prazdnik-2012-1/'+n+'.jpg')
+            p.
+              The second time Darya fought MMA was in July 2012 when she participated in the Nevskaya Arena Tournament organized by the Club. In that fight her opponent was another MMA newcomer <b>Olga</b>  (5’7” / 139 lb). The both girls were highly motivated to show themselves in the best possible way. They fought three rounds of four minutes each with one minute rest between the rounds. Olga was 15 lb (7 kg) heavier than Darya and had the heavier punches as well, so Darya got it really bad from her. However, eventually Darya was able to tough it out through all the rounds and tie the match. It was a hard-won draw.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample2')
+              | See photos
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 38
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/darya-balina/mma-pervaya-nevskaya-arena-2012-2/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/darya-balina/mma-pervaya-nevskaya-arena-2012-2/'+n+'.jpg')
+            h4 <u>Results for MMA fight 2012</u>
+            p Win-loss-draw record – 0:1:1 (for 1 July 2012)
+            hr
+            p.
+              In our store on <a href="https://gumroad.com/namazonclub">Gumroad</a> you can purchase full videos of Darya’s MMA fights held in the Namazon Club (Videos 18 and 21).
+
+
+    +footer("../")

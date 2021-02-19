@@ -1,0 +1,59 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','MARIA RYLYOVA')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Participants of competitions 2010 - 2011
+            h4 MARIA RYLYOVA 
+            img.mainImg(src='../img/girls/mariya-ryljova/7.jpg' alt='main')
+            p.
+              <b>Maria Rylyova</b> ( 5'8" / 130 lb )  is a winner of the championship of "Namazon" club in SUBMISSION GRAPPLING 2010.<br>
+              Maria - master of sports of the Russion Federation in arm wrestling.
+            h4 SUBMISSION GRAPPLING
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | See photos
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 8
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/mariya-ryljova/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/mariya-ryljova/'+n+'.jpg')
+            h4 <u>Results of fights</u>
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.table-warning
+              theat
+                tr
+                  th(scope="col") Maria Rylyova vs. Valentina Perfilyeva
+                  th(scope="col") Maria Rylyova vs. Natalia Mysik
+                tr
+                  td <a href="../videos/12Eng.html">VIDEO 12. Submission grappling. Tournament. April, 2010</a> 
+                  td <a href="../videos/12Eng.html">VIDEO 12. Submission grappling. Tournament. April, 2010</a> 	
+                
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.table-warning
+              theat
+                tr
+                  th(scope="col") Maria Rylyova vs. Tais
+                  th(scope="col") Maria Rylyova vs. Nadezhda Akhmerova
+                tr
+                  td <a href="../videos/1Eng.html">VIDEO 1. Submission grappling. Tournament. Part 1. June, 2010</a>
+                  td <a href="../videos/1Eng.html">VIDEO 1. Submission grappling. Tournament. Part 1. June, 2010</a>
+                tr
+                  td <a href="../videos/2Eng.html">VIDEO 2. Submission grappling. Tournament. Part 2. June, 2010</a>
+                  td <a href="../videos/2Eng.html">VIDEO 2. Submission grappling. Tournament. Part 2. June, 2010</a>
+                tr
+                  td <a href="../videos/6Eng.html">VIDEO 6. Maria Rylyova vs Tais. March, 2011</a>
+                
+
+    +footer("../")

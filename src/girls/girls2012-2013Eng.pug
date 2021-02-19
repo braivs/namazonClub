@@ -1,0 +1,21 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('../','Participants of competitions 2012 - 2013')
+  body
+    +header("../")
+    main
+      +slider("../") 
+      .container.videoAll.girls
+        .row.row-text
+          .col
+            h3 Participants of competitions
+        .row.row-text
+          .col
+            h5 2012-2013
+            include ../includes/cardsGirls2012-2013Eng.pug
+    +footer("../")

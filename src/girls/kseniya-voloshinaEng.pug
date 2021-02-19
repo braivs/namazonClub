@@ -1,0 +1,43 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Ksenia Voloshina')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Participants of competitions 2010 - 2011
+            h4 KSENIA VOLOSHINA
+            img.mainImgSmall(src='../img/girls/kseniya-voloshina/kseniya.jpg' alt='main')
+            p.
+              <b>Ksenia Voloshina</b> ( 5'3" / 141 lb ) - the participant of club's tournaments on SUBMISSION GRAPPLING.<br>
+              She is a prize-winner of the tournament on submission grappling "Christmas Cup 2011".
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | SUBMISSION GRAPPLING
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 8
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/kseniya-voloshina/subgr/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/kseniya-voloshina/subgr/'+n+'.jpg')
+            
+            h5 <u>Results of fights</u>
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.table-warning
+              theat
+                tr
+                  th(scope="col") Ksenia Voloshina vs. Natalia Mysik
+                  th(scope="col") Ksenia Voloshina vs. Valentina Perfilyeva
+                tr
+                  td <a href="../videos/4Eng.html">VIDEO 4. "Christmas Cup 2011". Tournament on Submission Grappling</a> 
+                  td <a href="../videos/4Eng.html">VIDEO 4. "Christmas Cup 2011". Tournament on Submission Grappling</a> 
+    +footer("../")

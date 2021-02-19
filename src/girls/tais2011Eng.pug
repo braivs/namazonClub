@@ -1,0 +1,90 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','TAIS')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Participants of competitions 2010 - 2011
+            h4 TAIS 
+            img.mainImg(src='../img/girls/tais2011/8.jpg' alt='main')
+            p.
+              <b>Tais</b> ( 5'7" / 130 lb ) is a many-time winner of the SUBMISSION GRAPPLING championships of "NAMAZON" club. She is the best MMA fighter of our club.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | TAIS. GALLERY
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 12
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/tais2011/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/tais2011/'+n+'.jpg')
+            <br>
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample2')
+              | SUBMISSION GRAPPLING
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 8
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/tais2011/subgr/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/tais2011/subgr/'+n+'.jpg')
+            <br>
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample3' role='button' aria-expanded='false' aria-controls='collapseExample3')
+              | ММА
+            #collapseExample3.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 8
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/tais2011/mma/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/tais2011/mma/'+n+'.jpg')
+            <br>
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample4' role='button' aria-expanded='false' aria-controls='collapseExample4')
+              | KARATE
+            #collapseExample4.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 4
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/tais2011/karate/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/tais2011/karate/'+n+'.jpg')
+            h4 <u>Results of fights</u>
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.table-warning
+              theat
+                tr
+                  th(scope="col") Tais vs. Maria Rylyova
+                  th(scope="col") Tais vs. Nadezhda Akhmerova
+                tr
+                  td <a href="../videos/1Eng.html">VIDEO 1. Submission grappling. Tournament. Part 1. June, 2010</a> 
+                  td <a href="../videos/1Eng.html">VIDEO 1. Submission grappling. Tournament. Part 1. June, 2010</a>
+                tr
+                  td <a href="../videos/2Eng.html">VIDEO 2. Submission grappling. Tournament. Part 2. June, 2010</a> 
+                  td <a href="../videos/2Eng.html">VIDEO 2. Submission grappling. Tournament. Part 2. June, 2010</a>
+                tr
+                  td <a href="../videos/6Eng.html">VIDEO 6. Maria Rylyova vs Tais. March, 2011</a>  	
+                
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.table-warning
+              theat
+                tr
+                  th(scope="col") Tais vs. Elena Vasilyeva
+                  th(scope="col") Tais vs. Vlasta
+                tr
+                  td <a href="../videos/8Eng.html">VIDEO 8. Beach Tournament.Submission Grappling. June, 2011</a>
+                  td <a href="../videos/8Eng.html">VIDEO 8. Beach Tournament.Submission Grappling. June, 2011</a>
+                tr
+                  td <a href="../videos/16Eng.html">VIDEO 16. Youth vs Experience. Submission grappling. June, 2011</a>
+    +footer("../")

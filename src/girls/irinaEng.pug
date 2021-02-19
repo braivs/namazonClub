@@ -1,0 +1,48 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('../','IRINA')
+  link(rel="stylesheet", href="../css/ekko-lightbox.css")
+  body
+    +header("../")
+    main
+      +slider('../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 Participants of competitions 2010 - 2011 
+            h4 IRINA 
+            img.mainImg(src='../img/girls/irina/irina.jpg' alt='main')
+            p.
+              <b>IRINA</b> ( 5'9" / 154 lb ) - one of the strongest participants of tournaments, the championships and separate fights on <b>SUBMISSION GRAPPLING</b>, organized by club "Namazon". Spending each fight vigorously and uncompromisingly, Irina could make a competition to any opponent.
+            p.
+              As an example photos of episodes of one of last fights Irina against <b>Tais</b> and <b>Izida</b> (known Ukrainian bodybuilder and mixed wrestler) are shown.
+            h4 SUBMISSION GRAPPLING
+            p <b>Irina</b> vs. <b>Izida</b>
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | See photos
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 10
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/irina/subgr/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/irina/subgr/'+n+'.jpg')
+            h4 BEACH GRAPPLING
+            p <b>Irina</b> vs. <b>Tais</b>
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample2')
+              | See photos
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 6
+                      - n = n+1
+                      a.col-sm-4(href='../img/girls/irina/beachgr/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../img/girls/irina/beachgr/'+n+'.jpg')
+    +footer("../")
