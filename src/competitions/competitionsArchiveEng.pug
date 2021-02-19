@@ -1,0 +1,19 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../','Competitions archive')
+  body
+    +header("../")
+    main
+      +slider("../")
+      .container.videoAll
+        .row.row-text
+          .col
+            h3 Results of the past competitions
+            h3 Archive
+            include ../includes/cardsCompetitionsArchiveEng.pug
+  +footer("../")

@@ -1,0 +1,19 @@
+include ../includes/head.pug
+include ../includes/headerEng.pug
+include ../includes/sliderEng.pug
+include ../includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('../','Competitions 2012')
+  body
+    +header("../")
+    main
+      +slider("../")
+      .container.videoAll
+        .row.row-text
+          .col
+            h3 Results of the past competitions 
+            h3 2012
+            include ../includes/cardsCompetitions2012Eng.pug
+  +footer("../")

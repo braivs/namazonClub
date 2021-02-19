@@ -1,0 +1,134 @@
+include ../../includes/head.pug
+include ../../includes/header.pug
+include ../../includes/slider.pug
+include ../../includes/footer.pug
+
+doctype html
+html(lang='ru')
+  +head('../../',"Women's Power Event Tournament. October, 2013")
+  link(rel="stylesheet", href="../../css/ekko-lightbox.css")
+  body
+    +header("../../")
+    main
+      +slider('../../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 2013-2014
+            h4 Women's Power Event Tournament. October, 2013
+            ul
+              li 
+                a(href="tournament-2013Eng.html") <u>page 1</u>
+              li page 2
+              li
+                a(href="tournament-2013_3Eng.html") <u>page 3</u>
+            h4.text-center <u>Results of the first round (Quarter-finals):</u>
+            h5.text-center <u>LISA Sergovskaya vs LIDA Oslopovskih</u>
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.my-table-color
+              tr
+                td Competitors
+                td Weight (lb)
+                td Tug of war
+                td Arm wrestling
+                td Leg wrestling
+                td Sumo (Mercy) 	
+                td Points
+              tr
+                td.text-left LISA Sergovskaya
+                td 127
+                td 0
+                td 1
+                td 1
+                td 0
+                td 2
+              tr
+                td.text-left <b>LIDA Oslopovskih</b>
+                td 117
+                td 2
+                td 1
+                td 1
+                td 2
+                td <b>6</b>
+            p.
+              In the first pair, a significant advantage was on the side of Lida who was, among other things, more spirited to win the contest.
+            h5.text-center <u>DARINA Chupahina vs VIKA Vardugina</u>
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.my-table-color
+              tr
+                td Competitors
+                td Weight (lb)
+                td Tug of war
+                td Arm wrestling
+                td Leg wrestling
+                td Sumo (Mercy) 	
+                td Points
+              tr
+                td.text-left DARINA Chupahina
+                td 141
+                td 0
+                td 0
+                td 1
+                td 0
+                td 1
+              tr
+                td.text-left <b>VIKA Vardugina</b>
+                td 152
+                td 2
+                td 2
+                td 1
+                td 2
+                td <b>7</b>
+            p In the second pair, the advantage of <b>Vika</b> was evident..
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | See photos
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 16
+                      - n = n+1
+                      a.col-sm-4(href='../../img/competitions/2013-2014/silovye-edinoborstva-2013/darina-viktoria/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/competitions/2013-2014/silovye-edinoborstva-2013/darina-viktoria/'+n+'.jpg')
+            h5.text-center <u>YAROSLAVA Shuvalova vs MASHA Barsukova</u>
+            table.table.table-sm.table-bordered.table-responsive-sm.text-center.my-table-color
+              tr
+                td Competitors
+                td Weight (lb)
+                td Tug of war
+                td Arm wrestling
+                td Leg wrestling
+                td Sumo (Mercy) 	
+                td Points
+              tr
+                td.text-left <b>ЯРОСЛАВА Шувалова</b>
+                td 124
+                td 2
+                td 1
+                td 1
+                td 0
+                td <b>4</b>
+              tr
+                td.text-left <b>МАША Барсукова</b>
+                td 124
+                td 0
+                td 1
+                td 1
+                td 2
+                td <b>4</b>
+            p.
+              The struggle in the third pair was very tough, the opponents almost evenly matched. Yaroslava is naturally stronger than Masha, but Masha is better trained, more skilled and cunning. The result was <b>a draw by 4-4</b>.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample2')
+              | See photos
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 10
+                      - n = n+1
+                      a.col-sm-4(href='../../img/competitions/2013-2014/silovye-edinoborstva-2013/yaroslava-masha/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/competitions/2013-2014/silovye-edinoborstva-2013/yaroslava-masha/'+n+'.jpg')
+            p.
+              The winners of the first two pairs and the both contestants of the third pair entered the semi-finals where they had to compete with each other only in one competition event, tug of war.
+            ul
+              li <a href="tournament-2013Eng.html"><u><< Prev</u></a>
+              li <a href="tournament-2013_3Eng.html"><u>Next >></u></a>
+    +footer("../../")
