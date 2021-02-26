@@ -1,0 +1,42 @@
+include ../../includes/head.pug
+include ../../includes/headerEng.pug
+include ../../includes/sliderEng.pug
+include ../../includes/gallery.pug
+include ../../includes/footerEng.pug
+
+doctype html
+html(lang='ru')
+  +head('../../','Beach tournament. Submission Grappling. June, 2011')
+  body
+    +header("../../")
+    main
+      +slider('../../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 2011
+            h4 Beach tournament. Submission Grappling. June, 2011
+            img(src='../../img/videos/8/main.jpg' alt='main')
+            p.
+              The tournament was held in two rounds. The fights had no time limit.<br>
+              In the competition participated three fighters:
+            ul
+              li <b>Tais</b> (5’7” / 130 lb) - a numerous winner of club submission grappling tournaments;
+              li <b>Elena Vasilyeva</b>  (5’6” / 134 lb) - a young and promising Namazonian fighter. She also goes in for judo and armwrestling;
+              li <b>Irina (Vlasta)</b>  (5’9” / 154 lb) - a newcomer in our competitions. She is engaged in Muay Thai and pole dancing.
+            p.
+              Experienced Tais handled her opponents with relative ease, using various grappling techniques (chokes and pain holds). Tais took 1st place, defeating both Elena and Irina by a score of 2-0.
+            h5 Tais vs. Elena Vasilyeva
+            +gallery("See photos", "../../img/videos/8/1/", 1, 15, "first")
+            h5 Tais vs. Irina (Vlasta)
+            +gallery("See photos", "../../img/videos/8/plyazhnyj-turnir-2011-2/", 1, 9, "second")
+            p.
+              The struggle for the 2nd place between Elena and Irina proved to be interesting und uncompromising. In their first fight Elena tossed Irina to the ground with a nice throw and, after some further struggle, finished the fight with a choke. In the second fight the advantage was on the side of Irina. She struggled a long time trying to choke Elena, but Elena just was not giving up... At the end – whether Irina had run out of strength or lost her confidence – as soon as Elena had escaped and moved on top, Irina gave up.
+            h5 Irina (Vlasta) vs. Elena Vasilyeva
+            +gallery("See photos", "../../img/videos/8/plyazhnyj-turnir-2011-3/", 1, 17, "third")
+            p.
+              2nd place went to Elena, 3rd place to Irina (Vlasta).
+            hr
+            p.
+              Do you want to know how all this was happening? Buy now on <a href="https://gumroad.com/namazonclub">Gumroad</a> (<b><u>VIDEO 8.</u></b> Beach Tournament. Submission Grappling. June, 2011) and find out.
+    +footer("../../")  

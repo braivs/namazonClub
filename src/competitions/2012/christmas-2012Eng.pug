@@ -1,0 +1,78 @@
+include ../../includes/head.pug
+include ../../includes/headerEng.pug
+include ../../includes/sliderEng.pug
+include ../../includes/footerEng.pug
+
+doctype html
+html(lang='en')
+  +head('../../','MMA fights. Tournament "Christmas Cup 2012"')
+  link(rel="stylesheet", href="../../css/ekko-lightbox.css")
+  body
+    +header("../../")
+    main
+      +slider('../../')
+      .container.videos
+        .row.mx-auto
+          .col
+            h3 2012
+            h4 MMA fights. Tournament "Christmas Cup 2012"
+            img.mainImg(src='../../img/videos/9/main.jpg' alt='main')
+            p.
+              In the competition participated three fighters: <a href="../../girls/elena-vasileva2013Eng.html">Elena Vasilyeva</a>  (St. Petersburg, 5’6” / 132 lb); <a href="../../girls/kara-tellerEng.html"">Kara Teller</a>, Namazon Club’s newcomer (Moscow, 5’7” / 119 lb); <a href="../../girls/tais2013Eng.html">Tais</a>  (St. Petersburg, 5’7” / 130 lb). The tournament was held in a single round format. The girls eventually had to have two fights each. Each fight consisted of three 4 min rounds with 1 min rest between each round.
+            h5 <u>The first fight</u> Elena Vasilyeva vs Kara Teller
+            p.
+              In the first two rounds the advantage was on the side of Elena, who was able to throw down Kara several times on the mat and had a lot of chances to finish her on the ground. Notice that Kara at the same time defended herself skillfully.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample' role='button' aria-expanded='false' aria-controls='collapseExample')
+              | See photos
+            #collapseExample.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 12
+                      - n = n+1
+                      a.col-sm-4(href='../../img/videos/9/mma-rozhdestvenskij-kubok-2012-1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/videos/9/mma-rozhdestvenskij-kubok-2012-1/'+n+'.jpg')
+            p.
+              In the 3rd round the advantage gradually shifted to Kara. She managed to get a full-mount on Elena, forcing her to defend herself. During one of the Elena’s attempts to throw her opponent off, our guest from Moscow took advantage of Elena when the latter left her neck unprotected and flawlessly performed a choke.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample2' role='button' aria-expanded='false' aria-controls='collapseExample2')
+              | See photos
+            #collapseExample2.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 12;
+                    while n < 20
+                      - n = n+1
+                      a.col-sm-4(href='../../img/videos/9/mma-rozhdestvenskij-kubok-2012-1/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/videos/9/mma-rozhdestvenskij-kubok-2012-1/'+n+'.jpg')
+            h5 <u>The second fight</u>  Kara vs Tais 
+            p.
+              Tais defeated Kara in the first round. Her aggressive attack, consisting mainly of strikes with kicks, the majority of which missed the target by some way, resulted in bringing the fight into the ground, where Tais managed to get the top position.<br>
+              Continuing to wrestle on top Tais tried to armlock Kara. The young girl wrenched herself free but while doing so, she got her neck caught in the grip of Tais, who won by a choke as a result.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample3' role='button' aria-expanded='false' aria-controls='collapseExample3')
+              | See photos
+            #collapseExample3.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 20
+                      - n = n+1
+                      a.col-sm-4(href='../../img/videos/9/mma-rozhdestvenskij-kubok-2012-3/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/videos/9/mma-rozhdestvenskij-kubok-2012-3/'+n+'.jpg')
+            h5 <u>The third fight</u>  Elena vs Tais
+            p.
+              The third fight was as brief as the second one. Elena had already been defeated by Tais in the first round. After bringing the fight to the ground, Tais was able to apply her favorite armlock that forced Elena to submit.
+            a.btn.btn-primary.screensBtn(data-toggle='collapse' href='#collapseExample4' role='button' aria-expanded='false' aria-controls='collapseExample4')
+              | See photos
+            #collapseExample4.collapse
+              .col-md-12.text-center
+                  .row.justify-content-center
+                    - var n = 0;
+                    while n < 15
+                      - n = n+1
+                      a.col-sm-4(href='../../img/videos/9/mma-rozhdestvenskij-kubok-2012-4/'+n+'.jpg' data-toggle='lightbox' data-gallery='example-gallery')
+                        img.img-fluid(src='../../img/videos/9/mma-rozhdestvenskij-kubok-2012-4/'+n+'.jpg')
+            p As a result, <b>Tais</b> took the 1st place, <b>Kara Teller</b> won the 2nd, and <b>Elena Vasilyeva</b> the 3rd.
+            hr
+            p.
+              The girls fought hard and uncompromisingly in all these three fights. If you like such fights, buy our film (<b><u>VIDEO 9</u></b>. MMA tournament "Christmas Cup 2012") on <a href="https://gumroad.com/namazonclub">Gumroad</a>  and you will be able to see everything yourself.
+    +footer("../../")
